@@ -1,0 +1,26 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+
+ext.toPluginName = { String n ->
+    n.split(/[-_]/)*.capitalize().join('') + 'Plugin'
+}
+
+def artifactsDir = file("$rootDir/artifacts/plugins")
+
+subprojects {sp ->
+    dependencies {
+        compileOnly(project(":core-application"))
+        compileOnly(project(":network"))
+        compileOnly(project(":commons"))
+
+        compileOnly(libs.eventbus)
+    }
+
+    plugins.withId('com.github.johnrengelman.shadow') {
+        tasks.withType(ShadowJar).configureEach {
+            archiveFileName.set("${toPluginName(sp.name)}.jar")
+            destinationDirectory.set(artifactsDir)
+        }
+    }
+
+}
+

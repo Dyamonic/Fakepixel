@@ -1,0 +1,15 @@
+interval: 100
+message_keys:
+  - 'automessage_discord'
+  - 'automessage_gold'
+  - 'automessage_duel'
+  - 'automessage_telegram'
+  - 'automessage_report'
+  - 'automessage_ultra'
+  - 'automessage_youtube'
+  - 'automessage_rubium'
+  - 'automessage_special'
+  - 'automessage_bugtracker'
+  - 'automessage_axclient'
+  - 'automessage_staff'
+  - 'automessage_vk'

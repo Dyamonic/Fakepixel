@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+}
+
+group = 'club.abelix'
+version = '1.0.0-PROD'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+
+    maven { url = "https://repo.abelix.club/repository/public/" }
+
+    maven {
+        url "https://git.abelix.club/api/v4/groups/1214/-/packages/maven"
+
+        credentials(HttpHeaderCredentials) {
+            name = "${System.getenv("CI_JOB_TOKEN") ? 'Job-Token' : 'Private-Token'}"
+            value = System.getenv("CI_JOB_TOKEN") ?: System.getenv("ABELIX_ACCESS_TOKEN")
+        }
+
+        authentication { header(HttpHeaderAuthentication) }
+    }
+
+}
+
+dependencies {
+    compileOnly(libs.jetbrains.annotations)
+
+    compileOnly(libs.lombok)
+    annotationProcessor(libs.lombok)
+
+    compileOnly(libs.spigot)
+    compileOnly(libs.protocollib)
+    compileOnly(libs.swm)
+}
+
+tasks.named('jar') {
+    archiveFileName.set('Auth.jar')
+
+    destinationDirectory.set(file("$rootDir/artifacts"))
+}
+
+tasks.named('processResources') {
+    inputs.property 'VERSION', project.version
+    inputs.property 'COMMIT', System.getenv('CI_COMMIT_SHORT_SHA') ?: 'unspecified'
+
+    filesMatching('plugin.yml') {
+        expand([
+                VERSION    : project.version,
+                DESCRIPTION: project.description ?: '',
+                URL        : project.findProperty('url') ?: '',
+                COMMIT     : System.getenv('CI_COMMIT_SHORT_SHA') ?: 'unspecified'
+        ])
+        filteringCharset = 'UTF-8'
+    }
+}

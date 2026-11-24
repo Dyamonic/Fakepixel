@@ -1,0 +1,4 @@
+main: club.abelix.bot.discord.DiscordBotCorePlugin
+name: DiscordBot
+author: Abelix
+version: 1.3.0

@@ -1,0 +1,7 @@
+name: FastBridgeGame
+main: club.abelix.games.buildffa.BuildFFA
+version: '${VERSION} git-${COMMIT}'
+description: "BuildFFA game plugin for the Abelix platform base on K8S"
+author: AbelixClub
+
+depend: [ Api ]

@@ -1,0 +1,21 @@
+{
+  "id": "abelix",
+  "name": "StarshipVelocity",
+  "version": "${VERSION}",
+  "authors": [
+    "Krashe85",
+    "milanskyy (PbIBa)",
+    "gbashmak"
+  ],
+  "dependencies": [
+    {
+      "id": "vpacketevents",
+      "optional": false
+    },
+    {
+      "id": "sonar",
+      "optional": true
+    }
+  ],
+  "main": "club.abelix.core.velocity.StarshipVelocity"
+}

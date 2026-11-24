@@ -1,0 +1,5 @@
+npcs:
+  default-name: '&bThe Pit'
+  hologram:
+    top-offset: 2.55
+    bottom-offset: 2.25

@@ -1,0 +1,9 @@
+enabled: False
+mailFrom: "Abelix"
+
+forum:
+  server: ""
+
+ranks:
+  - id: 1
+    forumId: 2

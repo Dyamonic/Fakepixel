@@ -1,0 +1,15 @@
+package me.outerspace.thepit.managers;
+
+public enum KillstreakPurchaseResult {
+    SUCCESS,
+    INVALID_KILLSTREAK,
+    PROFILE_NOT_LOADED,
+    LEVEL_REQUIRED,
+    PRESTIGE_REQUIRED,
+    BUNDLE_REQUIRED,
+    ALREADY_OWNED,
+    INSUFFICIENT_GOLD,
+    PURCHASE_IN_PROGRESS,
+    STORAGE_FAILURE,
+    REFUND_FAILURE
+}

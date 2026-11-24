@@ -1,0 +1,191 @@
+rank-detection:
+  admin-staff:
+    ADMINISTRATOR:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - housing.staff.gamemode
+      - housing.staff
+    AX_TEAM:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - housing.staff.gamemode
+      - housing.staff
+    JR_DEVELOPER:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - housing.staff.gamemode
+      - housing.staff
+    DEVELOPER:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - housing.staff.gamemode
+      - housing.staff
+    SR_DEVELOPER:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - housing.staff.gamemode
+      - housing.staff
+    DEPUTY:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - housing.staff.gamemode
+      - housing.staff
+    MAIN_ADMIN:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - housing.staff.gamemode
+      - housing.staff
+    OWNER:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - housing.staff.gamemode
+      - housing.staff
+
+  staff:
+    SPONSOR_STAFF:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.socialspy
+      - fakevival.staff.xray
+      - smp.admin.commandlog
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+    GM:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.socialspy
+      - fakevival.staff.xray
+      - smp.admin.commandlog
+      - fakevival.staff.chatfilter
+      - housing.staff
+    MODERATOR:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.socialspy
+      - fakevival.staff.xray
+      - smp.admin.commandlog
+      - fakevival.staff.chatfilter
+      - fakevival.admin.itembrowser
+      - housing.staff
+    HELPER:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.xray
+      - fakevival.staff.chatfilter
+      - housing.staff
+    JR_HELPER:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.xray
+      - fakevival.staff.chatfilter
+      - housing.staff
+
+  player-ranks:
+    DEFAULT:
+      permissions: []
+    VIP:
+      permissions:
+      - fakevival.command.kit.vip
+    VIP_PLUS:
+      permissions:
+      - fakevival.command.kit.vip
+      - fakevival.command.kit.vip_plus
+    MVP:
+      permissions:
+      - fakevival.command.kit.vip
+      - fakevival.command.kit.mvp
+    MVP_PLUS:
+      permissions:
+      - fakevival.command.kit.vip
+      - fakevival.command.kit.mvp
+      - fakevival.command.kit.mvp_plus
+    MVP_PLUS_PLUS:
+      permissions:
+      - fakevival.command.kit.vip
+      - fakevival.command.kit.mvp
+      - fakevival.command.kit.mvp_plus
+      - fakevival.command.kit.mvp_plus_plus
+    YOUTUBE:
+      permissions:
+      - fakevival.command.kit.youtube
+    PIG:
+      permissions:
+      - fakevival.command.kit.pig
+    PIG_PLUS:
+      permissions:
+      - fakevival.command.kit.pig
+      - fakevival.command.kit.pig_plus
+    PIG_PLUS_PLUS:
+      permissions:
+      - fakevival.command.kit.pig
+      - fakevival.command.kit.pig_plus
+      - fakevival.command.kit.pig_plus_plus
+    PIG_PLUS_PLUS_PLUS:
+      permissions:
+      - fakevival.command.kit.pig
+      - fakevival.command.kit.pig_plus
+      - fakevival.command.kit.pig_plus_plus
+      - fakevival.command.kit.pig_plus_plus_plus
+    BETA:
+      permissions:
+      - fakevival.rank.beta
+      - fakevival.admin.itembrowser
+    SPONSOR_1:
+      permissions:
+      - fakevival.rank.sponsor_1
+    SPONSOR_2:
+      permissions:
+      - fakevival.rank.sponsor_1
+      - fakevival.rank.sponsor_2
+    SPONSOR_3:
+      permissions:
+      - fakevival.rank.sponsor_1
+      - fakevival.rank.sponsor_2
+      - fakevival.rank.sponsor_3
+    SPECIAL:
+      permissions:
+      - fakevival.rank.special

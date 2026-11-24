@@ -1,0 +1,336 @@
+package club.abelix.network.packet;
+
+import club.abelix.network.packet.handshake.packet.HRequest;
+import club.abelix.network.packet.handshake.packet.HResponse;
+import club.abelix.network.packet.play.both.BAddServerJoinMessage;
+import club.abelix.network.packet.play.both.BBestPlayerDonate;
+import club.abelix.network.packet.play.both.BBestPlayerUpdate;
+import club.abelix.network.packet.play.both.BBroadcastChat;
+import club.abelix.network.packet.play.both.BBroadcastChatLocalized;
+import club.abelix.network.packet.play.both.BChat;
+import club.abelix.network.packet.play.both.BLicenseStatus;
+import club.abelix.network.packet.play.both.BPlayerSuccessBotCheck;
+import club.abelix.network.packet.play.both.BProxyBotCheck;
+import club.abelix.network.packet.play.both.BProxyKick;
+import club.abelix.network.packet.play.both.BQueueJoinQueue;
+import club.abelix.network.packet.play.both.BRemoveProperty;
+import club.abelix.network.packet.play.both.BSetProperty;
+import club.abelix.network.packet.play.both.BUpdatePlayerLanguage;
+import club.abelix.network.packet.play.both.BUserRankRefreshPacket;
+import club.abelix.network.packet.play.both.BCheckChannelSubscription;
+import club.abelix.network.packet.play.client.CActivateNetworkBooster;
+import club.abelix.network.packet.play.client.CAddPartyMember;
+import club.abelix.network.packet.play.client.CArenaCreate;
+import club.abelix.network.packet.play.client.CArenaEditQueueState;
+import club.abelix.network.packet.play.client.CArenaJoinBroadcast;
+import club.abelix.network.packet.play.client.CArenaSetGameMap;
+import club.abelix.network.packet.play.client.CArenaSetState;
+import club.abelix.network.packet.play.client.CBanPlayer;
+import club.abelix.network.packet.play.client.CBroadcastStaff;
+import club.abelix.network.packet.play.client.CChangePlayerNick;
+import club.abelix.network.packet.play.client.CConnectExact;
+import club.abelix.network.packet.play.client.CConnectMap;
+import club.abelix.network.packet.play.client.CConnectMode;
+import club.abelix.network.packet.play.client.CConnectToPlayer;
+import club.abelix.network.packet.play.client.CCreateParty;
+import club.abelix.network.packet.play.client.CDisbandParty;
+import club.abelix.network.packet.play.client.CDispatchCommand;
+import club.abelix.network.packet.play.client.CDuelRequest;
+import club.abelix.network.packet.play.client.CGamerLeaveQueue;
+import club.abelix.network.packet.play.client.CGamerQueueJoinRequest;
+import club.abelix.network.packet.play.client.CGetActiveStreams;
+import club.abelix.network.packet.play.client.CGetBestServer;
+import club.abelix.network.packet.play.client.CGetGlobalOnline;
+import club.abelix.network.packet.play.client.CGetGuildInfo;
+import club.abelix.network.packet.play.client.CGetReports;
+import club.abelix.network.packet.play.client.CGetServerOnline;
+import club.abelix.network.packet.play.client.CGiveSkyblockGemsResponse;
+import club.abelix.network.packet.play.client.CGoPrivateGame;
+import club.abelix.network.packet.play.client.CListPartyMembers;
+import club.abelix.network.packet.play.client.CLoadFriends;
+import club.abelix.network.packet.play.client.CLookupGlobalOnline;
+import club.abelix.network.packet.play.client.CMakePrivateGameResponse;
+import club.abelix.network.packet.play.client.CMapBalancerRecovery;
+import club.abelix.network.packet.play.client.CMapBalancerRegister;
+import club.abelix.network.packet.play.client.CMapBalancerUpdateMap;
+import club.abelix.network.packet.play.client.CMutePlayer;
+import club.abelix.network.packet.play.client.CNetworkBoosterRequest;
+import club.abelix.network.packet.play.client.CNetworkPlayerLoadRequest;
+import club.abelix.network.packet.play.client.COnlineFriendsCountRequest;
+import club.abelix.network.packet.play.client.CPingResponse;
+import club.abelix.network.packet.play.client.CPlayerChangeSkin;
+import club.abelix.network.packet.play.client.CPlayerCommand;
+import club.abelix.network.packet.play.client.CPlayerConnected;
+import club.abelix.network.packet.play.client.CPlayerNickGenerate;
+import club.abelix.network.packet.play.client.CPlayerPingResponse;
+import club.abelix.network.packet.play.client.CProxyPlayerDisconnect;
+import club.abelix.network.packet.play.client.CProxyPlayerLoginRequest;
+import club.abelix.network.packet.play.client.CQueueCreate;
+import club.abelix.network.packet.play.client.CQueueQuitQueue;
+import club.abelix.network.packet.play.client.CReconnectPlayers;
+import club.abelix.network.packet.play.client.CRemovePartyMember;
+import club.abelix.network.packet.play.client.CReportAction;
+import club.abelix.network.packet.play.client.CReportCheckExistenceRequest;
+import club.abelix.network.packet.play.client.CReportCheckStateRequest;
+import club.abelix.network.packet.play.client.CSendPlayerFailed;
+import club.abelix.network.packet.play.client.CSendServerCommand;
+import club.abelix.network.packet.play.client.CServerConnectRequest;
+import club.abelix.network.packet.play.client.CServerPingResponse;
+import club.abelix.network.packet.play.client.CServerRestartScheduled;
+import club.abelix.network.packet.play.client.CSetJoinableState;
+import club.abelix.network.packet.play.client.CSetSlots;
+import club.abelix.network.packet.play.client.CSync;
+import club.abelix.network.packet.play.client.CSyncResponse;
+import club.abelix.network.packet.play.client.CTabcompleteRequest;
+import club.abelix.network.packet.play.client.CTelegramAuth;
+import club.abelix.network.packet.play.client.CTelegramMessage;
+import club.abelix.network.packet.play.client.CTwoFactorAuthentication;
+import club.abelix.network.packet.play.client.CTelegramToken;
+import club.abelix.network.packet.play.server.SActiveStreams;
+import club.abelix.network.packet.play.server.SAddPlayerJoinMessage;
+import club.abelix.network.packet.play.server.SAddPlayerSuffix;
+import club.abelix.network.packet.play.server.SAddServerSuffix;
+import club.abelix.network.packet.play.server.SBestServer;
+import club.abelix.network.packet.play.server.SChangePlayerNickResponse;
+import club.abelix.network.packet.play.server.SConnectResponse;
+import club.abelix.network.packet.play.server.SDisableGameStatistic;
+import club.abelix.network.packet.play.server.SDuelOpenGui;
+import club.abelix.network.packet.play.server.SFailedReconnectPlayers;
+import club.abelix.network.packet.play.server.SFriendAction;
+import club.abelix.network.packet.play.server.SGamerQueueJoinResponse;
+import club.abelix.network.packet.play.server.SGiveCompanion;
+import club.abelix.network.packet.play.server.SGiveSkyblockGems;
+import club.abelix.network.packet.play.server.SGlobalOnline;
+import club.abelix.network.packet.play.server.SGuildInfo;
+import club.abelix.network.packet.play.server.SIgnoreListUpdate;
+import club.abelix.network.packet.play.server.SMakeGamePrivateRequest;
+import club.abelix.network.packet.play.server.SMapBalancerUpdateResponse;
+import club.abelix.network.packet.play.server.SMovePlayerToMini;
+import club.abelix.network.packet.play.server.SMuteChangeMuteState;
+import club.abelix.network.packet.play.server.SNetworkBoosterResponse;
+import club.abelix.network.packet.play.server.SNetworkPlayerLoadResponse;
+import club.abelix.network.packet.play.server.SOnlineFriendsCountResponse;
+import club.abelix.network.packet.play.server.SPartyChange;
+import club.abelix.network.packet.play.server.SPartyChangeLeader;
+import club.abelix.network.packet.play.server.SPartyMemberResponse;
+import club.abelix.network.packet.play.server.SPartyRemove;
+import club.abelix.network.packet.play.server.SPingRequest;
+import club.abelix.network.packet.play.server.SPlayerNickGenerateResponse;
+import club.abelix.network.packet.play.server.SPlayerPingRequest;
+import club.abelix.network.packet.play.server.SPlayerVote;
+import club.abelix.network.packet.play.server.SProxyPlayerLoginResponse;
+import club.abelix.network.packet.play.server.SRefreshRanksPacket;
+import club.abelix.network.packet.play.server.SRegisterCommands;
+import club.abelix.network.packet.play.server.SRegisterServers;
+import club.abelix.network.packet.play.server.SReloadLanguages;
+import club.abelix.network.packet.play.server.SRemovePrefix;
+import club.abelix.network.packet.play.server.SReportCheckExistenceResponse;
+import club.abelix.network.packet.play.server.SReportCheckStateResponse;
+import club.abelix.network.packet.play.server.SReports;
+import club.abelix.network.packet.play.server.SScreenShareFinishPacket;
+import club.abelix.network.packet.play.server.SScreenShareStartPacket;
+import club.abelix.network.packet.play.server.SSendPlayer;
+import club.abelix.network.packet.play.server.SSendTitle;
+import club.abelix.network.packet.play.server.SServerCommand;
+import club.abelix.network.packet.play.server.SServerConnectResponse;
+import club.abelix.network.packet.play.server.SServerOnline;
+import club.abelix.network.packet.play.server.SServerPingRequest;
+import club.abelix.network.packet.play.server.SServerStatusUpdate;
+import club.abelix.network.packet.play.server.SSetGlobalOnline;
+import club.abelix.network.packet.play.server.SSyncRequest;
+import club.abelix.network.packet.play.server.STabcompleteResponse;
+import club.abelix.network.packet.play.server.STablistHeaderFooter;
+import club.abelix.network.packet.play.server.STelegramAuth;
+import club.abelix.network.packet.play.server.STelegramLinked;
+import club.abelix.network.packet.play.server.STwoFactorAuthenticationResult;
+import club.abelix.network.packet.play.server.SUnmute;
+import club.abelix.network.packet.play.server.SUnregisterServer;
+import club.abelix.network.packet.play.server.SUpdatePlayersTag;
+import club.abelix.network.packet.play.server.SUpdatePrefix;
+import club.abelix.network.packet.play.server.STelegramToken;
+
+/**
+ * Client (C) - Proxy/Bukkit -> Core
+ * Server (S) - Core -> Proxy/Bukkit
+ * Both (B) - Both directions
+ * All id's greater than 1000 were reserved for plugins
+ */
+public enum PacketRegistry {
+
+    HANDSHAKE {
+        {
+            toServer(0, HRequest.class, HRequest::new);
+            toClient(0, HResponse.class, HResponse::new);
+        }
+    },
+    PLAY {
+        {
+            both(100, BUserRankRefreshPacket.class, BUserRankRefreshPacket::new);
+            both(101, BSetProperty.class, BSetProperty::new);
+            both(102, BRemoveProperty.class, BRemoveProperty::new);
+            both(103, BBroadcastChat.class, BBroadcastChat::new);
+            both(104, BChat.class, BChat::new);
+            both(105, BProxyKick.class, BProxyKick::new);
+            both(106, BUpdatePlayerLanguage.class, BUpdatePlayerLanguage::new);
+            both(107, BAddServerJoinMessage.class, BAddServerJoinMessage::new);
+            both(108, BQueueJoinQueue.class, BQueueJoinQueue::new);
+            both(109, BBroadcastChatLocalized.class, BBroadcastChatLocalized::new);
+            both(110, BPlayerSuccessBotCheck.class, BPlayerSuccessBotCheck::new);
+            both(111, BBestPlayerUpdate.class, BBestPlayerUpdate::new);
+            both(112, BBestPlayerDonate.class, BBestPlayerDonate::new);
+            both(113, BProxyBotCheck.class, BProxyBotCheck::new);
+            both(114, BLicenseStatus.class, BLicenseStatus::new);
+
+            toClient(0, SServerConnectResponse.class, SServerConnectResponse::new);
+            toClient(1, SMovePlayerToMini.class, SMovePlayerToMini::new);
+            toClient(2, SPartyChange.class, SPartyChange::new);
+            toClient(3, SPartyChangeLeader.class, SPartyChangeLeader::new);
+            toClient(4, SPartyRemove.class, SPartyRemove::new);
+            toClient(5, SFriendAction.class, SFriendAction::new);
+            toClient(6, SGlobalOnline.class, SGlobalOnline::new);
+            toClient(7, SServerOnline.class, SServerOnline::new);
+            toClient(9, SFailedReconnectPlayers.class, SFailedReconnectPlayers::new);
+            toClient(10, SBestServer.class, SBestServer::new);
+            toClient(11, SNetworkPlayerLoadResponse.class, SNetworkPlayerLoadResponse::new);
+            toClient(12, SUpdatePrefix.class, SUpdatePrefix::new);
+            toClient(13, STabcompleteResponse.class, STabcompleteResponse::new);
+            toClient(14, SConnectResponse.class, SConnectResponse::new);
+            toClient(15, SSendPlayer.class, SSendPlayer::new);
+            toClient(16, SProxyPlayerLoginResponse.class, SProxyPlayerLoginResponse::new);
+            toClient(17, SRemovePrefix.class, SRemovePrefix::new);
+            toClient(19, SRegisterCommands.class, SRegisterCommands::new);
+            toClient(20, SRegisterServers.class, SRegisterServers::new);
+            toClient(21, SUnregisterServer.class, SUnregisterServer::new);
+            toClient(22, SReloadLanguages.class, SReloadLanguages::new);
+            toClient(23, SActiveStreams.class, SActiveStreams::new);
+            toClient(24, SMuteChangeMuteState.class, SMuteChangeMuteState::new);
+            toClient(25, SUnmute.class, SUnmute::new);
+            toClient(26, SReportCheckStateResponse.class, SReportCheckStateResponse::new);
+            toClient(27, SReports.class, SReports::new);
+            toClient(28, SReportCheckExistenceResponse.class, SReportCheckExistenceResponse::new);
+            toClient(29, SPlayerVote.class, SPlayerVote::new);
+            toClient(30, SAddPlayerSuffix.class, SAddPlayerSuffix::new);
+            toClient(31, SAddServerSuffix.class, SAddServerSuffix::new);
+            toClient(32, SSendTitle.class, SSendTitle::new);
+            toClient(33, STwoFactorAuthenticationResult.class, STwoFactorAuthenticationResult::new);
+            toClient(34, SServerCommand.class, SServerCommand::new);
+            toClient(35, SSetGlobalOnline.class, SSetGlobalOnline::new);
+            toClient(36, SGamerQueueJoinResponse.class, SGamerQueueJoinResponse::new);
+            toClient(37, STablistHeaderFooter.class, STablistHeaderFooter::new);
+            toClient(38, SPlayerNickGenerateResponse.class, SPlayerNickGenerateResponse::new);
+            toClient(39, SChangePlayerNickResponse.class, SChangePlayerNickResponse::new);
+            toClient(40, SAddPlayerJoinMessage.class, SAddPlayerJoinMessage::new);
+            toClient(41, SIgnoreListUpdate.class, SIgnoreListUpdate::new);
+            toClient(42, SNetworkBoosterResponse.class, SNetworkBoosterResponse::new);
+            toClient(43, SPartyMemberResponse.class, SPartyMemberResponse::new);
+            toClient(44, SGuildInfo.class, SGuildInfo::new);
+            toClient(45, SUpdatePlayersTag.class, SUpdatePlayersTag::new);
+            toClient(46, SGiveSkyblockGems.class, SGiveSkyblockGems::new);
+            toClient(47, SSyncRequest.class, SSyncRequest::new);
+            toClient(48, SMapBalancerUpdateResponse.class, SMapBalancerUpdateResponse::new);
+            toClient(49, SDuelOpenGui.class, SDuelOpenGui::new);
+            toClient(50, SServerStatusUpdate.class, SServerStatusUpdate::new);
+            toClient(51, SPingRequest.class, SPingRequest::new);
+            toClient(52, SDisableGameStatistic.class, SDisableGameStatistic::new);
+            toClient(53, SGiveCompanion.class, SGiveCompanion::new);
+            toClient(54, SMakeGamePrivateRequest.class, SMakeGamePrivateRequest::new);
+            toClient(55, SPlayerPingRequest.class, SPlayerPingRequest::new);
+            toClient(56, SRefreshRanksPacket.class, SRefreshRanksPacket::new);
+            toClient(57, SOnlineFriendsCountResponse.class, SOnlineFriendsCountResponse::new);
+            toClient(58, STelegramAuth.class, STelegramAuth::new);
+            toClient(59, STelegramLinked.class, STelegramLinked::new);
+            toClient(60, SScreenShareStartPacket.class, SScreenShareStartPacket::new);
+            toClient(61, SScreenShareFinishPacket.class, SScreenShareFinishPacket::new);
+            toClient(62, SServerPingRequest.class, SServerPingRequest::new);
+            toClient(63, BCheckChannelSubscription.Response.class, BCheckChannelSubscription.Response::new);
+            toClient(64, STelegramToken.class, STelegramToken::new);
+
+            toServer(0, CPlayerConnected.class, CPlayerConnected::new);
+            toServer(1, CNetworkPlayerLoadRequest.class, CNetworkPlayerLoadRequest::new);
+            toServer(2, CGetGlobalOnline.class, CGetGlobalOnline::new);
+            toServer(3, CGetServerOnline.class, CGetServerOnline::new);
+            toServer(4, CReconnectPlayers.class, CReconnectPlayers::new);
+            toServer(5, CGetBestServer.class, CGetBestServer::new);
+            toServer(6, CServerConnectRequest.class, CServerConnectRequest::new);
+            toServer(7, CSync.class, CSync::new);
+            toServer(8, CArenaSetState.class, CArenaSetState::new);
+            toServer(10, CConnectExact.class, CConnectExact::new);
+            toServer(11, CConnectToPlayer.class, CConnectToPlayer::new);
+            toServer(12, CConnectMode.class, CConnectMode::new);
+            toServer(13, CTabcompleteRequest.class, CTabcompleteRequest::new);
+            toServer(14, CConnectMap.class, CConnectMap::new);
+            toServer(15, CProxyPlayerLoginRequest.class, CProxyPlayerLoginRequest::new);
+            toServer(16, CQueueCreate.class, CQueueCreate::new);
+            toServer(18, CProxyPlayerDisconnect.class, CProxyPlayerDisconnect::new);
+            toServer(19, CQueueQuitQueue.class, CQueueQuitQueue::new);
+            toServer(20, CPlayerCommand.class, CPlayerCommand::new);
+            toServer(21, CArenaCreate.class, CArenaCreate::new);
+            toServer(22, CReportCheckExistenceRequest.class, CReportCheckExistenceRequest::new);
+            toServer(23, CReportCheckStateRequest.class, CReportCheckStateRequest::new);
+            toServer(24, CSetSlots.class, CSetSlots::new);
+            toServer(25, CGetActiveStreams.class, CGetActiveStreams::new);
+            toServer(26, CReportAction.class, CReportAction::new);
+            toServer(27, CSendServerCommand.class, CSendServerCommand::new);
+            toServer(28, CGetReports.class, CGetReports::new);
+            toServer(30, CLookupGlobalOnline.class, CLookupGlobalOnline::new);
+            toServer(31, CLoadFriends.class, CLoadFriends::new);
+            toServer(32, CTwoFactorAuthentication.class, CTwoFactorAuthentication::new);
+            toServer(33, CArenaEditQueueState.class, CArenaEditQueueState::new);
+            toServer(34, CSetJoinableState.class, CSetJoinableState::new);
+            toServer(35, CPlayerNickGenerate.class, CPlayerNickGenerate::new);
+            toServer(36, CChangePlayerNick.class, CChangePlayerNick::new);
+            toServer(37, CArenaJoinBroadcast.class, CArenaJoinBroadcast::new);
+            toServer(38, CMutePlayer.class, CMutePlayer::new);
+            toServer(39, CBroadcastStaff.class, CBroadcastStaff::new);
+            toServer(40, CBanPlayer.class, CBanPlayer::new);
+            toServer(41, CGamerLeaveQueue.class, CGamerLeaveQueue::new);
+            toServer(42, CGamerQueueJoinRequest.class, CGamerQueueJoinRequest::new);
+            toServer(43, CSendPlayerFailed.class, CSendPlayerFailed::new);
+            toServer(44, CActivateNetworkBooster.class, CActivateNetworkBooster::new);
+            toServer(45, CNetworkBoosterRequest.class, CNetworkBoosterRequest::new);
+            toServer(46, CDispatchCommand.class, CDispatchCommand::new);
+            toServer(47, CAddPartyMember.class, CAddPartyMember::new);
+            toServer(48, CRemovePartyMember.class, CRemovePartyMember::new);
+            toServer(49, CDisbandParty.class, CDisbandParty::new);
+            toServer(50, CCreateParty.class, CCreateParty::new);
+            toServer(51, CListPartyMembers.class, CListPartyMembers::new);
+            toServer(52, CGetGuildInfo.class, CGetGuildInfo::new);
+            toServer(53, CGiveSkyblockGemsResponse.class, CGiveSkyblockGemsResponse::new);
+            toServer(54, CPlayerChangeSkin.class, CPlayerChangeSkin::new);
+            toServer(55, CSyncResponse.class, CSyncResponse::new);
+            toServer(56, CMapBalancerRegister.class, CMapBalancerRegister::new);
+            toServer(57, CMapBalancerUpdateMap.class, CMapBalancerUpdateMap::new);
+            toServer(58, CMapBalancerRecovery.class, CMapBalancerRecovery::new);
+            toServer(59, CDuelRequest.class, CDuelRequest::new);
+            toServer(60, CPingResponse.class, CPingResponse::new);
+            toServer(61, CArenaSetGameMap.class, CArenaSetGameMap::new);
+            toServer(62, CMakePrivateGameResponse.class, CMakePrivateGameResponse::new);
+            toServer(63, CGoPrivateGame.class, CGoPrivateGame::new);
+            toServer(64, CPlayerPingResponse.class, CPlayerPingResponse::new);
+            toServer(65, CServerRestartScheduled.class, CServerRestartScheduled::new);
+            toServer(66, COnlineFriendsCountRequest.class, COnlineFriendsCountRequest::new);
+            toServer(67, CTelegramAuth.class, CTelegramAuth::new);
+            toServer(68, CTelegramMessage.class, CTelegramMessage::new);
+            toServer(69, CServerPingResponse.class, CServerPingResponse::new);
+            toServer(70, BCheckChannelSubscription.Request.class, BCheckChannelSubscription.Request::new);
+            toServer(71, CTelegramToken.class, CTelegramToken::new);
+        }
+    };
+
+    public final PacketMapper TO_SERVER = new PacketMapper(),
+            TO_CLIENT = new PacketMapper();
+
+    public <T extends Packet<?>> void toServer(int id, Class<?> cls, PacketFactory factory) {
+        TO_SERVER.registerPacket(id, cls, factory);
+    }
+
+    public <T extends Packet<?>> void toClient(int id, Class<?> cls, PacketFactory factory) {
+        TO_CLIENT.registerPacket(id, cls, factory);
+    }
+
+    public <T extends Packet<?>> void both(int id, Class<?> cls, PacketFactory factory) {
+        toServer(id, cls, factory);
+        toClient(id, cls, factory);
+    }
+
+}

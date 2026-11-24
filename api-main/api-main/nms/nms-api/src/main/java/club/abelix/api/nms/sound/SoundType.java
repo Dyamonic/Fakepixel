@@ -1,0 +1,108 @@
+package club.abelix.api.nms.sound;
+
+import club.abelix.api.nms.sound.type.YSound;
+import lombok.Getter;
+
+
+@Getter
+public enum SoundType {
+
+    CLICK(1.0F, 10.0F, YSound.CLICK),
+    DESTROY(YSound.WITHER_DEATH),
+    POP(YSound.CHICKEN_EGG_POP),
+    NO(YSound.VILLAGER_NO),
+    YES(YSound.VILLAGER_YES),
+    CHEST_OPEN(YSound.CHEST_OPEN),
+    CHEST_CLOSE(YSound.CHEST_CLOSE),
+    TELEPORT(YSound.ENDERMAN_TELEPORT),
+    LEVEL_UP(YSound.LEVEL_UP),
+    SELECTED(YSound.ANVIL_USE),
+    POSITIVE(YSound.ORB_PICKUP),
+    PICKUP(1.0F, 10.F, YSound.ORB_PICKUP),
+    NEGATIVE(YSound.BAT_HURT),
+    BREAK(YSound.ITEM_BREAK),
+    SLIME(YSound.SLIME_WALK),
+    DIG_GRASS(YSound.DIG_GRASS),
+    DIG_STONE(YSound.DIG_STONE),
+    DIG_WOOD(YSound.DIG_WOOD),
+    DIG_GLASS(YSound.GLASS),
+    DIG_GRAVEL(YSound.DIG_GRAVEL),
+    DIG_SAND(YSound.DIG_SAND),
+    DIG_SNOW(YSound.DIG_SNOW),
+    DIG_WOOL(YSound.DIG_WOOL),
+    AFK_SOUND(10.0F, 1.0F, YSound.NOTE_PLING),
+    NOTIFICATION(0.75F, 2F, YSound.ORB_PICKUP),
+    CREEPER_DEATH(YSound.CREEPER_DEATH),
+    BLAZE_DEATH(YSound.BLAZE_DEATH),
+    BLAZE_SHOOT(YSound.BLAZE_HIT),
+    ENDERMAN_DEATH(YSound.ENDERMAN_DEATH),
+    GHAST_DEATH(YSound.GHAST_DEATH),
+    IRONGOLEM_DEATH(YSound.IRONGOLEM_DEATH),
+    SKELETON_DEATH(YSound.SKELETON_DEATH),
+    ZOMBIE_DEATH(YSound.ZOMBIE_DEATH),
+    DONKEY_DEATH(YSound.DONKEY_DEATH),
+    HORSE_ZOMBIE_DEATH(YSound.HORSE_ZOMBIE_DEATH),
+    WITHER_DEATH(YSound.WITHER_DEATH),
+    WITHER_SHOOT(YSound.WITHER_SHOOT),
+    ENTITY_SHULKER_BULLET_HURT(YSound.SHULKER_BULLET_HURT),
+    ENTITY_PLAYER_HURT(YSound.HURT_FLESH),
+    ZOMBIE_PIG_ANGRY(10.0f, 1.0f, YSound.ZOMBIE_PIG_ANGRY),
+    EXPLODE(YSound.EXPLODE),
+    ZOMBIE_WOOD(YSound.ZOMBIE_WOOD),
+    FIREWORK_LAUNCH(YSound.FIREWORK_LAUNCH),
+    SPIDER_IDLE(YSound.SPIDER_IDLE),
+    WOLF_GROWL(YSound.WOLF_GROWL),
+    SHOOT_ARROW(YSound.SHOOT_ARROW),
+    VILLAGER_HIT(YSound.VILLAGER_HIT),
+    BAT_DEATH(YSound.BAT_DEATH),
+    EAT(YSound.EAT),
+    HORSE_ARMOR(YSound.HORSE_ARMOR),
+    ITEM_PICKUP(YSound.ITEM_PICKUP),
+    FIREWORK_BLAST(YSound.FIREWORK_BLAST),
+    CREEPER_HISS(YSound.CREEPER_HISS),
+    STEP_GRASS(YSound.STEP_GRASS),
+    PIG_IDLE(YSound.PIG_IDLE),
+    FIREWORK_BLAST2(YSound.FIREWORK_BLAST2),
+    LAVA(YSound.LAVA_POP),
+    TOTEM_OF_UNDYING(YSound.TOTEM),
+    FIREWORK_TWINKLE(YSound.FIREWORK_TWINKLE),
+    ENTITY_ILLUSION_VILLAGER_PREPARE_BLINDNESS(YSound.ILLUSIONER_PREPARE_BLINDNESS),
+    CHICKEN_HURT(YSound.CHICKEN_HURT),
+
+    NOTE_PIANO(YSound.NOTE_PIANO),
+    NOTE_BASS(YSound.NOTE_BASS),
+    NOTE_BASS_DRUM(YSound.NOTE_BASS_DRUM),
+    NOTE_SNARE_DRUM(YSound.NOTE_SNARE_DRUM),
+    NOTE_STICKS(YSound.NOTE_STICKS),
+    NOTE_BASS_GUITAR(YSound.NOTE_BASS_GUITAR),
+    NOTE_FLUTE(YSound.NOTE_FLUTE),
+    NOTE_BELL(YSound.NOTE_BELL),
+    NOTE_CHIME(YSound.NOTE_CHIME),
+    NOTE_PLING(YSound.NOTE_PLING),
+    NOTE_XYLOPHONE(YSound.NOTE_XYLOPHONE),
+    NOTE_IRON_XYLOPHONE(YSound.NOTE_IRON_XYLOPHONE),
+    NOTE_COW_BELL(YSound.NOTE_COW_BELL),
+    NOTE_DIDGERIDOO(YSound.NOTE_DIDGERIDOO),
+    NOTE_BIT(YSound.NOTE_BIT),
+    NOTE_BANJO(YSound.NOTE_BANJO);
+
+    private final YSound newSound;
+
+    SoundType(float volume, float pitch, YSound newSound) {
+        this.volume = volume;
+        this.pitch = pitch;
+        this.newSound = newSound;
+    }
+
+    SoundType(YSound newSound) {
+        this.newSound = newSound;
+    }
+
+    public YSound toYSound() {
+        return newSound;
+    }
+
+    private float volume = 1.0F;
+    private float pitch = 1.0F;
+
+}

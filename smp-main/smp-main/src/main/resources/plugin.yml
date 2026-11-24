@@ -1,0 +1,531 @@
+name: smp
+description: Fakepixel Survival SMP core
+prefix: SMP
+version: 2.5
+main: club.abelix.games.fakevival.Game
+api-version: '1.21'
+load: POSTWORLD
+softdepend: [stub-abelix-api]
+authors: [1zg]
+website: world.fakepixel.me
+commands:
+  smp:
+    aliases: [fv, fakevival]
+    description: Main SMP command
+  cooking:
+    aliases: [cook]
+    description: Open SMP cooking help
+    usage: /cooking help
+  mayor:
+    aliases: [election]
+    description: View and participate in the SMP Mayor Election
+    usage: /mayor
+  alerts:
+    aliases: [staffalerts]
+    description: Toggle SMP staff alerts
+  macrocheck:
+    aliases: [mcheck]
+    description: Run a non-punitive staff macro check
+    usage: /macrocheck <player>
+  smpmob:
+    description: SMP optimized mob engine admin command
+    usage: /smpmob <debug|count|profile|spawn|clear>
+  smpworlds:
+    aliases: [smpworld]
+    description: Manage database-backed SMPWorlds runtime worlds
+    usage: /smpworld <dbstatus|list|info|import|importfile|importslime|create|load|save|unload|clone|delete|goto>
+  networkstatus:
+    description: View SMP hub, overworld, and dungeon server status
+    permission: fakevival.proxy.admin
+  pregen:
+    aliases: [pregenerate]
+    description: Manage SMP chunk pregeneration
+  language:
+    aliases: [languages]
+    description: Select your language
+  lang:
+    description: Select your language
+  menu:
+    aliases: [sbmenu, survivalmenu]
+    description: Open the survival main menu
+  mainmenu:
+    description: Open the survival main menu
+  playtimerewards:
+    aliases: [ptr, rewards]
+    description: Open monthly playtime rewards
+  playtime:
+    description: Open monthly playtime rewards
+  fly:
+    description: Toggle fly for yourself or another player
+  speed:
+    description: Set walk or fly speed
+  gmc:
+    description: Set creative mode
+  gms:
+    description: Set survival mode
+  gmsp:
+    description: Set spectator mode
+  gma:
+    description: Set adventure mode
+  invsee:
+    description: Open a player's inventory
+  setspawn:
+    description: Set server spawn
+  spawn:
+    description: Teleport to spawn
+  warp:
+    description: Travel between SMP hub, overworld, and dungeon lobby servers
+    usage: /warp <hub|overworld|dungeon>
+  setdungeonlobby:
+    description: Set this dungeon server's lobby spawn
+    permission: fakevival.dungeon.admin
+  back:
+    description: Teleport to your death or previous teleport location
+  skills:
+    description: View your skills
+  playerlevel:
+    aliases: [plevel, arank, adventurerank]
+    description: View or upgrade your player level
+  levels:
+    description: View SMP player level progression
+  stats:
+    aliases: [playerstats]
+    description: View your player stats
+  jobs:
+    description: View or select jobs
+  npc:
+    aliases: [fakevivalnpc]
+    description: Create and manage Fakevival NPCs
+  spawnprotection:
+    aliases: [sprot]
+    description: Set Fakevival spawn protection positions
+  buildmode:
+    aliases: [bm]
+    description: Toggle admin build mode in spawn protection
+  rtp:
+    description: Randomly teleport to a safe location
+  setrtplocation:
+    description: Set this overworld server's RTP center
+    permission: fakevival.rtp.admin
+  sethome:
+    description: Set a home
+  home:
+    description: Teleport to one of your homes
+  delhome:
+    aliases: [deletehome, removehome]
+    description: Delete a home
+  renamehome:
+    description: Rename a home
+  homes:
+    description: List your homes
+  tpa:
+    description: Request to teleport to a player
+  tpaccept:
+    description: Accept a teleport request
+  tpacancel:
+    description: Cancel your outgoing teleport request
+  tpahere:
+    description: Request a player teleport to you
+  tp:
+    description: Admin teleport command
+  tphere:
+    description: Teleport a player to you
+  tpall:
+    description: Teleport all players
+  vanish:
+    aliases: [v]
+    description: Toggle staff vanish
+  zone:
+    aliases: [zones, mapzone]
+    description: Create safe, resource, and combat zones
+  lootbox:
+    aliases: [lootboxes]
+    description: Give configurable weapon, gear, and item loot boxes
+  dungeon:
+    aliases: [dungeons]
+    description: Join or manage dungeons
+  createdungeon:
+    description: Create a dungeon
+  setdungeonportal:
+    description: Set a dungeon portal location
+  setmobspawnlocation:
+    description: Set dungeon mob spawn locations
+  addmobspawnlocation:
+    description: Add another dungeon mob spawn location
+  setbosslocation:
+    description: Set dungeon boss location
+  setdungeonarea:
+    description: Set dungeon area pos1 and pos2
+  setdungeonspawn:
+    description: Set the dungeon arena spawn
+
+  coins:
+    aliases: [coin, balance, bal]
+    description: View or manage Fakevival coins
+  wipestats:
+    description: Wipe a player's Fakevival stats without touching Abelix data
+  battlepass:
+    aliases: [bp]
+    description: Open the BattlePass menu
+  auctionhouse:
+    aliases: [ah]
+    description: Open the auction house menu
+  bazaar:
+    aliases: [bz, market]
+    description: Open the Market menu
+  quests:
+    aliases: [quest, adventureguild, adventureguilds, ag, adventurer, guildadventure]
+    description: Open Adventure Guild daily and weekly quests
+  givedevnotebook:
+    description: Give a personalized Developer's Notebook
+    usage: /givedevnotebook <giver> <player>
+  recipes:
+    aliases: [recipebook, recipe]
+    description: Open the Recipe Book
+  etable:
+    aliases: [enchanttable]
+    description: Open the SMP enchant table
+  enchants:
+    aliases: [customenchants]
+    description: View SMP custom enchants
+  guilds:
+    aliases: [guild]
+    description: Open the guild and land claim menu
+  store:
+    aliases: [goldstore, shop]
+    description: Open the SMP Gold Store
+  enderchest:
+    aliases: [ec, storage]
+    description: Open personal Ender Chest storage pages
+    permission: fakevival.command.storage
+  sellall:
+    aliases: [sellinventory, sellinv]
+    description: Open the Sell All menu
+  equipment:
+    aliases: [equip]
+    description: Open your equipment menu
+  pve:
+    aliases: [pvptoggle]
+    description: Toggle PvE protection on or off
+  boosters:
+    aliases: [booster]
+    description: View and activate your SMP boosters
+  cosmetics:
+    aliases: [cosmetic]
+    description: Select your purchased cosmetics
+  itembrowser:
+    aliases: [customitems, cibrowser]
+    description: Browse and give configured custom items
+  edititem:
+    aliases: [ei]
+    description: Edit and persist SMP custom items
+  maxiteminhand:
+    aliases: [maxitem, maxhand]
+    description: Max the held custom gear item's allowed stats and enchants
+  addskill:
+    description: Set a player's SMP skill level
+  addjob:
+    description: Set a player's SMP job level
+  sandbox:
+    aliases: [adminsandbox]
+    description: Open the admin testing sandbox
+  collections:
+    aliases: [collection]
+    description: View survival collections and unlocked custom recipes
+  companions:
+    aliases: [companion, pets, pet]
+    description: View, summon, and upgrade companions
+  kit:
+    aliases: [kits]
+    description: View and claim kits
+  anvil:
+    description: Open a virtual anvil
+  rename:
+    aliases: [itemname]
+    description: Rename the held item
+  hat:
+    description: Wear the held block as a hat
+  socialspy:
+    aliases: [sspy]
+    description: Toggle staff social spy
+  econhistory:
+    description: View a player's economy history
+  tradehistory:
+    description: View a player's trade history
+  ahhistory:
+    description: View a player's Auction House history
+  itemhistory:
+    description: View a player's item history
+  rollbacktrade:
+    description: Roll back a completed player trade
+  freezeeco:
+    description: Toggle a player's economy freeze
+permissions:
+  fakevival.admin:
+    default: op
+  fakevival.staff.admin:
+    default: op
+  fakevival.admin.skill:
+    description: Allows setting SMP skill levels
+    default: op
+  fakevival.admin.job:
+    description: Allows setting SMP job levels
+    default: op
+  fakevival.dev.edititem:
+    description: Allows developer access to the custom item editor
+    default: false
+  fakevival.dev.maxiteminhand:
+    description: Allows developers to max compatible held custom gear
+    default: false
+  fakevival.developer:
+    default: false
+  fakevival.fishing.admin:
+    description: Administer and validate the fishing bar minigame
+    default: op
+  fakevival.goldstore.admin:
+    description: View, validate, and reset Gold Store purchase limits
+    default: op
+  fakevival.mayor.admin:
+    description: Administer network Mayor Elections
+    default: op
+  fakevival.collections.admin:
+    description: Validates Java-backed collections and vanilla collection paths
+    default: op
+  fakevival.recipes.admin:
+    description: Validates Java-backed custom and vanilla recipe paths
+    default: op
+  fakevival.furniture.admin:
+    description: Allows furniture administration and cleanup commands
+    default: op
+  fakevival.storage.admin:
+    description: Shows storage unlock and edit diagnostics
+    default: op
+  fakevival.furniture.place.bypassserver:
+    description: Allows furniture placement testing outside SMPWorld servers while in build mode
+    default: false
+  smpworlds.admin:
+    description: Allows managing database-backed SMPWorlds runtime worlds
+    default: op
+  fakevival.smpworld.admin:
+    description: Allows saving and loading persistent SMPWorld templates
+    default: op
+  smpmob.admin:
+    description: Allows using /smpmob debug and spawn tools
+    default: op
+  fakevival.debug.combat:
+    description: Allows toggling per-player combat diagnostics
+    default: op
+  fakevival.level.admin:
+    default: op
+  fakevival.playerdatasync.admin:
+    default: op
+  fakevival.worldedit.admin:
+    description: Allows SMP built-in administrative world editing commands
+    default: op
+  fakevival.worldedit.bypasslimit:
+    description: Allows SMP FAWE edits above the standard block limit
+    default: false
+  fakevival.pregenerate.admin:
+    description: Allows managing SMP chunk pregeneration
+    default: op
+  fakevival.pregenerate.unlimited:
+    description: Allows pregeneration radii above the normal safety limit
+    default: false
+  fakevival.auctionhouse.unlimited:
+    description: Allows unlimited active Auction House listings
+    default: op
+  smp.admin.commandlog:
+    default: op
+  fakevival.staff.xray:
+    default: op
+  fakevival.admin.xray.bypass:
+    default: op
+  smp.admin.reload:
+    default: op
+  fakevival.event.admin:
+    description: Allows managing rotating SMP events
+    default: op
+  smp.admin.hub:
+    default: op
+  smp.admin.bazaar:
+    description: Allows viewing, reloading, and resetting dynamic bazaar prices
+    default: op
+  smp.dev:
+    description: Opens SMP developer live controls
+    default: op
+  fakevival.admin.reload:
+    default: op
+  fakevival.admin.hub:
+    default: op
+  fakevival.command.fly:
+    default: op
+  fakevival.command.speed:
+    default: op
+  fakevival.command.speed.others:
+    default: op
+  fakevival.command.gamemode:
+    default: op
+  fakevival.command.invsee:
+    default: op
+  fakevival.command.anvil:
+    default: true
+  fakevival.command.rename:
+    default: false
+  fakevival.command.hat:
+    default: false
+  fakevival.command.store:
+    default: true
+  fakevival.command.storage:
+    default: true
+  fakevival.dungeon.spectate:
+    description: Allows staff to spectate active dungeon runs
+    default: op
+  fakevival.command.sellall:
+    default: true
+  fakevival.command.equipment:
+    default: true
+  fakevival.command.pve:
+    default: true
+  fakevival.command.language:
+    default: true
+  fakevival.command.menu:
+    default: true
+  fakevival.command.playtimerewards:
+    default: true
+  fakevival.command.playerlevel:
+    default: true
+  fakevival.command.stats:
+    default: true
+  fakevival.command.quests:
+    default: true
+  fakevival.admin.givedevnotebook:
+    default: op
+  fakevival.alerts.staff:
+    default: op
+  fakevival.alerts.admin:
+    default: op
+  fakevival.staff.joinalerts:
+    default: op
+  fakevival.staff.macrocheck:
+    default: op
+  fakevival.staff.macrocheck.history:
+    default: op
+  fakevival.staff.macrocheck.exempt:
+    default: op
+  fakevival.command.recipes:
+    default: true
+  fakevival.command.etable:
+    default: true
+  fakevival.command.enchants:
+    default: op
+  fakevival.admin.recipes:
+    default: op
+  fakevival.command.guilds:
+    default: true
+  fakevival.guilds.bypass:
+    default: op
+  fakevival.command.boosters:
+    default: true
+  fakevival.command.cosmetics:
+    default: true
+  fakevival.admin.itembrowser:
+    default: op
+  fakevival.developer.itembrowser:
+    default: op
+  smp.edititem:
+    description: Allows editing and saving SMP custom items
+    default: op
+  fakevival.sandbox.admin:
+    description: Allows access to the admin sandbox menu
+    default: op
+    children:
+      fakevival.admin.itembrowser: true
+      smp.edititem: true
+  smp.customitem.abilities:
+    description: Allows using SMP custom item abilities
+    default: true
+  fakevival.command.trade:
+    default: true
+  fakevival.command.companions:
+    default: true
+  fakevival.staff.socialspy:
+    default: op
+  fakevival.staff.socialspy.auto:
+    default: false
+  fakevival.staff.chatfilter:
+    default: op
+  fakevival.chatfilter.bypass:
+    default: op
+  fakevival.command.setspawn:
+    default: op
+  fakevival.command.spawn:
+    default: true
+  fakevival.command.back:
+    default: true
+  fakevival.command.rtp:
+    default: true
+  fakevival.command.rtp.cooldown.bypass:
+      default: op
+  fakevival.rtp.admin:
+      default: op
+  fakevival.command.home:
+    default: true
+  fakevival.command.home.unlimited:
+    default: op
+  fakevival.command.tpa:
+    default: true
+  fakevival.admin.teleport:
+    default: op
+  fakevival.command.vanish:
+    default: op
+  fakevival.command.vanish.others:
+    default: op
+  fakevival.command.vanish.see:
+    default: op
+  fakevival.admin.npc:
+    default: op
+  fakevival.npc.admin:
+    default: op
+  fakevival.scoreboard.admin:
+    default: op
+  fakevival.shops.admin:
+    default: op
+  fakevival.admin.spawnprotection:
+    default: op
+  fakevival.admin.spawnprotection.bypass:
+    default: op
+  smp.admin.buildmode:
+    description: Allows toggling admin build mode in protected spawn areas
+    default: op
+  fakevival.admin.buildmode:
+    default: op
+  fakevival.admin.zone:
+    default: op
+  fakevival.zone.admin:
+    default: op
+  fakevival.zones.admin:
+    default: op
+  fakevival.admin.zone.bypass:
+    default: op
+  fakevival.admin.lootbox:
+    default: op
+  fakevival.admin.dungeon:
+    default: op
+  fakevival.dungeon.admin:
+    default: op
+  fakevival.admin.dungeon.bypass:
+    default: op
+  fakevival.item.admin:
+    default: op
+  fakevival.admin.coins:
+    default: op
+  fakevival.staff.economy:
+    default: op
+  fakevival.admin.wipestats:
+    default: op
+  fakevival.command.kit:
+    default: op
+  fakevival.command.kit.cooldown.bypass:
+    default: op
+  fakevival.admin.kit:
+    default: op

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70e0404b-670b-4b75-b1ec-3c5128b4c3de" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="139" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.9436443478435699" />
+      <entry key="MS500" value="2.5108681347662034" />
+      <entry key="S2" value="2.8486325998926665" />
+      <entry key="S5" value="2.9366643200748492" />
+      <entry key="S10" value="2.9678476039983943" />
+      <entry key="S30" value="2.989172956839624" />
+      <entry key="S60" value="2.9945726607960186" />
+      <entry key="M2" value="2.9972828668968763" />
+      <entry key="M5" value="2.998912314401718" />
+      <entry key="M10" value="2.999463102460035" />
+      <entry key="M15" value="3.0000063229568847" />
+      <entry key="M30" value="3.0209031458901205" />
+      <entry key="H1" value="3.3632663773932268" />
+      <entry key="H2" value="6.297447272457144" />
+      <entry key="H4" value="18.119023541375498" />
+      <entry key="D1" value="222.94244369073365" />
+      <entry key="W1" value="543.7031557048089" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="1.086720456551796E-220" />
+      <entry key="M5" value="1.0338252543594873E-88" />
+      <entry key="M10" value="1.0167719790600652E-44" />
+      <entry key="M15" value="4.6933499835035265E-30" />
+      <entry key="M30" value="2.1688767152289725E-15" />
+      <entry key="H1" value="4.811446219800762E-8" />
+      <entry key="H2" value="2.55362035163361E-4" />
+      <entry key="H4" value="0.020982589821505835" />
+      <entry key="D1" value="0.9245679778082933" />
+      <entry key="W1" value="1.7907187144574142" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9813258424589061" />
+      <entry key="MS500" value="2.029937770037732" />
+      <entry key="S2" value="2.697434622992848" />
+      <entry key="S5" value="2.873196193286872" />
+      <entry key="S10" value="2.9355933728922827" />
+      <entry key="S30" value="2.9783038367165493" />
+      <entry key="S60" value="2.9891232527102383" />
+      <entry key="M2" value="2.994554440699228" />
+      <entry key="M5" value="2.9978200493032805" />
+      <entry key="M10" value="2.9989168202242875" />
+      <entry key="M15" value="2.9996420854579666" />
+      <entry key="M30" value="3.0207204920280497" />
+      <entry key="H1" value="3.363168090545751" />
+      <entry key="H2" value="6.297622456571349" />
+      <entry key="H4" value="18.139914686560783" />
+      <entry key="D1" value="223.86688677623388" />
+      <entry key="W1" value="545.4938399795886" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3DyKy89r2khbaNMRVG0P6NhuNJO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.BuildFFA [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BuildFFA [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ThePit [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ThePit [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ThePit [verify].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maste/OneDrive/Desktop/apps/lofi/coffeepixel/servers/bronsin/smp system/BuildFFA-remake&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BuildFFA-remake" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BuildFFA-remake" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70e0404b-670b-4b75-b1ec-3c5128b4c3de" name="Changes" comment="" />
+      <created>1779249120394</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779249120394</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

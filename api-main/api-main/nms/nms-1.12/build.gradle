@@ -1,0 +1,8 @@
+dependencies {
+    compileOnly libs.spigot.v1122
+    compileOnly libs.protocollib.legacy
+
+    api project(":nms:nms-api")
+}
+
+enablePublishing(project)

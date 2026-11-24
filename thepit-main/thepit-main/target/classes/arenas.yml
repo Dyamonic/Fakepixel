@@ -1,0 +1,2164 @@
+arenas:
+  abyss:
+    enabled: true
+    display-name: Abyss
+    world: Abyss
+    rage-pit:
+      enabled: true
+      shape: CIRCLE
+      center:
+        world: Abyss
+        x: 0.5
+        y: 70
+        z: 0.5
+      radius-x: 25
+      radius-z: 25
+      minimum-y: 43
+      maximum-y: 93
+      thickness: 1
+      material: STAINED_GLASS
+      data: 14
+    events:
+      giant-cake:
+        locations:
+          '20':
+            x: 28
+            y: 83
+            z: -45
+            yaw: 210.84222
+            pitch: 5.025934
+          '48':
+            x: 48
+            y: 86
+            z: -22
+            yaw: 58.56909
+            pitch: 10.658341
+          '29':
+            x: 29
+            y: 84
+            z: 32
+            yaw: 310.16632
+            pitch: 19.237083
+      king-of-the-hill:
+        locations:
+          '-63':
+            x: -63
+            y: 94
+            z: 80
+            yaw: 209.68787
+            pitch: 3.7838497
+    type: slime
+    spawn:
+      world: Abyss
+      x: 10.812641293909397
+      y: 114
+      z: 0.5130792666948396
+      yaw: 90.5622
+      pitch: 1.93517
+    spawn-protection:
+      pos1:
+        world: Abyss
+        x: 21.429650186593054
+        y: 114.0
+        z: -22.500628848846254
+        yaw: -315.5033
+        pitch: 1.4114534
+      pos2:
+        world: Abyss
+        x: -22.581335965490528
+        y: 230.05401702700001
+        z: 23.56333635584237
+        yaw: 227.4397
+        pitch: 26.296124
+    pvp-arena:
+      pos1:
+        world: Abyss
+        x: -249.3604902394799
+        y: 171.9854095837979
+        z: 232.8634617842519
+        yaw: -132.59248
+        pitch: 6.3084316
+      pos2:
+        world: Abyss
+        x: 211.4980468150012
+        y: 75.88116356314252
+        z: -197.83259842429143
+        yaw: -312.05237
+        pitch: 3.6767716
+    launch-pads:
+      enabled: true
+      defaults:
+        horizontal-power: 2.0
+        vertical-power: 0.85
+        cooldown-millis: 1000
+        fall-protection-seconds: 5
+        particle: SLIME
+        sound: IRONGOLEM_HIT
+      locations:
+        launchpad_1:
+          world: Abyss
+          x: 20
+          y: 113
+          z: -15
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_2:
+          world: Abyss
+          x: 20
+          y: 113
+          z: -16
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_3:
+          world: Abyss
+          x: 20
+          y: 113
+          z: -17
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_4:
+          world: Abyss
+          x: 19
+          y: 113
+          z: -18
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_5:
+          world: Abyss
+          x: 19
+          y: 113
+          z: -19
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_6:
+          world: Abyss
+          x: 18
+          y: 113
+          z: -20
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_7:
+          world: Abyss
+          x: 17
+          y: 113
+          z: -21
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_8:
+          world: Abyss
+          x: 16
+          y: 113
+          z: -22
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_9:
+          world: Abyss
+          x: 15
+          y: 113
+          z: -22
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_10:
+          world: Abyss
+          x: 14
+          y: 113
+          z: -23
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_11:
+          world: Abyss
+          x: 13
+          y: 113
+          z: -23
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_12:
+          world: Abyss
+          x: -10
+          y: 113
+          z: -18
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_13:
+          world: Abyss
+          x: -11
+          y: 113
+          z: -18
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_14:
+          world: Abyss
+          x: -12
+          y: 113
+          z: -18
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_15:
+          world: Abyss
+          x: -13
+          y: 113
+          z: -17
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_16:
+          world: Abyss
+          x: -14
+          y: 113
+          z: -17
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_17:
+          world: Abyss
+          x: -15
+          y: 113
+          z: -16
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_18:
+          world: Abyss
+          x: -16
+          y: 113
+          z: -15
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_19:
+          world: Abyss
+          x: -17
+          y: 113
+          z: -14
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_20:
+          world: Abyss
+          x: -17
+          y: 113
+          z: -13
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_21:
+          world: Abyss
+          x: -18
+          y: 113
+          z: -12
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_22:
+          world: Abyss
+          x: -18
+          y: 113
+          z: -11
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_23:
+          world: Abyss
+          x: -18
+          y: 113
+          z: -10
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_24:
+          world: Abyss
+          x: -19
+          y: 113
+          z: 11
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_25:
+          world: Abyss
+          x: -19
+          y: 113
+          z: 12
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_26:
+          world: Abyss
+          x: -19
+          y: 113
+          z: 13
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_27:
+          world: Abyss
+          x: -18
+          y: 113
+          z: 14
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_28:
+          world: Abyss
+          x: -18
+          y: 113
+          z: 15
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_29:
+          world: Abyss
+          x: -17
+          y: 113
+          z: 16
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_30:
+          world: Abyss
+          x: -15
+          y: 113
+          z: 18
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_31:
+          world: Abyss
+          x: -14
+          y: 113
+          z: 18
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_32:
+          world: Abyss
+          x: -13
+          y: 113
+          z: 19
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_33:
+          world: Abyss
+          x: -12
+          y: 113
+          z: 19
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_34:
+          world: Abyss
+          x: -11
+          y: 113
+          z: 19
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_35:
+          world: Abyss
+          x: -16
+          y: 113
+          z: 17
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_36:
+          world: Abyss
+          x: 12
+          y: 113
+          z: 23
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_37:
+          world: Abyss
+          x: 13
+          y: 113
+          z: 23
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_38:
+          world: Abyss
+          x: 14
+          y: 113
+          z: 23
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_39:
+          world: Abyss
+          x: 15
+          y: 113
+          z: 22
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_40:
+          world: Abyss
+          x: 16
+          y: 113
+          z: 22
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_41:
+          world: Abyss
+          x: 17
+          y: 113
+          z: 21
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_42:
+          world: Abyss
+          x: 18
+          y: 113
+          z: 20
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_43:
+          world: Abyss
+          x: 19
+          y: 113
+          z: 19
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_44:
+          world: Abyss
+          x: 19
+          y: 113
+          z: 18
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_45:
+          world: Abyss
+          x: 20
+          y: 113
+          z: 17
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+    coin-spawns:
+      enabled: true
+      defaults:
+        reward: 5
+        respawn-seconds: 30
+        display-name: '&6Gold Coin'
+        pickup-message: '&6+%amount% Gold'
+        max-active: 40
+      locations:
+        '2':
+          world: Abyss
+          x: -3.816633342460333
+          y: 83.0
+          z: -23.616690248575445
+          yaw: 82.20941
+          pitch: 64.37913
+          reward: 5
+          respawn-seconds: 30
+        '4':
+          world: Abyss
+          x: -24.26249571058758
+          y: 83.0
+          z: -8.05276753816063
+          yaw: 30.00055
+          pitch: 42.20298
+          reward: 5
+          respawn-seconds: 30
+        '1':
+          world: Abyss
+          x: 36.81273205644298
+          y: 87.0
+          z: 6.700476723345068
+          yaw: 266.42426
+          pitch: 11.125457
+          reward: 5
+          respawn-seconds: 30
+        '5':
+          world: Abyss
+          x: 67.83157180410794
+          y: 89.0
+          z: 19.8590801406756
+          yaw: 292.77997
+          pitch: 18.517534
+          reward: 5
+          respawn-seconds: 30
+        '6':
+          world: Abyss
+          x: 91.67595227270638
+          y: 88.0
+          z: 38.12099300996
+          yaw: 329.35284
+          pitch: 20.375221
+          reward: 5
+          respawn-seconds: 30
+        '7':
+          world: Abyss
+          x: 80.2327532849875
+          y: 93.0
+          z: 64.19706530427712
+          yaw: 49.001587
+          pitch: 8.687244
+          reward: 5
+          respawn-seconds: 30
+        '8':
+          world: Abyss
+          x: 62.84002825384323
+          y: 93.0
+          z: 58.33133470402005
+          yaw: 124.62457
+          pitch: 17.201616
+          reward: 5
+          respawn-seconds: 30
+        '9':
+          world: Abyss
+          x: 53.27962343924669
+          y: 87.0
+          z: 28.518536902357148
+          yaw: 143.85968
+          pitch: 20.684793
+          reward: 5
+          respawn-seconds: 30
+        '10':
+          world: Abyss
+          x: 25.49906539127929
+          y: 84.0
+          z: 33.524995878626456
+          yaw: 95.289
+          pitch: -17.746138
+          reward: 5
+          respawn-seconds: 30
+        '11':
+          world: Abyss
+          x: 35.309301277184076
+          y: 84.0
+          z: 67.36200504764267
+          yaw: 334.7328
+          pitch: 15.653545
+          reward: 5
+          respawn-seconds: 30
+        '12':
+          world: Abyss
+          x: 8.558372745154614
+          y: 86.0
+          z: 89.21348399855356
+          yaw: 62.12213
+          pitch: 14.22156
+          reward: 5
+          respawn-seconds: 30
+        '13':
+          world: Abyss
+          x: -25.33117251477354
+          y: 91.0
+          z: 99.65585068372918
+          yaw: 159.6878
+          pitch: 46.189255
+          reward: 5
+          respawn-seconds: 30
+        '14':
+          world: Abyss
+          x: -27.201914641765764
+          y: 90.0
+          z: 62.86720336728626
+          yaw: 167.08044
+          pitch: 23.509981
+          reward: 5
+          respawn-seconds: 30
+        '15':
+          world: Abyss
+          x: -46.79965533601262
+          y: 85.0
+          z: -27.631361497523248
+          yaw: 90.1037
+          pitch: 9.190285
+          reward: 5
+          respawn-seconds: 30
+        '16':
+          world: Abyss
+          x: -59.35303263323625
+          y: 92.0
+          z: -70.89336024585106
+          yaw: 229.04248
+          pitch: 20.56865
+          reward: 5
+          respawn-seconds: 30
+        '17':
+          world: Abyss
+          x: -19.302506004780227
+          y: 88.0
+          z: -71.39360178945829
+          yaw: 25.668762
+          pitch: 13.253993
+          reward: 5
+          respawn-seconds: 30
+        '18':
+          world: Abyss
+          x: 7.5978935423046225
+          y: 91.0
+          z: -94.8474238915293
+          yaw: 272.62524
+          pitch: 19.949389
+          reward: 5
+          respawn-seconds: 30
+        '19':
+          world: Abyss
+          x: 31.627996381692704
+          y: 88.0
+          z: -90.21462350174636
+          yaw: 253.35156
+          pitch: 11.938081
+          reward: 5
+          respawn-seconds: 30
+        '20':
+          world: Abyss
+          x: 29.09371727608741
+          y: 83.0
+          z: -44.0349572904297
+          yaw: 359.12817
+          pitch: 15.653496
+          reward: 5
+          respawn-seconds: 30
+    fishing:
+      enabled: false
+      regions: {}
+    leaderboards:
+      unlockedfeatures:
+        enabled: true
+        location:
+          world: Abyss
+          x: -8.698838325602317
+          y: 117.46007771428185
+          z: 11.8318935929451
+          yaw: 34.796997
+          pitch: 44.08151
+      activeplayers:
+        enabled: true
+        location:
+          world: Abyss
+          x: 13.699999988079073
+          y: 117.85603108253817
+          z: 0.3267943500804193
+          yaw: 268.9776
+          pitch: 16.138845
+    care-packages:
+      enabled: true
+      locations:
+        test:
+          world: Abyss
+          x: 40.5
+          y: 86
+          z: -25.5
+          drop-height: 25.0
+        lava:
+          world: Abyss
+          x: 48.5
+          y: 86
+          z: 45.5
+          drop-height: 25.0
+        ship:
+          world: Abyss
+          x: -55.5
+          y: 85
+          z: 54.5
+          drop-height: 25.0
+        seaweed:
+          world: Abyss
+          x: -46.5
+          y: 95
+          z: -57.5
+          drop-height: 25.0
+    npcs:
+      stats:
+        type: STATS
+        display-name: '&b&lStats'
+        location:
+          x: -11.526770912806903
+          y: 114.0
+          z: -4.49979130691469
+          yaw: 267.27512
+          pitch: -5.959983
+        skin-id: pit_stats
+        action-id: open_stats
+        hologram-id: stats
+        look-at-players: false
+        enabled: true
+      prestige:
+        type: PRESTIGE
+        display-name: '&b&lPrestige'
+        location:
+          x: 0.47827830199186433
+          y: 115.0
+          z: -11.448417642580068
+          yaw: 0.0831604
+          pitch: 1.334077
+        skin-id: pit_prestige
+        action-id: command
+        hologram-id: prestige
+        look-at-players: false
+        enabled: true
+        command: pit prestige
+        execution-mode: PLAYER
+      shop:
+        type: SHOP
+        display-name: '&b&lShop'
+        location:
+          x: 2.5284462807343897
+          y: 114.0
+          z: 12.479401850801574
+          yaw: 180.3118
+          pitch: -2.0511181
+        skin-id: pit_prestige
+        action-id: open_shop
+        hologram-id: shop
+        look-at-players: false
+        enabled: true
+      perks:
+        type: PERKS
+        display-name: '&a&lUpgrades'
+        location:
+          x: -1.4774503678801787
+          y: 114.0
+          z: 12.439525196402087
+          yaw: 181.16353
+          pitch: 1.7416382
+        skin-id: pit_perks
+        action-id: open_perks
+        hologram-id: perks
+        look-at-players: false
+        enabled: true
+      quests:
+        type: QUESTS
+        display-name: '&b&lQuest Master'
+        location:
+          x: 11.431020732130857
+          y: 114.0
+          z: 5.414738374026526
+          yaw: 121.8811
+          pitch: -1.0061754
+        skin-id: pit_quests
+        action-id: open_quests
+        hologram-id: quests
+        look-at-players: false
+        enabled: true
+  castle:
+    enabled: true
+    display-name: Castle
+    world: Castle
+    rage-pit:
+      enabled: false
+      shape: SQUARE
+      center:
+        world: Castle
+    spawn:
+      world: Castle
+      x: 11.443015946181786
+      y: 95.0
+      z: 0.4297278678611532
+      yaw: 89.289764
+      pitch: 7.6811423
+    spawn-protection:
+      pos1:
+        world: Castle
+        x: 24.68758677987124
+        y: 95.0
+        z: 24.719060492348373
+        yaw: 135.11755
+        pitch: 0.48265755
+      pos2:
+        world: Castle
+        x: -23.882799556934774
+        y: 172.11310447341006
+        z: -23.863089636860508
+        yaw: 315.31775
+        pitch: 0.947132
+    pvp-arena:
+      pos1:
+        world: Castle
+        x: -365.5256937883534
+        y: 92.81314457236329
+        z: -357.50849897303533
+        yaw: 134.33894
+        pitch: 3.423834
+      pos2:
+        world: Castle
+        x: 414.3515674405053
+        y: 31.332038643788696
+        z: 456.76284371501623
+        yaw: 317.90576
+        pitch: -1.5299361
+    launch-pads:
+      enabled: true
+      defaults:
+        horizontal-power: 2.0
+        vertical-power: 0.85
+        cooldown-millis: 1000
+        fall-protection-seconds: 5
+        particle: SLIME
+        sound: IRONGOLEM_HIT
+      locations:
+        launchpad_1:
+          world: Castle
+          x: 20
+          y: 94
+          z: 14
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_2:
+          world: Castle
+          x: 20
+          y: 94
+          z: 15
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_3:
+          world: Castle
+          x: 20
+          y: 94
+          z: 16
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_4:
+          world: Castle
+          x: 19
+          y: 94
+          z: 17
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_5:
+          world: Castle
+          x: 19
+          y: 94
+          z: 18
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_6:
+          world: Castle
+          x: 19
+          y: 94
+          z: 19
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_7:
+          world: Castle
+          x: 18
+          y: 94
+          z: 19
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_8:
+          world: Castle
+          x: 17
+          y: 94
+          z: 19
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_9:
+          world: Castle
+          x: 16
+          y: 94
+          z: 20
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_10:
+          world: Castle
+          x: 15
+          y: 94
+          z: 20
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+        launchpad_11:
+          world: Castle
+          x: 14
+          y: 94
+          z: 20
+          horizontal-power: 2.0
+          vertical-power: 0.85
+          cooldown-millis: 1000
+          fall-protection-seconds: 5
+          particle: SLIME
+          sound: IRONGOLEM_HIT
+    coin-spawns:
+      enabled: true
+      defaults:
+        reward: 5
+        respawn-seconds: 30
+        display-name: '&6Gold Coin'
+        pickup-message: '&6+%amount% Gold'
+        max-active: 40
+      locations:
+        '1':
+          world: Castle
+          x: 42.79432675747011
+          y: 72.0
+          z: 34.93194400713882
+          yaw: -112.26416
+          pitch: 9.296209
+          reward: 5
+          respawn-seconds: 30
+        '2':
+          world: Castle
+          x: 55.8474518935011
+          y: 72.0
+          z: 18.166956682639608
+          yaw: -149.00696
+          pitch: 17.93268
+          reward: 5
+          respawn-seconds: 30
+        '3':
+          world: Castle
+          x: 76.15621917012821
+          y: 72.0
+          z: 14.04380208305992
+          yaw: -109.781006
+          pitch: 19.203587
+          reward: 5
+          respawn-seconds: 30
+        '4':
+          world: Castle
+          x: 102.98574670208843
+          y: 72.0
+          z: 6.986068334688944
+          yaw: -86.471436
+          pitch: 17.961521
+          reward: 5
+          respawn-seconds: 30
+        '5':
+          world: Castle
+          x: 113.24121944944105
+          y: 72.0
+          z: 23.338197614427198
+          yaw: -348.35132
+          pitch: 19.261354
+          reward: 5
+          respawn-seconds: 30
+        '6':
+          world: Castle
+          x: 79.47261431991326
+          y: 76.0
+          z: -34.061353208672074
+          yaw: -217.34766
+          pitch: 20.474478
+          reward: 5
+          respawn-seconds: 30
+        '7':
+          world: Castle
+          x: 34.499999209546274
+          y: 72.0
+          z: -11.204743478023271
+          yaw: -315.38086
+          pitch: 24.576117
+          reward: 5
+          respawn-seconds: 30
+        '8':
+          world: Castle
+          x: 51.82547032683766
+          y: 58.0
+          z: -42.09798020299081
+          yaw: -128.52551
+          pitch: 17.47049
+          reward: 5
+          respawn-seconds: 30
+        '9':
+          world: Castle
+          x: 78.36797168707687
+          y: 60.0
+          z: -23.570088125706132
+          yaw: -58.73877
+          pitch: 11.982384
+          reward: 5
+          respawn-seconds: 30
+        '10':
+          world: Castle
+          x: 103.952237156933
+          y: 62.0
+          z: -20.64494128032191
+          yaw: -2.4434814
+          pitch: 11.115847
+          reward: 5
+          respawn-seconds: 30
+        '11':
+          world: Castle
+          x: 113.63440210710347
+          y: 59.0
+          z: 23.489147613972843
+          yaw: -358.0819
+          pitch: 12.502305
+          reward: 5
+          respawn-seconds: 30
+        '12':
+          world: Castle
+          x: 84.6793262364689
+          y: 55.0
+          z: 32.94429118005617
+          yaw: -278.09955
+          pitch: 22.380898
+          reward: 5
+          respawn-seconds: 30
+        '13':
+          world: Castle
+          x: 65.45542329231095
+          y: 55.0
+          z: 33.30675718406053
+          yaw: -27.082275
+          pitch: 10.538165
+          reward: 5
+          respawn-seconds: 30
+        '14':
+          world: Castle
+          x: 18.56605840393375
+          y: 53.0
+          z: 31.50836551602282
+          yaw: -179.94733
+          pitch: 15.390777
+          reward: 5
+          respawn-seconds: 30
+        '15':
+          world: Castle
+          x: 3.4953769603119023
+          y: 58.0
+          z: 42.11630422636922
+          yaw: -6.639282
+          pitch: 6.638679
+          reward: 5
+          respawn-seconds: 30
+        '16':
+          world: Castle
+          x: -9.4226931680022
+          y: 66.0
+          z: 59.10339969152828
+          yaw: -273.4574
+          pitch: 10.393685
+          reward: 5
+          respawn-seconds: 30
+        '17':
+          world: Castle
+          x: -24.90870661005024
+          y: 71.0
+          z: 83.59131662131921
+          yaw: -1.1516724
+          pitch: 25.673702
+          reward: 5
+          respawn-seconds: 30
+        '18':
+          world: Castle
+          x: -14.920852246309524
+          y: 67.0
+          z: 99.20705492569455
+          yaw: -0.63098145
+          pitch: 19.983404
+          reward: 5
+          respawn-seconds: 30
+        '19':
+          world: Castle
+          x: -32.46220965885681
+          y: 72.0
+          z: 94.72189619581515
+          yaw: -175.47852
+          pitch: 14.033107
+          reward: 5
+          respawn-seconds: 30
+        '20':
+          world: Castle
+          x: -33.99620520410765
+          y: 66.0
+          z: 66.69121151954397
+          yaw: -189.31378
+          pitch: 12.32887
+          reward: 5
+          respawn-seconds: 30
+        '21':
+          world: Castle
+          x: -49.590873547266156
+          y: 67.0
+          z: 76.4274475915991
+          yaw: -273.62616
+          pitch: 7.360643
+          reward: 5
+          respawn-seconds: 30
+        '22':
+          world: Castle
+          x: -79.95776907620723
+          y: 71.0
+          z: 72.4473266895254
+          yaw: -215.13397
+          pitch: 13.83086
+          reward: 5
+          respawn-seconds: 30
+        '23':
+          world: Castle
+          x: -87.80050328632393
+          y: 69.5
+          z: 35.25088810308323
+          yaw: -181.74268
+          pitch: 10.682421
+          reward: 5
+          respawn-seconds: 30
+        '24':
+          world: Castle
+          x: -101.01368175598598
+          y: 79.0
+          z: 15.341733894359914
+          yaw: -220.24548
+          pitch: 11.491215
+          reward: 5
+          respawn-seconds: 30
+        '25':
+          world: Castle
+          x: -98.35974197348945
+          y: 80.0
+          z: -16.648418150264465
+          yaw: -188.2428
+          pitch: 17.210358
+          reward: 5
+          respawn-seconds: 30
+        '26':
+          world: Castle
+          x: -78.31674740226057
+          y: 72.0625
+          z: 0.026118505358679767
+          yaw: -87.62549
+          pitch: 27.31997
+          reward: 5
+          respawn-seconds: 30
+        '27':
+          world: Castle
+          x: -42.121270236797535
+          y: 72.0625
+          z: 0.24254859938410603
+          yaw: -90.57129
+          pitch: 20.387642
+          reward: 5
+          respawn-seconds: 30
+        '28':
+          world: Castle
+          x: -23.221464274377198
+          y: 76.0
+          z: -39.264464899881624
+          yaw: -247.3855
+          pitch: 15.217283
+          reward: 5
+          respawn-seconds: 30
+        '29':
+          world: Castle
+          x: -54.60537735831462
+          y: 72.0
+          z: -24.77991838529268
+          yaw: -219.36755
+          pitch: 9.122607
+          reward: 5
+          respawn-seconds: 30
+        '30':
+          world: Castle
+          x: -93.61706745197336
+          y: 80.0
+          z: -52.83875316140796
+          yaw: -166.79639
+          pitch: 18.365637
+          reward: 5
+          respawn-seconds: 30
+        '31':
+          world: Castle
+          x: -103.89111595081715
+          y: 87.0
+          z: -79.1859001500664
+          yaw: -146.43195
+          pitch: 2.7967737
+          reward: 5
+          respawn-seconds: 30
+        '32':
+          world: Castle
+          x: -83.52001832518731
+          y: 89.0
+          z: -102.36964232266047
+          yaw: -74.94287
+          pitch: 18.163431
+          reward: 5
+          respawn-seconds: 30
+        '33':
+          world: Castle
+          x: -46.068773579715696
+          y: 81.0
+          z: -105.85563518480998
+          yaw: -105.35809
+          pitch: 20.474222
+          reward: 5
+          respawn-seconds: 30
+        '34':
+          world: Castle
+          x: -13.229207299988804
+          y: 83.0
+          z: -94.15874447365817
+          yaw: -19.021057
+          pitch: 21.485188
+          reward: 5
+          respawn-seconds: 30
+        '35':
+          world: Castle
+          x: -13.394607903194263
+          y: 71.0
+          z: -85.00471460411583
+          yaw: -268.21826
+          pitch: -1.1026695
+          reward: 5
+          respawn-seconds: 30
+        '36':
+          world: Castle
+          x: -10.21976356970836
+          y: 74.0
+          z: -66.52395394576652
+          yaw: -97.44037
+          pitch: 12.5597725
+          reward: 5
+          respawn-seconds: 30
+        '37':
+          world: Castle
+          x: 56.840265687200095
+          y: 77.0
+          z: -72.09948152356762
+          yaw: -109.22473
+          pitch: 6.176232
+          reward: 5
+          respawn-seconds: 30
+        '38':
+          world: Castle
+          x: 55.32768635360513
+          y: 74.0
+          z: -24.26872970354897
+          yaw: -143.48926
+          pitch: 23.680275
+          reward: 5
+          respawn-seconds: 30
+        '39':
+          world: Castle
+          x: 14.416369958817944
+          y: 72.0
+          z: -37.14514936629046
+          yaw: -92.24005
+          pitch: 23.824999
+          reward: 5
+          respawn-seconds: 30
+        '40':
+          world: Castle
+          x: 14.907139572106505
+          y: 72.0
+          z: -67.73189818591085
+          yaw: -156.2489
+          pitch: 17.528158
+          reward: 5
+          respawn-seconds: 30
+        '41':
+          world: Castle
+          x: 17.001625248619792
+          y: 73.0
+          z: -103.5351113504298
+          yaw: -219.50586
+          pitch: 23.738321
+          reward: 5
+          respawn-seconds: 30
+        '42':
+          world: Castle
+          x: 16.489756544556812
+          y: 56.0
+          z: -72.26664613575103
+          yaw: -331.34705
+          pitch: 26.395712
+          reward: 5
+          respawn-seconds: 30
+        '43':
+          world: Castle
+          x: -22.266484320182688
+          y: 49.0
+          z: -77.38938619806076
+          yaw: -130.54086
+          pitch: 6.840785
+          reward: 5
+          respawn-seconds: 30
+        '44':
+          world: Castle
+          x: 1.2378598528909257
+          y: 55.0
+          z: -44.419881375805716
+          yaw: -60.07904
+          pitch: 10.624621
+          reward: 6
+          respawn-seconds: 30
+        '45':
+          world: Castle
+          x: 25.668324430583137
+          y: 56.0
+          z: -57.68831187247655
+          yaw: -43.67224
+          pitch: 3.230146
+          reward: 6
+          respawn-seconds: 30
+        '46':
+          world: Castle
+          x: -61.908345846209585
+          y: 73.0
+          z: -86.88564227362875
+          yaw: -314.14514
+          pitch: 6.6962204
+          reward: 6
+          respawn-seconds: 30
+        '47':
+          world: Castle
+          x: -61.896287160335845
+          y: 84.0
+          z: -89.3557001014239
+          yaw: -216.68896
+          pitch: 25.124678
+          reward: 6
+          respawn-seconds: 30
+        '48':
+          world: Castle
+          x: 45.70174298983032
+          y: 77.0
+          z: -100.95705181227169
+          yaw: -270.67273
+          pitch: 9.238097
+          reward: 6
+          respawn-seconds: 30
+        '49':
+          world: Castle
+          x: 2.1365805105874953
+          y: 72.0
+          z: -106.66656558872724
+          yaw: -280.40558
+          pitch: 6.8406706
+          reward: 6
+          respawn-seconds: 30
+        '50':
+          world: Castle
+          x: -35.649400995784305
+          y: 74.0
+          z: -84.04710306300115
+          yaw: -39.899536
+          pitch: 13.19528
+          reward: 6
+          respawn-seconds: 30
+    fishing:
+      enabled: true
+      regions:
+        port:
+          pos1:
+            world: Castle
+            x: 0
+            y: 0
+            z: 0
+          pos2:
+            world: Castle
+            x: 0
+            y: 0
+            z: 0
+    leaderboards:
+      unlockedfeatures:
+        enabled: true
+        location:
+          world: Castle
+          x: -5.515432318451356
+          y: 98.25013168034876
+          z: 11.551569645476299
+          yaw: -136.89429
+          pitch: -2.2866213
+      activeplayers:
+        enabled: true
+        location:
+          world: Castle
+          x: 14.576746686787192
+          y: 99.5781864994522
+          z: 0.4657379160159708
+          yaw: -268.71356
+          pitch: 1.9883285
+    npcs:
+      stats:
+        type: STATS
+        display-name: '&b&lStats'
+        location:
+          x: -10.426319045680321
+          y: 95.0
+          z: -5.475631035523196
+          yaw: -89.10748
+          pitch: -3.442007
+        skin-id: pit_stats
+        action-id: open_stats
+        hologram-id: stats
+        look-at-players: false
+        enabled: true
+      prestige:
+        type: PRESTIGE
+        display-name: '&b&lPrestige'
+        location:
+          x: 0.5211305971864345
+          y: 96.0
+          z: -12.455808262402497
+          yaw: -359.8646
+          pitch: -0.0047355667
+        skin-id: pit_prestige
+        action-id: command
+        hologram-id: prestige
+        look-at-players: false
+        enabled: true
+        command: pit prestige
+        execution-mode: PLAYER
+      shop:
+        type: SHOP
+        display-name: '&b&lShop'
+        location:
+          x: 2.501610359753767
+          y: 95.0
+          z: 12.451588113855498
+          yaw: -180.0004
+          pitch: 0.45993543
+        skin-id: pit_prestige
+        action-id: open_shop
+        hologram-id: shop
+        look-at-players: false
+        enabled: true
+      perks:
+        type: PERKS
+        display-name: '&a&lUpgrades'
+        location:
+          x: -1.4780309087648433
+          y: 95.0
+          z: 12.392371441618833
+          yaw: -179.7301
+          pitch: -0.4932534
+        skin-id: pit_perks
+        action-id: open_perks
+        hologram-id: perks
+        look-at-players: false
+        enabled: true
+      quests:
+        type: QUESTS
+        display-name: '&b&lQuest Master'
+        location:
+          x: 11.491971559203037
+          y: 95.0
+          z: -5.503220404580296
+          yaw: -270.05847
+          pitch: 0.97735196
+        skin-id: pit_quests
+        action-id: open_quests
+        hologram-id: quests
+        look-at-players: false
+        enabled: true
+  elements:
+    enabled: true
+    display-name: Elements
+    world: Elements
+    rage-pit:
+      enabled: false
+      center:
+        world: Elements
+    spawn-protection:
+      pos1:
+        world: Elements
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      pos2:
+        world: Elements
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+    pvp-arena:
+      pos1:
+        world: Elements
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      pos2:
+        world: Elements
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+    launch-pads:
+      enabled: true
+      defaults:
+        horizontal-power: 2.0
+        vertical-power: 0.85
+        cooldown-millis: 1000
+        fall-protection-seconds: 5
+        particle: SLIME
+        sound: IRONGOLEM_HIT
+      locations: {}
+    coin-spawns:
+      enabled: true
+      defaults:
+        reward: 5
+        respawn-seconds: 30
+        display-name: '&6Gold Coin'
+        pickup-message: '&6+%amount% Gold'
+        max-active: 40
+      locations: {}
+    fishing:
+      enabled: true
+      regions:
+        water:
+          pos1:
+            world: Elements
+            x: 0
+            y: 0
+            z: 0
+          pos2:
+            world: Elements
+            x: 0
+            y: 0
+            z: 0
+    leaderboards:
+      unlockedfeatures:
+        enabled: true
+        location:
+          world: Elements
+          x: -8.698838325602317
+          y: 117.46007771428185
+          z: 11.8318935929451
+          yaw: 34.796997
+          pitch: 44.08151
+      activeplayers:
+        enabled: true
+        location:
+          world: Elements
+          x: 13.699999988079073
+          y: 117.85603108253817
+          z: 0.3267943500804193
+          yaw: 268.9776
+          pitch: 16.138845
+    npcs:
+      stats:
+        type: STATS
+        display-name: '&b&lStats'
+        location:
+          x: -11.526770912806903
+          y: 114.0
+          z: -4.49979130691469
+          yaw: 267.27512
+          pitch: -5.959983
+        skin-id: pit_stats
+        action-id: open_stats
+        hologram-id: stats
+        look-at-players: false
+        enabled: true
+      prestige:
+        type: PRESTIGE
+        display-name: '&b&lPrestige'
+        location:
+          x: 0.47827830199186433
+          y: 115.0
+          z: -11.448417642580068
+          yaw: 0.0831604
+          pitch: 1.334077
+        skin-id: pit_prestige
+        action-id: command
+        hologram-id: prestige
+        look-at-players: false
+        enabled: true
+        command: pit prestige
+        execution-mode: PLAYER
+      shop:
+        type: SHOP
+        display-name: '&b&lShop'
+        location:
+          x: 2.5284462807343897
+          y: 114.0
+          z: 12.479401850801574
+          yaw: 180.3118
+          pitch: -2.0511181
+        skin-id: pit_prestige
+        action-id: open_shop
+        hologram-id: shop
+        look-at-players: false
+        enabled: true
+      perks:
+        type: PERKS
+        display-name: '&a&lUpgrades'
+        location:
+          x: -1.4774503678801787
+          y: 114.0
+          z: 12.439525196402087
+          yaw: 181.16353
+          pitch: 1.7416382
+        skin-id: pit_perks
+        action-id: open_perks
+        hologram-id: perks
+        look-at-players: false
+        enabled: true
+      quests:
+        type: QUESTS
+        display-name: '&b&lQuest Master'
+        location:
+          x: 11.431020732130857
+          y: 114.0
+          z: 5.414738374026526
+          yaw: 121.8811
+          pitch: -1.0061754
+        skin-id: pit_quests
+        action-id: open_quests
+        hologram-id: quests
+        look-at-players: false
+        enabled: true
+    spawn:
+      world: Elements
+      x: -8.765194717989871
+      y: 114.0
+      z: 8.269668399125848
+      yaw: -130.51245
+      pitch: 4.4119983
+  genesis:
+    enabled: true
+    display-name: Genesis
+    world: Genesis
+    rage-pit:
+      enabled: false
+      center:
+        world: Genesis
+    spawn-protection:
+      pos1:
+        world: Genesis
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      pos2:
+        world: Genesis
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+    pvp-arena:
+      pos1:
+        world: Genesis
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      pos2:
+        world: Genesis
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+    launch-pads:
+      enabled: true
+      defaults:
+        horizontal-power: 2.0
+        vertical-power: 0.85
+        cooldown-millis: 1000
+        fall-protection-seconds: 5
+        particle: SLIME
+        sound: IRONGOLEM_HIT
+      locations: {}
+    coin-spawns:
+      enabled: true
+      defaults:
+        reward: 5
+        respawn-seconds: 30
+        display-name: '&6Gold Coin'
+        pickup-message: '&6+%amount% Gold'
+        max-active: 40
+      locations: {}
+    fishing:
+      enabled: false
+      regions:
+        garden:
+          pos1:
+            world: Genesis
+            x: 0
+            y: 0
+            z: 0
+          pos2:
+            world: Genesis
+            x: 0
+            y: 0
+            z: 0
+    leaderboards:
+      unlockedfeatures:
+        enabled: true
+        location:
+          world: Genesis
+          x: -8.698838325602317
+          y: 117.46007771428185
+          z: 11.8318935929451
+          yaw: 34.796997
+          pitch: 44.08151
+      activeplayers:
+        enabled: true
+        location:
+          world: Genesis
+          x: 13.699999988079073
+          y: 117.85603108253817
+          z: 0.3267943500804193
+          yaw: 268.9776
+          pitch: 16.138845
+    npcs:
+      stats:
+        type: STATS
+        display-name: '&b&lStats'
+        location:
+          x: -11.526770912806903
+          y: 114.0
+          z: -4.49979130691469
+          yaw: 267.27512
+          pitch: -5.959983
+        skin-id: pit_stats
+        action-id: open_stats
+        hologram-id: stats
+        look-at-players: false
+        enabled: true
+      prestige:
+        type: PRESTIGE
+        display-name: '&b&lPrestige'
+        location:
+          x: 0.47827830199186433
+          y: 115.0
+          z: -11.448417642580068
+          yaw: 0.0831604
+          pitch: 1.334077
+        skin-id: pit_prestige
+        action-id: command
+        hologram-id: prestige
+        look-at-players: false
+        enabled: true
+        command: pit prestige
+        execution-mode: PLAYER
+      shop:
+        type: SHOP
+        display-name: '&b&lShop'
+        location:
+          x: 2.5284462807343897
+          y: 114.0
+          z: 12.479401850801574
+          yaw: 180.3118
+          pitch: -2.0511181
+        skin-id: pit_prestige
+        action-id: open_shop
+        hologram-id: shop
+        look-at-players: false
+        enabled: true
+      perks:
+        type: PERKS
+        display-name: '&a&lUpgrades'
+        location:
+          x: -1.4774503678801787
+          y: 114.0
+          z: 12.439525196402087
+          yaw: 181.16353
+          pitch: 1.7416382
+        skin-id: pit_perks
+        action-id: open_perks
+        hologram-id: perks
+        look-at-players: false
+        enabled: true
+      quests:
+        type: QUESTS
+        display-name: '&b&lQuest Master'
+        location:
+          x: 11.431020732130857
+          y: 114.0
+          z: 5.414738374026526
+          yaw: 121.8811
+          pitch: -1.0061754
+        skin-id: pit_quests
+        action-id: open_quests
+        hologram-id: quests
+        look-at-players: false
+        enabled: true
+    spawn:
+      world: Genesis
+      x: 12.013949667729301
+      y: 86.0
+      z: 0.32950887647316063
+      yaw: -269.2491
+      pitch: 4.412005
+  seasons:
+    enabled: true
+    display-name: Seasons
+    world: Seasons
+    rage-pit:
+      enabled: false
+      center:
+        world: Seasons
+    spawn-protection:
+      pos1:
+        world: Seasons
+        x: 24.4434960265846
+        y: 112.0
+        z: -26.500177899629556
+        yaw: 43.2063
+        pitch: 7.139365
+      pos2:
+        world: Seasons
+        x: -22.531117202486694
+        y: 234.22990465751423
+        z: 23.589848953165916
+        yaw: 227.19116
+        pitch: -73.670044
+    pvp-arena:
+      pos1:
+        world: Seasons
+        x: 279.3937844662034
+        y: 107.20000004768372
+        z: -204.9399587612148
+        yaw: 47.84204
+        pitch: 6.636208
+      pos2:
+        world: Seasons
+        x: -179.94300206140935
+        y: 59.614292018020215
+        z: 240.5395284466957
+        yaw: 221.61566
+        pitch: 0.28910238
+    launch-pads:
+      enabled: true
+      defaults:
+        horizontal-power: 2.0
+        vertical-power: 0.85
+        cooldown-millis: 1000
+        fall-protection-seconds: 5
+        particle: SLIME
+        sound: IRONGOLEM_HIT
+      locations: {}
+    coin-spawns:
+      enabled: true
+      defaults:
+        reward: 5
+        respawn-seconds: 30
+        display-name: '&6Gold Coin'
+        pickup-message: '&6+%amount% Gold'
+        max-active: 40
+      locations: {}
+    fishing:
+      enabled: true
+      regions:
+        summer:
+          pos1:
+            world: Seasons
+            x: 0
+            y: 0
+            z: 0
+          pos2:
+            world: Seasons
+            x: 0
+            y: 0
+            z: 0
+    leaderboards:
+      unlockedfeatures:
+        enabled: true
+        location:
+          world: Seasons
+          x: -6.373
+          y: 117.46007771428185
+          z: 11.254
+          yaw: 34.796997
+          pitch: 44.08151
+      activeplayers:
+        enabled: true
+        location:
+          world: Seasons
+          x: 16.699999988079075
+          y: 117.85603108253817
+          z: 0.3267943500804193
+          yaw: 268.9776
+          pitch: 16.138845
+    npcs:
+      quests:
+        type: QUESTS
+        display-name: '&b&lQuest Master'
+        location:
+          x: 13.539325580922318
+          y: 114.0
+          z: 4.505021361072997
+          yaw: 89.38754
+          pitch: 3.1360734
+        skin-id: pit_quests
+        action-id: open_quests
+        hologram-id: quests
+        look-at-players: false
+        enabled: true
+      stats:
+        type: STATS
+        display-name: '&b&lStats'
+        location:
+          x: -11.526770912806903
+          y: 114.0
+          z: -4.49979130691469
+          yaw: 267.27512
+          pitch: -5.959983
+        skin-id: pit_stats
+        action-id: open_stats
+        hologram-id: stats
+        look-at-players: false
+        enabled: true
+      prestige:
+        type: PRESTIGE
+        display-name: '&b&lPrestige'
+        location:
+          x: 0.48910825206760367
+          y: 115.0
+          z: -14.441552997536741
+          yaw: 1.259552
+          pitch: 2.2117317
+        skin-id: pit_prestige
+        action-id: command
+        hologram-id: prestige
+        look-at-players: false
+        enabled: true
+        command: pit prestige
+        execution-mode: PLAYER
+      shop:
+        type: SHOP
+        display-name: '&b&lShop'
+        location:
+          x: 2.5284462807343897
+          y: 114.0
+          z: 12.479401850801574
+          yaw: 180.3118
+          pitch: -2.0511181
+        skin-id: pit_prestige
+        action-id: open_shop
+        hologram-id: shop
+        look-at-players: false
+        enabled: true
+      perks:
+        type: PERKS
+        display-name: '&a&lUpgrades'
+        location:
+          x: -1.4774503678801787
+          y: 114.0
+          z: 12.439525196402087
+          yaw: 181.16353
+          pitch: 1.7416382
+        skin-id: pit_perks
+        action-id: open_perks
+        hologram-id: perks
+        look-at-players: false
+        enabled: true
+    spawn:
+      world: Seasons
+      x: 12.7118486336601
+      y: 114.0
+      z: 0.7411719507185729
+      yaw: 91.07269
+      pitch: 3.3670847
+npc-skins:
+  pit_stats:
+    name: 1zg
+    value: ewogICJ0aW1lc3RhbXAiIDogMTc4NDc4OTkyMzA0NywKICAicHJvZmlsZUlkIiA6ICI3ZmM1M2Q5MmRiYTY0NjM0ODliMzE3ZmNhNGFjMDA5ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICIxemciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGI2NjZkMmY2NDUwYjQxNWY1NGE0OWMxZTM0OTE3MGI2MzZlNDk2NmI4YTNhNzE5OWFhNzc0MDIzOTYxY2FmMyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVlNmYzMTkzZTc0Y2QxNmNkZDY2MzdkOWJhZTU0ODRlM2EzN2ZmMmExNGMyZDE1N2M2NTlhMDc4MTBiMWJkY2EiCiAgICB9CiAgfQp9
+    signature: iMW7ywJF/rjDDjwqF2OZuyq6Aw+fZyJklXD0j8EiQmXvXfPRVIdcCpGOmk6gdv6YM19bB8KTSRAUwGY7Vnu+cgSJH/FfHP19UQ3zAeOyRtjuws2PxAUqkkEEId50FMsC58/9nB5l6yuWxy9HI0g1cWZVJ0Z0tvacUXP3STWIaBi3a99fCsNb0xuT8b+ugJ2Jk+Oydn0+HoLphfXXtJ3jVYItasauPMPHrhw/diOC/muj/PlwbsP4thjUwfyeCfRoINHmPL1HPaMoqSR/XAABcNb2M+qzi+D9pLwdgGUpzV77v6Ecg0w33nv474qkr8aHlwGgwK9JccHJacIs+rBtq85D406wmrbAGtnE616+MsPCjByV0ZdvrV0n04NKFx4+FpvKyYCPq8+YkkQ8h9WmxrIMnpU95S7jVpFPAOJfhhkETUZCgLDpiEWe7xsepwqSZQT4yPq3PbIyWZU+yujHwoaAsH4YkzjE+7Ero0obVfAVpONdnoSzSpxhZDhP3hmhsNxn+WydN6hUAD3ugN7FPfk1Rkv832wR7BTKPoPI6+fDseTJ7eEut4CqHte3cAQ7/70Ud7dQaHG7nEn4InbXbJ/+CSJ2EHSQzRRMrwcSVDngurmrw5k18+BC+TIrEMLXqJ5iwnIAHtPk6DGRZpAggbSRjC/AE6tSEWgLI+makNs=
+  pit_prestige:
+    name: 1zg
+    value: ewogICJ0aW1lc3RhbXAiIDogMTc4NDc5MzMwODk0MSwKICAicHJvZmlsZUlkIiA6ICI3ZmM1M2Q5MmRiYTY0NjM0ODliMzE3ZmNhNGFjMDA5ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICIxemciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGI2NjZkMmY2NDUwYjQxNWY1NGE0OWMxZTM0OTE3MGI2MzZlNDk2NmI4YTNhNzE5OWFhNzc0MDIzOTYxY2FmMyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVlNmYzMTkzZTc0Y2QxNmNkZDY2MzdkOWJhZTU0ODRlM2EzN2ZmMmExNGMyZDE1N2M2NTlhMDc4MTBiMWJkY2EiCiAgICB9CiAgfQp9
+    signature: hiCWMqFpmn5E9//606lB1ffl7xbw7GWFIOijX1Qfuqi4SrzvYRzWcKJDgF31PonYH97kHN6H5LXUvI2ZhLjztG0qC0tpTCKeB8H6goTyx18LfJo4ZTRO58Eb5X36hNqPUk9zy7xqPkjMio9uaLlyctvx64Ecd2KWX9MmAMu1zFJEeLAxkAhL70ujGHLMmdpWLM6Yz87jofTuYTh5hkS5pF3iqpImw2XtDTJcCHXZMhlJ/j1Gims0zPlJCWcxqj146wwPXHAkaCkQkfOx1VPaWBMl5Hpjmkrw2cniSNL3fW17F8tTl0L7D2c5vKs59Sb4WZ8wW+i5F1R2HehApFeSa3qaf6/fJ/uPm0oYLOFneHIBiYTYmAno9CWpMySTTJqjq9wy8relzgAh0h7hkJCcHN7GctayMP0omuFyngH4clBAdwZtZoqU03P+1kurLrrruRy+kfta5YO9M0KTOwBab0vjz2fh5Qhbh00TPUfVD9oCa7gtJLXjOCSkUcEhGfuWyD28jKo/GNPdpDcAOlpbhPl9aK4yHP8EchPs3aLntlbEsZokgdMF10KYRN9+oo08LjbYxLNtTr+KYK6YkLkssmAqAmcL+agkmUILt6fl4SVl/W7UHpQHWT4iD13ThoORgKqq4yYlmpoTGox9xoP1fwr4dwiI0iWIsCbS6OHFyv0=
+  pit_perks:
+    name: 1zg
+    value: ewogICJ0aW1lc3RhbXAiIDogMTc4NTA1MjQ3Njc0MywKICAicHJvZmlsZUlkIiA6ICI3ZmM1M2Q5MmRiYTY0NjM0ODliMzE3ZmNhNGFjMDA5ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICIxemciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGI2NjZkMmY2NDUwYjQxNWY1NGE0OWMxZTM0OTE3MGI2MzZlNDk2NmI4YTNhNzE5OWFhNzc0MDIzOTYxY2FmMyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVlNmYzMTkzZTc0Y2QxNmNkZDY2MzdkOWJhZTU0ODRlM2EzN2ZmMmExNGMyZDE1N2M2NTlhMDc4MTBiMWJkY2EiCiAgICB9CiAgfQp9
+    signature: FZOlt9/ClIOb5BMAxiRbhDWChXG9AxPPeWfF/TchDjY6QH3GoNa+QqH7cBLgupQJtHeuu7T9dQVGcbi4WJJzp50QMq+HgngodGAsqgplla2b3GKF1cakWrocPCqMnDgMGkJoqe8Pwb8J7fS9SyqbJWD9rVyMg7SvpShFVoltQJQ44l1tNfGd5UhcBh6kLusD5y5V+aWC0nSvKZmeRs8Wg6zbZkjFMKzzLLRYYnlLIVAzeS6fho2wMzIW7sQubbLPeHqDhZnEe7F8TnFRncvsqz8+IqIC0rnXR0pHyXzsaSSZ1Z1CVFY3JB6Dowg+q2mW5cPtER1vF59G4qPgsux84cB1O1TJAMtpNJYDpWAGrPGLal2pd30LOdOyVgxDrwBII6iMwgpREfeaJl+kYDQuPO4vM7nXa9EYp4/L+ZbpFslrKRr8PnAc32VQDGKRbz8Y5yL+313yS5ulFNS3gLzfYXwVYxABv7bjo9FmqDldTPvS4iWHvzRTY0lT+rnLqlu4QZ7DUXmwtyJaTnb5hLphTk4HWrXltxdu3OY0qcaGyG/UsioFumyCBtxdU2Wq8C82sJm0WomC/ECSD/UVnDORyg8mELiGcdDgzt1b1OG/hZBzwNQkgVERkh+XcB9oSNjRZ5Nk+buJRJVQJBceyw3+/ER+5P3h71FlVQwZ57dVG0s=
+  pit_quests:
+    name: 1zg
+    value: ewogICJ0aW1lc3RhbXAiIDogMTc4NTE1MjI2ODAwMSwKICAicHJvZmlsZUlkIiA6ICI3ZmM1M2Q5MmRiYTY0NjM0ODliMzE3ZmNhNGFjMDA5ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICIxemciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGI2NjZkMmY2NDUwYjQxNWY1NGE0OWMxZTM0OTE3MGI2MzZlNDk2NmI4YTNhNzE5OWFhNzc0MDIzOTYxY2FmMyIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVlNmYzMTkzZTc0Y2QxNmNkZDY2MzdkOWJhZTU0ODRlM2EzN2ZmMmExNGMyZDE1N2M2NTlhMDc4MTBiMWJkY2EiCiAgICB9CiAgfQp9
+    signature: ngbS+BQtG539inIfpo/k8c2Aq/FYHyyoxnS66WTpdlDY8XNCtcd9oc96ZXNOHAvxYxeodAfxMgseb75JtnlLMF+SZQD4/6zhD8uECUDQQ2VQ6SvkQageSws0DClP/jOqWQFCFgoZSMuaQ9umPiYXKIf4j2cD8Q9Cmj2ZVp5jlqysUlcbz4UYZ7KqWYUSL737oxLeOuOV4OyN8Bep8glI5neZzyfjUnl9ucWyA6apTmhmHOJJGO+OZk7SMzCkGtTHI5VJgjPlh1X2CF5M4ftYvf1qtB213nqeiGRWneZ2CpdOytLgpD5cgvnTLYafceWIrLrealKrTRHNfqu2FCuyjU/qyiRleHztCw+CvVdkv5gFoSTFEzdF8EcQzvMplHN5sNI31TL8FA0NxWaxCDWa9Id+HikXGKCOrZENlHp7AkdeXsCNj6bG4J/KlIar5OUGSaXqZ0/Mi5+t66fNWvckYtC9t/vz4dZGAzAF4ik8qk4btFaoKTRYNTMcTmL6jKKkiw2ewzmhwF1gXJLFr6/n4dATkqaA/ozi3X/UzStAwLGe+ZoHIVMBNLhuO342DwxDjE+PXkhSD2B8z21ukIfgwSJn4QiUmDoG2BlNep3qE7n5gpI9ffxqDCo6NQlaei63RkQdw+v4Ny/olLrOgJHQlECJomqWhUo6rqsT8OYsq3s=
+npcs: {}

@@ -1,0 +1,210 @@
+item-shop:
+  enabled: true
+  title: '&8Item Shop'
+  size: 45
+  currency: PIT_GOLD
+  player-gold-slot: 40
+  close-slot: 44
+  filler:
+    material: STAINED_GLASS_PANE
+    data: 15
+    name: ' '
+  autobuy:
+    allow-pants-bundle: false
+    order:
+    - diamond-sword
+    - obsidian
+    - diamond-chestplate
+    - diamond-boots
+    - golden-pickaxe
+    - iron-pack
+    - obsidian-stack
+    - combat-spade
+    - diamond-leggings
+    - bounty-solvent
+    - first-aid-egg
+    - jump-boost
+    - tactical-insertion
+    - pants-bundle
+  defaults:
+    diamond-sword:
+      enabled: true
+      display-name: '&bDiamond Sword'
+      description:
+      - '&7Deals +20% damage to bountied players.'
+      slot: 10
+      material: DIAMOND_SWORD
+      amount: 1
+      price: 150
+      lost-on-death: true
+      unbreakable: true
+      bounty-damage-bonus: 0.20
+    obsidian:
+      enabled: true
+      display-name: '&5Obsidian'
+      description:
+      - '&7Eight temporary building blocks.'
+      slot: 11
+      material: OBSIDIAN
+      amount: 8
+      price: 40
+      lost-on-death: true
+      despawn-seconds: 120
+    diamond-chestplate:
+      enabled: true
+      display-name: '&bDiamond Chestplate'
+      description:
+      - '&7Strong temporary protection.'
+      slot: 12
+      material: DIAMOND_CHESTPLATE
+      amount: 1
+      price: 500
+      lost-on-death: true
+      unbreakable: true
+    diamond-boots:
+      enabled: true
+      display-name: '&bDiamond Boots'
+      description:
+      - '&7Strong temporary protection.'
+      slot: 13
+      material: DIAMOND_BOOTS
+      amount: 1
+      price: 300
+      lost-on-death: true
+      unbreakable: true
+    golden-pickaxe:
+      enabled: true
+      display-name: '&6Golden Pickaxe'
+      description:
+      - '&7Break player obsidian in two hits.'
+      slot: 14
+      material: GOLD_PICKAXE
+      amount: 1
+      price: 500
+      lost-on-death: true
+      unbreakable: true
+      obsidian-hits: 2
+      connected-block-limit: 4
+      hit-timeout-millis: 3000
+  renown-items:
+    iron-pack:
+      enabled: true
+      display-name: '&fIron Pack'
+      description:
+      - '&7Iron chestplate, leggings and boots.'
+      slot: 19
+      required-prestige: 1
+      renown-unlock-price: 5
+      price: 100
+      lost-on-death: true
+    obsidian-stack:
+      enabled: true
+      display-name: '&5Obsidian Stack'
+      description:
+      - '&7A full stack of temporary obsidian.'
+      slot: 20
+      material: OBSIDIAN
+      required-prestige: 2
+      renown-unlock-price: 5
+      price: 240
+      amount: 64
+      despawn-seconds: 120
+      lost-on-death: true
+    combat-spade:
+      enabled: true
+      display-name: '&bCombat Spade'
+      description:
+      - '&7Deals +0.5 hearts per diamond armor piece.'
+      slot: 21
+      material: DIAMOND_SPADE
+      amount: 1
+      required-prestige: 3
+      renown-unlock-price: 10
+      price: 750
+      unbreakable: true
+      lost-on-death: true
+    diamond-leggings:
+      enabled: true
+      display-name: '&bDiamond Leggings'
+      description:
+      - '&7Strong temporary protection.'
+      slot: 22
+      material: DIAMOND_LEGGINGS
+      amount: 1
+      required-prestige: 3
+      renown-unlock-price: 20
+      price: 1200
+      unbreakable: true
+      lost-on-death: true
+    bounty-solvent:
+      enabled: true
+      display-name: '&6Bounty Solvent'
+      description:
+      - '&7Protection and bonus bounty Gold.'
+      slot: 23
+      material: POTION
+      amount: 1
+      required-prestige: 4
+      renown-unlock-price: 10
+      price: 750
+      duration-seconds: 60
+      bounty-threshold: 1000
+      damage-reduction: 0.30
+      bounty-gold-bonus: 0.50
+      lost-on-death: true
+    first-aid-egg:
+      enabled: true
+      display-name: '&cFirst-Aid Egg'
+      description:
+      - '&7Heal 2.5 hearts every 30 seconds.'
+      slot: 24
+      material: MONSTER_EGG
+      data: 96
+      amount: 1
+      required-prestige: 5
+      renown-unlock-price: 15
+      price: 200
+      heal-hearts: 2.5
+      cooldown-seconds: 30
+      kill-reduction-seconds: 5
+      lost-on-death: true
+    jump-boost:
+      enabled: true
+      display-name: '&aJump Boost IV'
+      description:
+      - '&7Jump Boost IV for 30 seconds.'
+      slot: 28
+      material: POTION
+      amount: 1
+      required-prestige: 7
+      renown-unlock-price: 20
+      price: 150
+      amplifier: 4
+      duration-seconds: 30
+      lost-on-death: true
+    tactical-insertion:
+      enabled: true
+      display-name: '&eTactical Insertion'
+      description:
+      - '&7Set your next respawn location.'
+      slot: 29
+      material: BLAZE_ROD
+      amount: 1
+      required-prestige: 8
+      renown-unlock-price: 20
+      price: 100
+      cooldown-seconds: 60
+      lost-on-death: true
+    pants-bundle:
+      enabled: true
+      display-name: '&6Pants Bundle'
+      description:
+      - '&7Securely stores up to ten Fresh Pants.'
+      slot: 30
+      material: MINECART
+      amount: 1
+      required-prestige: 12
+      renown-unlock-price: 20
+      price: 50
+      capacity: 10
+      kept-on-death: true

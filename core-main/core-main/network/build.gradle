@@ -1,0 +1,14 @@
+dependencies {
+    api(libs.gson)
+    api(libs.guava)
+    api(libs.trove)
+    api(libs.snakeyaml)
+    api(libs.fastutil)
+    api(libs.bundles.netty)
+    api(libs.bundles.wcommons)
+    api(libs.jedis)
+    api(libs.caffeine)
+    api(libs.nats)
+}
+
+enablePublishing(project)

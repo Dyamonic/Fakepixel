@@ -1,0 +1,184 @@
+abelix:
+  enabled: true
+  use-rank-prefix: true
+  use-rank-priority: true
+  use-gold: true
+  gamer-classes:
+  - club.abelix.api.base.gamer.Gamer
+  - club.abelix.api.gamer.Gamer
+  - me.abelix.api.base.gamer.Gamer
+  - net.fakepixel.api.base.gamer.Gamer
+  prefix-placeholders:
+  - '%abelix_prefix%'
+  gold-placeholders:
+  - '%abelix_gold%'
+  - '%abelixapi_gold%'
+rank-detection:
+  enabled: true
+  refresh-ticks: 200
+  rank-placeholders:
+  - '%abelix_rank%'
+  - '%abelix_group%'
+  - '%fakepixel_rank%'
+  - '%fakepixel_group%'
+  admin-staff:
+    ADMINISTRATOR:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - thepit.admin
+    AX_TEAM:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - thepit.admin
+    JR_DEVELOPER:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - thepit.admin
+    DEVELOPER:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - thepit.admin
+    SR_DEVELOPER:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - thepit.admin
+    DEPUTY:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - thepit.admin
+    MAIN_ADMIN:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - thepit.admin
+    OWNER:
+      permissions:
+      - '*'
+      - minecraft.command.*
+      - bukkit.command.*
+      - swm.*
+      - thepit.admin
+  staff:
+    SPONSOR_STAFF:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.socialspy
+      - fakevival.staff.xray
+      - smp.admin.commandlog
+      - fakevival.staff.chatfilter
+      - fakevival.chatfilter.bypass
+      - fakevival.admin.itembrowser
+    GM:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.socialspy
+      - fakevival.staff.xray
+      - smp.admin.commandlog
+      - fakevival.staff.chatfilter
+    MODERATOR:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.socialspy
+      - fakevival.staff.xray
+      - smp.admin.commandlog
+      - fakevival.staff.chatfilter
+    HELPER:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.xray
+      - fakevival.staff.chatfilter
+    JR_HELPER:
+      permissions:
+      - fakevival.command.vanish
+      - fakevival.command.vanish.see
+      - fakevival.staff.xray
+      - fakevival.staff.chatfilter
+  player-ranks:
+    DEFAULT:
+      permissions: []
+    VIP:
+      permissions:
+      - fakevival.command.kit.vip
+    VIP_PLUS:
+      permissions:
+      - fakevival.command.kit.vip
+      - fakevival.command.kit.vip_plus
+    MVP:
+      permissions:
+      - fakevival.command.kit.vip
+      - fakevival.command.kit.mvp
+    MVP_PLUS:
+      permissions:
+      - fakevival.command.kit.vip
+      - fakevival.command.kit.mvp
+      - fakevival.command.kit.mvp_plus
+    MVP_PLUS_PLUS:
+      permissions:
+      - fakevival.command.kit.vip
+      - fakevival.command.kit.mvp
+      - fakevival.command.kit.mvp_plus
+      - fakevival.command.kit.mvp_plus_plus
+    YOUTUBE:
+      permissions:
+      - fakevival.command.kit.youtube
+    PIG:
+      permissions:
+      - fakevival.command.kit.pig
+    PIG_PLUS:
+      permissions:
+      - fakevival.command.kit.pig
+      - fakevival.command.kit.pig_plus
+    PIG_PLUS_PLUS:
+      permissions:
+      - fakevival.command.kit.pig
+      - fakevival.command.kit.pig_plus
+      - fakevival.command.kit.pig_plus_plus
+    PIG_PLUS_PLUS_PLUS:
+      permissions:
+      - fakevival.command.kit.pig
+      - fakevival.command.kit.pig_plus
+      - fakevival.command.kit.pig_plus_plus
+      - fakevival.command.kit.pig_plus_plus_plus
+    BETA:
+      permissions:
+      - fakevival.rank.beta
+    SPONSOR_1:
+      permissions:
+      - fakevival.rank.sponsor_1
+    SPONSOR_2:
+      permissions:
+      - fakevival.rank.sponsor_1
+      - fakevival.rank.sponsor_2
+    SPONSOR_3:
+      permissions:
+      - fakevival.rank.sponsor_1
+      - fakevival.rank.sponsor_2
+      - fakevival.rank.sponsor_3
+    SPECIAL:
+      permissions:
+      - fakevival.rank.special
+rank-prefix-placeholders:
+- '%abelix_prefix%'

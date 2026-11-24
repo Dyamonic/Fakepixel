@@ -1,0 +1,826 @@
+currency: PIT_GOLD
+menu:
+  title: '&8Upgrades & Perks'
+  choose-title: 'Choose a perk'
+  size: 54
+  choose-size: 54
+  choose-slots:
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  filler:
+    material: STAINED_GLASS_PANE
+    data: 15
+    name: ' '
+  back:
+    slot: 49
+    material: ARROW
+    data: 0
+    name: '&aGo Back'
+    lore: []
+  killstreaks:
+    slot: 45
+    material: GOLD_SWORD
+    data: 0
+    name: '&6Killstreaks'
+    lore:
+    - '&7Purchase and equip rewards'
+    - '&7that trigger during a life.'
+    - ''
+    - '&eClick to open!'
+  sounds:
+    success: ORB_PICKUP
+    failure: NOTE_BASS
+  labels:
+    required-level: '&7Required Level: %level%'
+    required-prestige: '&7Required Prestige: &d%prestige%'
+    purchased: '&7Purchased: %status%'
+    yes: '&aYes'
+    no: '&cNo'
+    equipped: '&aCurrently equipped in Slot #%slot%'
+    not-equipped: '&7Equipped: &cNo'
+    prestige-locked: '&cRequires Prestige %prestige%.'
+    perk-locked: '&cPerk locked!'
+    select: '&eClick to select!'
+    cost: '&6Cost: %price% Gold'
+    purchase: '&eClick to purchase!'
+  messages:
+    success: '&aYour perk loadout was updated.'
+    slot-locked: '&cReach %required_level% &cto unlock this perk slot.'
+    perk-locked: '&cThis perk is locked.'
+    not-purchased: '&cPurchase that perk before equipping it.'
+    slot-unavailable: '&cThat perk slot is locked.'
+    insufficient-coins: '&cYou do not have enough Gold.'
+    storage-unavailable: '&cPerk storage is unavailable. Nothing was changed.'
+    not-found: '&cThat perk is unavailable.'
+assists:
+  combat-timeout-seconds: 15
+  base-coins: 2
+  base-xp: 5
+passives:
+  enabled: true
+  currency: PIT_GOLD
+  reset-on-prestige: true
+  definitions:
+    xp-boost:
+      display-name: '&bXP Boost'
+      material: INK_SACK
+      data: 12
+      inventory-slot: 28
+      bonus-per-tier: 0.10
+      tiers:
+        '1': { price: 500, required-level: 10 }
+        '2': { price: 2500, required-level: 30 }
+        '3': { price: 5000, required-level: 50 }
+        '4': { price: 10000, required-level: 80 }
+        '5': { price: 25000, required-level: 100 }
+        '6': { price: 50000, required-level: 100, required-renown-upgrade: one-upper }
+    gold-boost:
+      display-name: '&6Gold Boost'
+      material: INK_SACK
+      data: 14
+      inventory-slot: 29
+      bonus-per-tier: 0.10
+      tiers:
+        '1': { price: 1000, required-level: 20 }
+        '2': { price: 2500, required-level: 35 }
+        '3': { price: 10000, required-level: 50 }
+        '4': { price: 25000, required-level: 70 }
+        '5': { price: 40000, required-level: 90 }
+        '6': { price: 100000, required-level: 90, required-renown-upgrade: one-upper }
+    melee-damage:
+      display-name: '&cMelee Damage'
+      material: INK_SACK
+      data: 1
+      inventory-slot: 30
+      bonus-per-tier: 0.01
+      tiers:
+        '1': { price: 450, required-level: 30 }
+        '2': { price: 1050, required-level: 50 }
+        '3': { price: 1500, required-level: 60 }
+        '4': { price: 2250, required-level: 70 }
+        '5': { price: 3000, required-level: 80 }
+        '6': { price: 10000, required-level: 90, required-renown-upgrade: one-upper }
+    bow-damage:
+      display-name: '&cBow Damage'
+      material: INK_SACK
+      data: 11
+      inventory-slot: 31
+      bonus-per-tier: 0.03
+      tiers:
+        '1': { price: 450, required-level: 30 }
+        '2': { price: 1050, required-level: 50 }
+        '3': { price: 1500, required-level: 60 }
+        '4': { price: 2250, required-level: 70 }
+        '5': { price: 3000, required-level: 80 }
+        '6': { price: 5000, required-level: 90, required-renown-upgrade: one-upper }
+    damage-reduction:
+      display-name: '&9Damage Reduction'
+      material: INK_SACK
+      data: 6
+      inventory-slot: 32
+      reduction-per-tier: 0.01
+      affected-damage: BOW_ONLY
+      tiers:
+        '1': { price: 450, required-level: 30 }
+        '2': { price: 1050, required-level: 50 }
+        '3': { price: 1500, required-level: 60 }
+        '4': { price: 2250, required-level: 70 }
+        '5': { price: 3000, required-level: 80 }
+        '6': { price: 10000, required-level: 90, required-renown-upgrade: one-upper }
+    build-battler:
+      display-name: '&aBuild Battler'
+      material: INK_SACK
+      data: 15
+      inventory-slot: 33
+      duration-bonus-per-tier: 0.60
+      tiers:
+        '1': { price: 750, required-level: 40 }
+        '2': { price: 1750, required-level: 50 }
+        '3': { price: 2750, required-level: 55 }
+        '4': { price: 3750, required-level: 60 }
+        '5': { price: 5000, required-level: 65 }
+        '6': { price: 7500, required-level: 70, required-renown-upgrade: one-upper }
+    el-gato:
+      display-name: '&eEl Gato'
+      material: CAKE
+      inventory-slot: 34
+      bonus-gold: 5
+      bonus-xp: 5
+      tiers:
+        '1': { price: 1000, required-level: 50 }
+        '2': { price: 2000, required-level: 60 }
+        '3': { price: 3000, required-level: 70 }
+        '4': { price: 4000, required-level: 80 }
+        '5': { price: 5000, required-level: 90 }
+        '6': { price: 6000, required-level: 100, required-renown-upgrade: one-upper }
+loadout-slots:
+  '1':
+    inventory-slot: 11
+    required-level: 1
+    required-prestige: 0
+  '2':
+    inventory-slot: 12
+    required-level: 35
+    required-prestige: 0
+  '3':
+    inventory-slot: 13
+    required-level: 70
+    required-prestige: 0
+  '4':
+    inventory-slot: 14
+    required-level: 100
+    required-prestige: 3
+items:
+  golden_head:
+    display-name: '&6Golden Head'
+    lore:
+    - '&7Consume instantly for combat effects.'
+  olympus:
+    display-name: '&dOlympus Potion'
+    lore:
+    - '&7Consume for configured effects and rewards.'
+  kill_soup:
+    display-name: '&aTasty Soup'
+    lore:
+    - '&7A powerful kill reward.'
+  assist_soup:
+    display-name: '&eAssist Soup'
+    lore:
+    - '&7A combat assist reward.'
+perks:
+  golden_heads:
+    enabled: true
+    display-name: '&6Golden Heads'
+    material: SKULL_ITEM
+    data: 3
+    menu-slot: 9
+    lore:
+    - '&7Kills award consumable heads.'
+    coin-price: 500
+    required-level: 1
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      carrying-limit: 2
+      speed:
+        type: SPEED
+        duration-seconds: 8
+        level: 1
+      regeneration:
+        type: REGENERATION
+        duration-seconds: 5
+        level: 2
+      absorption:
+        type: ABSORPTION
+        duration-seconds: 120
+        level: 2
+      sound: EAT
+    messages:
+      consume: '&6You consumed a Golden Head.'
+  fishing_rod:
+    enabled: true
+    display-name: '&aFishing Rod'
+    material: FISHING_ROD
+    data: 0
+    menu-slot: 10
+    lore:
+    - '&7Spawn with a fishing rod.'
+    coin-price: 1000
+    required-level: 10
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      spawn-amount: 1
+      inventory-limit: 1
+      cooldown-seconds: 0
+      sound: ITEM_PICKUP
+    messages:
+      granted: '&bFishing rod equipped.'
+  lava_bucket:
+    enabled: true
+    display-name: '&6Lava Bucket'
+    material: LAVA_BUCKET
+    data: 0
+    menu-slot: 11
+    lore:
+    - '&7Spawn with a lava bucket.'
+    coin-price: 1000
+    required-level: 1
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      spawn-amount: 1
+      inventory-limit: 1
+      placement-cooldown-seconds: 0
+      owner-duration-seconds: 60
+      sound: ITEM_PICKUP
+    messages:
+      granted: '&6Lava bucket equipped.'
+  strength_chaining:
+    enabled: true
+    display-name: '&cStrength-Chaining'
+    material: BLAZE_POWDER
+    data: 0
+    menu-slot: 12
+    lore:
+    - '&7Kills stack temporary outgoing damage.'
+    coin-price: 2000
+    required-level: 10
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      damage-per-stack: 0.08
+      duration-seconds: 7
+      maximum-stacks: 5
+      sound: LEVEL_UP
+    messages:
+      stack: '&cStrength chain increased to %stacks%.'
+  safety_first:
+    enabled: true
+    display-name: '&fSafety First'
+    material: CHAINMAIL_HELMET
+    data: 0
+    menu-slot: 13
+    lore:
+    - '&7Spawn with a protected chain helmet.'
+    coin-price: 3000
+    required-level: 10
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      helmet-material: CHAINMAIL_HELMET
+      prevent-drop: true
+      prevent-move: true
+      restore-on-respawn: true
+      sound: ANVIL_USE
+    messages:
+      restored: '&fYour safety helmet was restored.'
+  mineman:
+    enabled: true
+    display-name: '&7Mineman'
+    material: COBBLESTONE
+    data: 0
+    menu-slot: 14
+    lore:
+    - '&7Spawn with blocks and a mining tool.'
+    coin-price: 3000
+    required-level: 20
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      block-material: COBBLESTONE
+      spawn-blocks: 24
+      blocks-per-kill: 3
+      block-limit: 64
+      block-duration-seconds: 15
+      pickaxe-material: DIAMOND_PICKAXE
+      pickaxe-efficiency: 4
+      sound: DIG_STONE
+    messages:
+      blocks: '&7You received %amount% building blocks.'
+  bonk:
+    enabled: true
+    display-name: '&eBonk!'
+    material: STICK
+    data: 0
+    menu-slot: 15
+    lore:
+    - '&7Block the first player hit each life.'
+    coin-price: 2000
+    required-level: 20
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      blocked-hits-per-life: 1
+      resistance:
+        type: DAMAGE_RESISTANCE
+        duration-seconds: 2
+        level: 1
+      sound: ANVIL_LAND
+    messages:
+      blocked: '&eBonk blocked the hit.'
+  trickle_down:
+    enabled: true
+    display-name: '&6Trickle-down'
+    material: GOLD_INGOT
+    data: 0
+    menu-slot: 16
+    lore:
+    - '&7Collectible Gold heals and rewards more.'
+    coin-price: 1000
+    required-level: 30
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      bonus-coins: 10
+      healing: 4.0
+      cooldown-seconds: 0
+      sound: ORB_PICKUP
+    messages:
+      collected: '&6Trickle-down granted bonus Gold.'
+  lucky_diamond:
+    enabled: true
+    display-name: '&bLucky Diamond'
+    material: DIAMOND_CHESTPLATE
+    data: 0
+    menu-slot: 17
+    lore:
+    - '&7Killed players may yield diamond armor.'
+    coin-price: 4000
+    required-level: 30
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      upgrade-chance: 0.30
+      exclude-helmets: true
+      direct-to-inventory: true
+      sound: LEVEL_UP
+    messages:
+      upgraded: '&bLucky Diamond upgraded an armor piece.'
+  spammer:
+    enabled: true
+    display-name: '&fSpammer'
+    material: BOW
+    data: 0
+    menu-slot: 18
+    lore:
+    - '&7Bow hits replenish arrows and rewards.'
+    coin-price: 4000
+    required-level: 30
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      arrows-per-hit: 3
+      arrow-limit: 64
+      bow-kill-coin-bonus: 4
+      assist-coin-bonus: 2
+      sound: SHOOT_ARROW
+    messages:
+      arrows: '&fYou received %amount% arrows.'
+  bounty_hunter:
+    enabled: true
+    display-name: '&6Bounty Hunter'
+    material: GOLD_LEGGINGS
+    data: 0
+    menu-slot: 19
+    lore:
+    - '&7Deal more damage to bountied targets.'
+    coin-price: 2000
+    required-level: 40
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      kill-coin-bonus: 4
+      bounty-unit: 100
+      damage-per-bounty-unit: 0.01
+      maximum-damage-bonus: 0.50
+      require-armor: true
+      armor-material: GOLD_LEGGINGS
+      sound: LEVEL_UP
+    messages:
+      bonus: '&6Bounty Hunter rewarded %amount% Gold.'
+  streaker:
+    enabled: true
+    display-name: '&dStreaker'
+    material: NETHER_STAR
+    data: 0
+    menu-slot: 20
+    lore:
+    - '&7Multiply streak XP rewards.'
+    coin-price: 8000
+    required-level: 40
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      xp-multiplier: 3.0
+      coin-multiplier: 1.0
+      minimum-streak: 1
+      sound: LEVEL_UP
+    messages:
+      bonus: '&dYour streak reward was multiplied.'
+  gladiator:
+    enabled: true
+    display-name: '&cGladiator'
+    material: IRON_CHESTPLATE
+    data: 0
+    menu-slot: 21
+    lore:
+    - '&7Nearby enemies reduce incoming damage.'
+    coin-price: 4000
+    required-level: 50
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      radius: 12.0
+      minimum-nearby-players: 3
+      reduction-per-player: 0.03
+      maximum-reduction: 0.30
+      sound: ZOMBIE_METAL
+    messages:
+      active: '&cGladiator reduced incoming damage.'
+  vampire:
+    enabled: true
+    display-name: '&4Vampire'
+    material: FERMENTED_SPIDER_EYE
+    data: 0
+    menu-slot: 22
+    lore:
+    - '&7Heal from combat instead of kill items.'
+    coin-price: 4000
+    required-level: 50
+    required-prestige: 0
+    required-perk-slot: 1
+    mechanics:
+      disable-normal-kill-healing-items: true
+      melee-healing: 1.0
+      full-bow-healing: 3.0
+      full-bow-velocity-squared: 8.0
+      regeneration:
+        type: REGENERATION
+        duration-seconds: 8
+        level: 1
+      sound: BURP
+    messages:
+      healed: '&4Vampire restored health.'
+  overheal:
+    enabled: true
+    display-name: '&cOverheal'
+    material: GOLDEN_APPLE
+    data: 0
+    menu-slot: 27
+    lore:
+    - '&7Increase healing item carrying limits.'
+    coin-price: 6000
+    required-level: 70
+    required-prestige: 1
+    required-perk-slot: 2
+    mechanics:
+      carrying-limit-multiplier: 2.0
+      sound: EAT
+    messages:
+      active: '&cYour healing capacity is increased.'
+  barbarian:
+    enabled: true
+    display-name: '&6Barbarian'
+    material: DIAMOND_AXE
+    data: 0
+    menu-slot: 28
+    lore:
+    - '&7Replace swords with equivalent axes.'
+    coin-price: 3000
+    required-level: 20
+    required-prestige: 2
+    required-perk-slot: 2
+    mechanics:
+      replace-wood-sword: true
+      replace-stone-sword: true
+      replace-iron-sword: true
+      replace-diamond-sword: true
+      replace-gold-sword: true
+      axe-bonus-base-damage: 1.0
+      sound: ANVIL_USE
+    messages:
+      converted: '&6Your swords were converted into axes.'
+  dirty:
+    enabled: true
+    display-name: '&8Dirty'
+    material: DIRT
+    data: 0
+    menu-slot: 29
+    lore:
+    - '&7Gain Resistance after kills.'
+    coin-price: 8000
+    required-level: 80
+    required-prestige: 2
+    required-perk-slot: 2
+    mechanics:
+      resistance:
+        type: DAMAGE_RESISTANCE
+        duration-seconds: 4
+        level: 2
+      sound: ZOMBIE_METAL
+    messages:
+      active: '&8Dirty granted Resistance.'
+  rambo:
+    enabled: true
+    display-name: '&cRambo'
+    material: REDSTONE
+    data: 0
+    menu-slot: 30
+    lore:
+    - '&7Lower maximum health and heal on kills.'
+    coin-price: 6000
+    required-level: 70
+    required-prestige: 3
+    required-perk-slot: 2
+    mechanics:
+      maximum-health: 16.0
+      heal-to-full-on-kill: true
+      disable-kill-healing-items: true
+      sound: LEVEL_UP
+    messages:
+      healed: '&cRambo restored your health.'
+  olympus:
+    enabled: true
+    display-name: '&dOlympus'
+    material: POTION
+    data: 8197
+    menu-slot: 31
+    lore:
+    - '&7Kills award one powerful potion.'
+    coin-price: 6000
+    required-level: 70
+    required-prestige: 4
+    required-perk-slot: 2
+    mechanics:
+      carrying-limit: 1
+      speed:
+        type: SPEED
+        duration-seconds: 24
+        level: 1
+      regeneration:
+        type: REGENERATION
+        duration-seconds: 10
+        level: 3
+      resistance:
+        type: DAMAGE_RESISTANCE
+        duration-seconds: 4
+        level: 2
+      coin-reward: 0
+      xp-reward: 27
+      sound: DRINK
+    messages:
+      consume: '&dOlympus empowered you.'
+  assistant_streaker:
+    enabled: true
+    display-name: '&aAssistant Streaker'
+    material: PAPER
+    data: 0
+    menu-slot: 32
+    lore:
+    - '&7Qualifying assists advance streaks.'
+    coin-price: 8000
+    required-level: 40
+    required-prestige: 5
+    required-perk-slot: 2
+    mechanics:
+      required-participation: 0.50
+      assist-coin-bonus: 2
+      assist-xp-bonus: 1
+      streak-progress: 1
+      sound: LEVEL_UP
+    messages:
+      assist: '&aYour assist advanced your streak.'
+  first_strike:
+    enabled: true
+    display-name: '&eFirst Strike'
+    material: GOLD_SWORD
+    data: 0
+    menu-slot: 33
+    lore:
+    - '&7Your first hit on a target is stronger.'
+    coin-price: 8000
+    required-level: 80
+    required-prestige: 5
+    required-perk-slot: 2
+    mechanics:
+      first-hit-damage-bonus: 0.35
+      combat-reset-seconds: 15
+      speed:
+        type: SPEED
+        duration-seconds: 5
+        level: 1
+      sound: SUCCESSFUL_HIT
+    messages:
+      hit: '&eFirst Strike activated.'
+  co_op_cat:
+    enabled: true
+    display-name: '&dCo-op Cat'
+    material: RAW_FISH
+    data: 0
+    menu-slot: 34
+    lore:
+    - '&7Increase assist coin and XP rewards.'
+    coin-price: 6000
+    required-level: 40
+    required-prestige: 6
+    required-perk-slot: 3
+    mechanics:
+      assist-coin-multiplier: 1.5
+      assist-xp-multiplier: 1.5
+      sound: CAT_MEOW
+    messages:
+      assist: '&dCo-op Cat increased your assist reward.'
+  marathon:
+    enabled: true
+    display-name: '&bMarathon'
+    material: LEATHER_BOOTS
+    data: 0
+    menu-slot: 35
+    lore:
+    - '&7Fight stronger while Speed is active.'
+    coin-price: 8000
+    required-level: 90
+    required-prestige: 6
+    required-perk-slot: 3
+    mechanics:
+      prevent-boots: true
+      outgoing-damage-bonus: 0.18
+      incoming-damage-reduction: 0.18
+      sound: STEP_GRASS
+    messages:
+      active: '&bMarathon combat bonuses are active.'
+  soup:
+    enabled: true
+    display-name: '&aSoup'
+    material: MUSHROOM_SOUP
+    data: 0
+    menu-slot: 36
+    lore:
+    - '&7Kills and assists award combat soups.'
+    coin-price: 8000
+    required-level: 90
+    required-prestige: 7
+    required-perk-slot: 3
+    mechanics:
+      total-soup-limit: 4
+      next-hit-damage-bonus: 0.15
+      kill-soup:
+        healing: 3.0
+        speed:
+          type: SPEED
+          duration-seconds: 7
+          level: 1
+        regeneration:
+          type: REGENERATION
+          duration-seconds: 1
+          level: 1
+        absorption:
+          type: ABSORPTION
+          duration-seconds: 120
+          level: 1
+      assist-soup:
+        healing: 0.0
+        speed:
+          type: SPEED
+          duration-seconds: 7
+          level: 1
+        regeneration:
+          type: REGENERATION
+          duration-seconds: 5
+          level: 2
+        absorption:
+          type: ABSORPTION
+          duration-seconds: 120
+          level: 1
+      sound: EAT
+    messages:
+      consume: '&aThe soup empowered your next hit.'
+  recon:
+    enabled: true
+    display-name: '&bRecon'
+    material: ARROW
+    data: 0
+    menu-slot: 37
+    lore:
+    - '&7Repeated arrow hits grant a bonus.'
+    coin-price: 6000
+    required-level: 50
+    required-prestige: 7
+    required-perk-slot: 3
+    mechanics:
+      hits-required: 4
+      xp-reward: 40
+      bonus-damage: 0.50
+      hit-reset-seconds: 30
+      sound: SHOOT_ARROW
+    messages:
+      triggered: '&bRecon rewarded your accurate shots.'
+  conglomerate:
+    enabled: true
+    display-name: '&6Conglomerate'
+    material: GOLD_BLOCK
+    data: 0
+    menu-slot: 38
+    lore:
+    - '&7Convert part of XP rewards to Gold.'
+    coin-price: 20000
+    required-level: 40
+    required-prestige: 8
+    required-perk-slot: 3
+    mechanics:
+      xp-to-coins-percent: 20.0
+      include-kills: true
+      include-assists: true
+      sound: ORB_PICKUP
+    messages:
+      converted: '&6Converted %xp% XP into Gold.'
+  kung_fu_knowledge:
+    enabled: true
+    display-name: '&eKung Fu Knowledge'
+    material: INK_SACK
+    data: 11
+    menu-slot: 39
+    lore:
+    - '&7Fight empty-handed with trained fists.'
+    coin-price: 10000
+    required-level: 120
+    required-prestige: 9
+    required-perk-slot: 4
+    mechanics:
+      require-empty-hand: true
+      fist-damage: 7.4
+      critical-fist-damage: 7.9
+      hits-for-speed: 4
+      speed:
+        type: SPEED
+        duration-seconds: 5
+        level: 2
+      target-reset-seconds: 15
+      sound: SUCCESSFUL_HIT
+    messages:
+      speed: '&eYour focused strikes granted Speed.'
+  thick:
+    enabled: true
+    display-name: '&cThick'
+    material: MAGMA_CREAM
+    data: 0
+    menu-slot: 40
+    lore:
+    - '&7Permanently increase maximum health while equipped.'
+    coin-price: 10000
+    required-level: 90
+    required-prestige: 11
+    required-perk-slot: 4
+    mechanics:
+      additional-health: 4.0
+      minimum-health-after-unequip: 1.0
+      sound: LEVEL_UP
+    messages:
+      active: '&cYour maximum health increased.'

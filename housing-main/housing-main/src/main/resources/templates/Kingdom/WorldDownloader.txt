@@ -1,0 +1,20 @@
+#These settings are shared across an entire server.  If multiworld is enabled, they act as the default values for the individual world properties; otherwise, they are used directly.
+#Wed Nov 29 02:13:55 CST 2023
+RandomSeed=
+Messages.ON_WORLD_LOAD=false
+Messages.SAVING=true
+LinkedWorlds=
+Messages.ON_GUI_CLOSED_WARNING=true
+Messages.LOAD_TILE_ENTITY=false
+LastSaved=1701245634984
+Entity.ArmorStand.Enabled=false
+Messages.enableAll=true
+ServerName=Hypixel
+Messages.UPDATE_DEBUG=false
+Messages.REMOVE_ENTITY=false
+GameType=creative
+Messages.INFO=true
+Entity.FallingSand.Enabled=false
+Entity.Hologram.Enabled=false
+Messages.ON_CHUNK_NO_LONGER_NEEDED=false
+Messages.PLUGIN_CHANNEL_MESSAGE=false

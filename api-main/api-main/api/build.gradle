@@ -1,0 +1,47 @@
+group = "club.abelix"
+
+dependencies {
+    implementation libs.abelix.tournament.proto
+    api libs.abelix.tournament.proto
+
+    compileOnly libs.spigot.v188
+    compileOnly libs.protocollib
+    compileOnly libs.worldedit
+    compileOnly libs.fawe
+    compileOnly libs.viaversion
+    compileOnly libs.gadgetsmenu
+    compileOnly libs.swm
+    implementation libs.bytebuddy
+    implementation libs.fasterxml
+    implementation libs.grpc.netty
+
+    implementation(libs.gamehistory.proto)
+
+    compileOnly libs.labymod.core
+    compileOnly libs.labymod.api
+    compileOnly libs.labymod.bukkit
+
+    compileOnly libs.lunar.api
+    compileOnly libs.lunar.adventure
+
+    compileOnly libs.trove
+    compileOnly libs.jafama
+    compileOnlyApi libs.adventure.platform.bukkit
+
+    implementation project(":nms:nms-1.8")
+    implementation project(":nms:nms-1.12")
+    implementation project(":nms:nms-1.16")
+    implementation project(":nms:nms-api")
+
+    api project(":nms:nms-1.8")
+    api project(":nms:nms-1.12")
+    api project(":nms:nms-1.16")
+    api project(":nms:nms-api")
+}
+
+shadowJar {
+    archiveFileName.set('Api.jar')
+    destinationDirectory.set(file("$rootDir/artifacts"))
+}
+
+enablePublishing(project)

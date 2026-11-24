@@ -1,0 +1,34 @@
+dependencies {
+    api(project(":network"))
+
+    api(libs.hikaricp)
+    api(libs.asm)
+    api(libs.commons.codec)
+
+    api(libs.grpc.netty) {
+        exclude group: "io.grpc", module: "grpc-netty-uds"
+    }
+
+    api(libs.grpc.stub)
+    api(libs.grpc.protobuf)
+    api(libs.abelix.rank.proto)
+    api(libs.abelix.trust.proto)
+    api(libs.abelix.chatfilter.proto)
+    api(libs.logback)
+
+    api(libs.simpleclient)
+    api(libs.simpleclient.http)
+
+    implementation(libs.simpleclient)
+    implementation(libs.simpleclient.http)
+    implementation(libs.s3sdk)
+    implementation(libs.logback)
+
+    implementation(libs.bouncycastle)
+
+    compileOnly(libs.javax.annotation)
+    compileOnly(libs.abelix.di.core)
+    compileOnly(libs.abelix.di.api)
+}
+
+enablePublishing(project)

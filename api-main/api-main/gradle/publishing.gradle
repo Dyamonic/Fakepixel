@@ -1,0 +1,29 @@
+ext.enablePublishing = { Project p ->
+    p.pluginManager.apply('maven-publish')
+
+    p.afterEvaluate {
+        p.publishing {
+            publications {
+                mavenJava(MavenPublication) {
+                    from p.components.java
+                }
+            }
+            repositories {
+                maven {
+                    url "https://git.fakepixel.online/api/v4/projects/47/packages/maven"
+                    credentials(HttpHeaderCredentials) {
+                        name = "${System.getenv('CI_JOB_TOKEN') ? 'Job-Token' : 'Private-Token'}"
+                        value = System.getenv('CI_JOB_TOKEN') ?: System.getenv('ABELIX_ACCESS_TOKEN')
+                    }
+                    authentication { header(HttpHeaderAuthentication) }
+                }
+            }
+        }
+
+        if (p.tasks.findByName("publish")) {
+            p.tasks.named("build") {
+                dependsOn p.tasks.named("publish")
+            }
+        }
+    }
+}

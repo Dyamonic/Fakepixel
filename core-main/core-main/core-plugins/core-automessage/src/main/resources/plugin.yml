@@ -1,0 +1,4 @@
+main: club.abelix.core.automessage.AutoMessageCorePlugin
+name: AutoMessages
+author: Kambet
+version: 1.0

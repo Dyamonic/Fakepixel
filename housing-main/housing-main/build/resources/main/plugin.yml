@@ -1,0 +1,89 @@
+name: HousingCore
+version: 1.1
+main: net.fakepixel.housing.HousingPlugin
+author: outerspacepugyt
+softdepend: [stub-abelix-api, SlimeWorldManager, SlimeWorldPlugin]
+commands:
+  housing:
+    description: Main housing command.
+    aliases: [house, h]
+  npc:
+    description: Manage housing NPCs.
+  borderbypass:
+    description: Toggle housing border bypass.
+  gmc:
+    description: Switch to creative mode in a house you can build in.
+  gms:
+    description: Switch to survival mode in a house you can build in.
+  gma:
+    description: Switch to adventure mode in a house you can build in.
+  tp:
+    description: Teleport two players inside your house.
+  tphere:
+    description: Teleport a player to you inside your house.
+  wand:
+    description: Get the housing selection wand.
+  set:
+    description: Fill your housing selection.
+  walls:
+    description: Fill the walls of your housing selection.
+  undo:
+    description: Undo your last housing selection edit.
+  copy:
+    description: Copy your housing selection.
+  pos1:
+    description: Set housing selection position 1.
+  pos2:
+    description: Set housing selection position 2.
+  housingtag:
+    description: Set your house browse tag.
+  groupname:
+    description: Rename a housing group display name.
+  grouptag:
+    description: Set a housing group tag.
+  fly:
+    description: Toggle flight in a house.
+  time:
+    description: Change time in the current player house.
+  visitingrule:
+    description: Set who can visit your house.
+    aliases: [visitingrules]
+  parkour:
+    description: Use house parkour commands.
+  adminbuild:
+    description: Toggle Housing admin build mode.
+    aliases: [buildmode]
+permissions:
+  housing.use:
+    default: true
+  housing.admin:
+    default: op
+  housing.mode.toggle:
+    default: op
+  housing.admin.buildmode:
+    default: op
+
+  housing.staff:
+    default: op
+  housing.staff.admin:
+    default: op
+  housing.staff.build:
+    default: false
+  housing.staff.reset:
+    default: op
+  housing.staff.delete:
+    default: op
+  housing.staff.fly:
+    default: op
+  housing.staff.gamemode:
+    default: false
+  housing.staff.spy:
+    default: op
+  housing.staff.dry:
+    default: op
+  housing.staff.bypassborder:
+    default: op
+  housing.staff.award:
+    default: op
+  housing.bypass.housepunish:
+    default: op

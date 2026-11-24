@@ -1,0 +1,216 @@
+achievements:
+  enabled: true
+  title: '&8The Pit Achievements'
+  size: 54
+  save-interval-seconds: 10
+  notification:
+    title: '&e&lACHIEVEMENT UNLOCKED!'
+    subtitle: '&a%achievement_name% &7+%points% Points'
+    chat: '&e&lACHIEVEMENT! &7You completed &a%achievement_name% &7and earned &e%points% Achievement Points&7!'
+    sound: LEVEL_UP
+    delay-ticks: 70
+    spacing-ticks: 55
+  broadcasts:
+    enabled: true
+    achievements:
+    - the-xx
+    - big-time
+    maximum-tiered: true
+    format: '&e&lACHIEVEMENT! &r%abelix_prefix%%player% &7completed &a%achievement_name%&7!'
+  migration:
+    evaluate-existing-lifetime-stats: true
+    send-notifications: false
+  seasonal:
+    timezone: America/Los_Angeles
+    easter:
+      enabled: true
+      start: '03-15'
+      end: '04-30'
+    summer:
+      enabled: true
+      start: '06-01'
+      end: '08-31'
+  menu:
+    filler:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    close-slot: 49
+    categories:
+      tiered: { slot: 10, material: NETHER_STAR, name: '&eTiered Achievements' }
+      combat: { slot: 12, material: DIAMOND_SWORD, name: '&cCombat' }
+      progression: { slot: 14, material: EXP_BOTTLE, name: '&bProgression' }
+      economy: { slot: 16, material: GOLD_INGOT, name: '&6Economy' }
+      events: { slot: 28, material: FIREWORK, name: '&dEvents' }
+      mystic: { slot: 30, material: ENCHANTMENT_TABLE, name: '&5Mystic' }
+      fishing: { slot: 32, material: FISHING_ROD, name: '&3Fishing' }
+      miscellaneous: { slot: 34, material: PAPER, name: '&fMiscellaneous' }
+      seasonal: { slot: 40, material: DOUBLE_PLANT, name: '&aSeasonal' }
+  systems:
+    CORE: true
+    COMBAT: true
+    LEVELS: true
+    PRESTIGE: true
+    PIT_GOLD: true
+    RENOWN: true
+    BOUNTIES: true
+    STREAKS: true
+    CONTRACTS: true
+    PASSIVES: true
+    PERKS: true
+    SHOP: true
+    BLOCKS: true
+    ENDER_CHEST: true
+    FISHING: true
+    FOOD_COLLECTION: false
+    MYSTIC_WELL: false
+    MYSTIC_ENCHANTS: false
+    TRADING: false
+    EVENTS: false
+    CARE_PACKAGE: true
+    AUCTIONS: false
+    DRAGON_EGG: false
+    BEAST: false
+    QUICK_MATHS: false
+    GIANT_CAKE: false
+    NIGHT_QUEST: false
+    FANCY_HAT: false
+    KING_OF_THE_LADDER: false
+    KING_OF_THE_HILL: false
+    SQUADS: false
+    SPIRE: false
+    RAFFLE: false
+    PIZZA: false
+    RAGE_PIT: false
+    ROBBERY: false
+    FACTIONS: false
+    KING_QUEST: false
+  tiered:
+    events:
+      enabled: true
+      name: Events
+      category: TIERED
+      description: See major-event starts.
+      required-system: EVENTS
+      statistic: events_seen
+      thresholds: [3, 10, 25, 100, 500]
+      points: [5, 10, 15, 20, 25]
+    gold:
+      enabled: true
+      name: Gold
+      category: TIERED
+      description: Earn Pit Gold from legitimate gameplay.
+      required-system: PIT_GOLD
+      statistic: gold_earned
+      thresholds: [10000, 100000, 1000000, 10000000, 30000000]
+      points: [5, 10, 15, 20, 25]
+    renown:
+      enabled: true
+      name: Renown
+      category: TIERED
+      description: Earn Renown legitimately.
+      required-system: RENOWN
+      statistic: lifetime_renown_earned
+      thresholds: [10, 50, 200, 500, 2000]
+      points: [5, 10, 15, 20, 25]
+    contracts:
+      enabled: true
+      name: Contracts
+      category: TIERED
+      description: Complete contracts.
+      required-system: CONTRACTS
+      statistic: contracts_completed
+      thresholds: [5, 25, 100, 250, 500]
+      points: [5, 10, 15, 20, 25]
+    prestige:
+      enabled: true
+      name: Prestige
+      category: TIERED
+      description: Reach new Prestige milestones.
+      required-system: PRESTIGE
+      statistic: prestige
+      thresholds: [1, 2, 5, 10, 15]
+      points: [5, 10, 15, 20, 25]
+    kills:
+      enabled: true
+      name: Kills
+      category: TIERED
+      description: Kill enemy players.
+      required-system: COMBAT
+      statistic: kills
+      thresholds: [200, 1000, 5000, 25000, 100000]
+      points: [5, 10, 15, 20, 25]
+    mysticism:
+      enabled: true
+      name: Mysticism
+      category: TIERED
+      description: Use the Mystic Well.
+      required-system: MYSTIC_WELL
+      statistic: mystic_well_uses
+      thresholds: [10, 50, 100, 250, 1000]
+      points: [5, 10, 15, 20, 25]
+  one-time:
+    skywars: { enabled: true, name: SkyWars, category: MISCELLANEOUS, points: 5, requirement: 1, required-system: CORE, description: Fall into the void during normal gameplay. }
+    bounty-claimed: { enabled: true, name: Bounty Claimed, category: COMBAT, points: 5, requirement: 1, required-system: BOUNTIES, description: Kill a player with an active bounty. }
+    the-streak: { enabled: true, name: The Streak, category: COMBAT, points: 5, requirement: 10, required-system: STREAKS, description: Reach a 10-kill streak. }
+    pentakill: { enabled: true, name: Pentakill, category: COMBAT, points: 5, requirement: 5, required-system: COMBAT, description: Earn five kills no more than five seconds apart. }
+    fast-contract: { enabled: true, name: Fast Contract, category: PROGRESSION, points: 5, requirement: 1, required-system: CONTRACTS, description: Complete a contract in under 60 seconds. }
+    powerful: { enabled: true, name: Powerful, category: COMBAT, points: 5, requirement: 1, required-system: PERKS, description: Kill while Strength-Chaining is at maximum strength. }
+    triple-digits: { enabled: true, name: Triple Digits, category: PROGRESSION, points: 5, requirement: 100, required-system: LEVELS, description: Reach level 100. }
+    businessman: { enabled: true, name: Businessman, category: ECONOMY, points: 5, requirement: 1, required-system: TRADING, description: Complete a secure player trade. }
+    loot-with-care: { enabled: true, name: Loot with Care, category: EVENTS, points: 5, requirement: 1, required-system: CARE_PACKAGE, description: Collect an item from a Care Package. }
+    auctioneer: { enabled: true, name: Auctioneer, category: EVENTS, points: 5, requirement: 1, required-system: AUCTIONS, description: Make a valid Auction bid. }
+    full-storage: { enabled: true, name: Full Storage, category: MISCELLANEOUS, points: 5, requirement: 1, required-system: ENDER_CHEST, description: Fill every available Ender Chest slot. }
+    tryhard-down: { enabled: true, name: Tryhard Down, category: COMBAT, points: 5, requirement: 1, required-system: BOUNTIES, description: 'Kill a player with at least a 5,000 Gold bounty.' }
+    locked-in: { enabled: true, name: Locked In, category: MISCELLANEOUS, points: 5, requirement: 50, required-system: BLOCKS, description: Place 50 obsidian without dying or returning to spawn. }
+    maximizado: { enabled: true, name: Maximizado, category: PROGRESSION, points: 5, requirement: 5, required-system: PASSIVES, description: Purchase El Gato Tier V. }
+    purple-egg: { enabled: true, name: Purple Egg, category: EVENTS, points: 5, requirement: 25, required-system: DRAGON_EGG, description: Click the Dragon Egg 25 times in one event. }
+    slaying-beasts: { enabled: true, name: Slaying Beasts, category: EVENTS, points: 5, requirement: 2, required-system: BEAST, description: Kill two Beast players in one event. }
+    genius-tier: { enabled: true, name: Genius Tier, category: EVENTS, points: 5, requirement: 1, required-system: QUICK_MATHS, description: Answer Quick Maths in under 2.5 seconds. }
+    sugar-rush: { enabled: true, name: Sugar Rush, category: EVENTS, points: 5, requirement: 5000, required-system: GIANT_CAKE, description: 'Earn 5,000 Gold during one Giant Cake event.' }
+    poet: { enabled: true, name: Poet, category: PROGRESSION, points: 5, requirement: 1, required-system: NIGHT_QUEST, description: Complete a Night Quest. }
+    paint-job: { enabled: true, name: Paint Job, category: MISCELLANEOUS, points: 5, requirement: 1, required-system: FANCY_HAT, description: Recolor a Fancy Hat. }
+    im-mining-here: { enabled: true, name: "I'm Mining Here", category: MISCELLANEOUS, points: 5, requirement: 100, required-system: BLOCKS, description: Mine 100 obsidian without the Golden Pickaxe. }
+    scam-artist: { enabled: true, name: Scam Artist, category: PROGRESSION, points: 5, requirement: 1, required-system: RENOWN, description: Purchase Scam Artist Tier I. }
+    the-punch: { enabled: true, name: The Punch, category: MYSTIC, points: 5, requirement: 1, required-system: MYSTIC_ENCHANTS, description: Hit a player with The Punch on a Mystic Sword. }
+    fully-upgraded: { enabled: true, name: Fully Upgraded, category: PROGRESSION, points: 5, requirement: 1, required-system: PASSIVES, description: Purchase Tier V of every passive. }
+    self-checked: { enabled: true, name: Self-Checked, category: MYSTIC, points: 5, requirement: 1, required-system: MYSTIC_ENCHANTS, description: 'Activate Self-Checkout III with a 5,000 Gold bounty.' }
+    fast-pass: { enabled: true, name: Fast Pass, category: PROGRESSION, points: 5, requirement: 1, required-system: RENOWN, description: Permanently unlock Fast Pass. }
+    big-belly: { enabled: true, name: Big Belly, category: MISCELLANEOUS, points: 5, requirement: 5, required-system: FOOD_COLLECTION, description: Consume all five required foods within five minutes. }
+    up-on-top: { enabled: true, name: Up on Top, category: EVENTS, points: 10, requirement: 20, required-system: KING_OF_THE_LADDER, description: Spend 20 seconds in one reward area. }
+    god-walking-amongst-mortals: { enabled: true, name: God Walking Amongst Mortals, category: COMBAT, points: 10, requirement: 50, required-system: STREAKS, description: Reach a 50-kill streak. }
+    golden-treat: { enabled: true, name: Golden Treat, category: MISCELLANEOUS, points: 10, requirement: 1000, required-system: PERKS, statistic: golden_heads_eaten, description: 'Consume 1,000 Golden Heads.' }
+    golden-age: { enabled: true, name: Golden Age, category: ECONOMY, points: 10, requirement: 1000, required-system: PERKS, description: 'Earn 1,000 bonus Gold from Trickle-down.' }
+    did-i-see-some-blue: { enabled: true, name: Did I See Some Blue, category: MYSTIC, points: 10, requirement: 1, required-system: MYSTIC_ENCHANTS, description: Receive a Mystic item from a kill. }
+    podium-position: { enabled: true, name: Podium Position, category: EVENTS, points: 10, requirement: 1, required-system: EVENTS, description: Finish top three in an eligible major event. }
+    i-bought-a-thing: { enabled: true, name: I Bought a Thing, category: EVENTS, points: 10, requirement: 1, required-system: AUCTIONS, description: Win an Auction event. }
+    team-effort: { enabled: true, name: Team Effort, category: EVENTS, points: 10, requirement: 8000, required-system: SQUADS, description: 'Earn 8,000 points in one Squads event.' }
+    glass-ceiling: { enabled: true, name: Glass Ceiling, category: EVENTS, points: 10, requirement: 9, required-system: SPIRE, description: Reach Spire floor nine. }
+    lucky-diamond: { enabled: true, name: Lucky Diamond, category: COMBAT, points: 10, requirement: 50, required-system: PERKS, statistic: lucky_diamond_armor, description: Receive 50 armor pieces from Lucky Diamond. }
+    nosferatu: { enabled: true, name: Nosferatu, category: COMBAT, points: 10, requirement: 15000, required-system: PERKS, statistic: vampire_health_restored, description: 'Restore 15,000 health through Vampire.' }
+    pure-skill: { enabled: true, name: Pure Skill, category: EVENTS, points: 10, requirement: 1, required-system: RAFFLE, description: Win a Raffle jackpot with at least 50 players. }
+    ingots-collector: { enabled: true, name: Ingots Collector, category: ECONOMY, points: 10, requirement: 2000, required-system: PIT_GOLD, statistic: ground_ingots_collected, description: 'Collect 2,000 world Gold ingots.' }
+    baker: { enabled: true, name: Baker, category: MISCELLANEOUS, points: 10, requirement: 1, required-system: EVENTS, description: Bake a Mini Cake. }
+    raging-hunger: { enabled: true, name: Raging Hunger, category: MISCELLANEOUS, points: 10, requirement: 100, required-system: EVENTS, statistic: rage_potatoes_eaten, description: Consume 100 Rage Potatoes. }
+    infinite-quiver: { enabled: true, name: Infinite Quiver, category: COMBAT, points: 10, requirement: 1500, required-system: PERKS, statistic: spammer_arrows_received, description: 'Receive 1,500 arrows from Spammer.' }
+    one-small-step-for-pants: { enabled: true, name: One Small Step for Pants, category: MYSTIC, points: 10, requirement: 1, required-system: MYSTIC_WELL, description: Enchant a Mystic item to Tier III. }
+    rare: { enabled: true, name: Rare, category: MYSTIC, points: 10, requirement: 1, required-system: MYSTIC_WELL, description: Obtain a RARE Mystic enchant. }
+    guaranteed-delivery: { enabled: true, name: Guaranteed Delivery, category: EVENTS, points: 10, requirement: 35, required-system: PIZZA, description: Deliver 35 pizzas in one event. }
+    obelix: { enabled: true, name: Obelix, category: MISCELLANEOUS, points: 10, requirement: 64, required-system: BLOCKS, description: Hold at least 64 cobblestone. }
+    monster-within: { enabled: true, name: Monster Within, category: EVENTS, points: 10, requirement: 25, required-system: BEAST, description: Kill 25 players while Beast in one event. }
+    furious-clicking: { enabled: true, name: Furious Clicking, category: EVENTS, points: 10, requirement: 1, required-system: RAGE_PIT, description: Place top three in a 50-player Rage Pit. }
+    gold-magnate: { enabled: true, name: Gold Magnate, category: ECONOMY, points: 10, requirement: 250000, required-system: PIT_GOLD, description: 'Hold at least 250,000 local Pit Gold.' }
+    not-much-of-a-hill: { enabled: true, name: Not Much of a Hill, category: EVENTS, points: 10, requirement: 200, required-system: KING_OF_THE_HILL, description: Spend 200 seconds in one Hill zone with 50 players. }
+    thief: { enabled: true, name: Thief, category: EVENTS, points: 10, requirement: 10000, required-system: ROBBERY, description: 'Finish Robbery with a 10,000-Gold stash.' }
+    in-the-club: { enabled: true, name: In the Club, category: FISHING, points: 10, requirement: 1, required-system: FISHING, description: Catch Fresh Aqua Pants through Fishing Club V. }
+    rambo: { enabled: true, name: Rambo, category: COMBAT, points: 10, requirement: 10, required-system: PERKS, description: Reach a 10-kill streak with Rambo equipped. }
+    theyre-after-me-now: { enabled: true, name: "They're After Me Now", category: COMBAT, points: 15, requirement: 5000, required-system: BOUNTIES, description: 'Reach a 5,000-Gold bounty.' }
+    king-of-the-xp: { enabled: true, name: King of the XP, category: EVENTS, points: 15, requirement: 10000, required-system: KING_OF_THE_HILL, description: 'Earn 10,000 kill and assist XP in one event.' }
+    guardian-angel: { enabled: true, name: Guardian Angel, category: EVENTS, points: 15, requirement: 1, required-system: FACTIONS, description: Claim the Angel faction Tier VII reward. }
+    demon-incarnate: { enabled: true, name: Demon Incarnate, category: EVENTS, points: 15, requirement: 1, required-system: FACTIONS, description: Claim the Demon faction Tier VII reward. }
+    all-hail-the-king: { enabled: true, name: All Hail the King, category: PROGRESSION, points: 20, requirement: 1, required-system: KING_QUEST, statistic: kings_quest_completed, description: Complete the King's Quest. }
+    bounty-hunter: { enabled: true, name: Bounty Hunter, category: COMBAT, points: 20, requirement: 30, required-system: BOUNTIES, description: Claim 30 bounties worth at least 500 Gold with Bounty Hunter. }
+    the-xx: { enabled: true, name: The XX, category: PROGRESSION, points: 25, requirement: 20, required-system: PRESTIGE, description: Reach Prestige XX. }
+    big-time: { enabled: true, name: Big Time, category: PROGRESSION, points: 25, requirement: 1, required-system: RENOWN, description: At Prestige XXV purchase every enabled Renown unlock. }
+    does-it-count: { enabled: true, name: Does It Count, category: SEASONAL, points: 5, requirement: 1, required-system: DRAGON_EGG, season: easter, description: Click the Dragon Egg during Easter. }
+    this-isnt-the-lobby: { enabled: true, name: "This Isn't the Lobby", category: SEASONAL, points: 5, requirement: 1, required-system: FISHING, season: summer, description: Catch a special fish during Summer. }

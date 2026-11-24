@@ -1,0 +1,146 @@
+name: smp
+description: Fakepixel Survival SMP core
+prefix: SMP
+version: 1.9
+main: club.abelix.games.fakevival.game
+api-version: '1.21'
+load: POSTWORLD
+softdepend: [stub-abelix-api, Citizens]
+authors: [1zg]
+website: world.fakepixel.me
+commands:
+  fakevival:
+    aliases: [fv]
+    description: Main Fakevival command
+  fly:
+    description: Toggle fly for yourself or another player
+  gmc:
+    description: Set creative mode
+  gms:
+    description: Set survival mode
+  gmsp:
+    description: Set spectator mode
+  gma:
+    description: Set adventure mode
+  invsee:
+    description: Open a player's inventory
+  setspawn:
+    description: Set server spawn
+  spawn:
+    description: Teleport to spawn
+  skills:
+    description: View your skills
+  jobs:
+    description: View or select jobs
+  npc:
+    aliases: [fakevivalnpc]
+    description: Create and manage Fakevival NPCs
+  spawnprotection:
+    aliases: [sprot]
+    description: Set Fakevival spawn protection positions
+  rtp:
+    description: Randomly teleport to a safe location
+  sethome:
+    description: Set a home
+  home:
+    description: Teleport to one of your homes
+  delhome:
+    aliases: [deletehome, removehome]
+    description: Delete a home
+  renamehome:
+    description: Rename a home
+  homes:
+    description: List your homes
+  tpa:
+    description: Request to teleport to a player
+  tpaccept:
+    description: Accept a teleport request
+  tpacancel:
+    description: Cancel your outgoing teleport request
+  tpahere:
+    description: Request a player teleport to you
+  tp:
+    description: Admin teleport command
+  tphere:
+    description: Teleport a player to you
+  tpall:
+    description: Teleport all players
+  vanish:
+    aliases: [v]
+    description: Toggle staff vanish
+  region:
+    aliases: [regions]
+    description: Create RPG discovery regions
+  dungeon:
+    description: Join or manage dungeons
+  createdungeon:
+    description: Create a dungeon
+  setdungeonportal:
+    description: Set a dungeon portal location
+  setmobspawnlocation:
+    description: Set dungeon mob spawn locations
+  setbosslocation:
+    description: Set dungeon boss location
+  setdungeonarea:
+    description: Set dungeon area pos1 and pos2
+  setdungeonspawn:
+    description: Set the dungeon arena spawn
+
+  coins:
+    aliases: [coin, balance, bal]
+    description: View or manage Fakevival coins
+  wipestats:
+    description: Wipe a player's Fakevival stats without touching Abelix data
+  battlepass:
+    aliases: [bp]
+    description: Open the BattlePass menu
+  auctionhouse:
+    aliases: [ah]
+    description: Open the auction house menu
+permissions:
+  fakevival.admin.reload:
+    default: op
+  fakevival.command.fly:
+    default: op
+  fakevival.command.gamemode:
+    default: op
+  fakevival.command.invsee:
+    default: op
+  fakevival.command.setspawn:
+    default: op
+  fakevival.command.spawn:
+    default: true
+  fakevival.command.rtp:
+    default: true
+  fakevival.command.rtp.cooldown.bypass:
+    default: op
+  fakevival.command.home:
+    default: true
+  fakevival.command.home.unlimited:
+    default: op
+  fakevival.command.tpa:
+    default: true
+  fakevival.admin.teleport:
+    default: op
+  fakevival.command.vanish:
+    default: op
+  fakevival.command.vanish.others:
+    default: op
+  fakevival.command.vanish.see:
+    default: op
+  fakevival.admin.npc:
+    default: op
+  fakevival.admin.spawnprotection:
+    default: op
+  fakevival.admin.spawnprotection.bypass:
+    default: op
+  fakevival.admin.region:
+    default: op
+  fakevival.admin.dungeon:
+    default: op
+  fakevival.admin.dungeon.bypass:
+    default: op
+  fakevival.admin.coins:
+    default: op
+  fakevival.admin.wipestats:
+    default: op

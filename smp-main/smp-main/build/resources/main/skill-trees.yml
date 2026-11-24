@@ -1,0 +1,542 @@
+skills:
+  mining-tree:
+    speed:
+      max-level: 5
+    fortune:
+      max-level: 5
+    double_drops:
+      max-level: 5
+  trees:
+    mining:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    woodcutting:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    excavation:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    farming:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    combat:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    archery:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    fishing:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    taming:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    acrobatics:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    alchemy:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    repair:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    smelting:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30
+    enchanting:
+      xp_boost:
+        name: '&aXP Boost'
+        description: '&7Earn more XP from this skill.'
+        max-level: 50
+      lucky:
+        name: '&aLucky'
+        description: '&7Small chance for extra rewards.'
+        max-level: 50
+      double_drops:
+        name: '&bDouble Drops'
+        description: '&7Chance to double drops or rewards.'
+        max-level: 50
+      speed:
+        name: '&eSpeed'
+        description: '&7Makes this skill feel faster over time.'
+        max-level: 50
+      mastery:
+        name: '&dMastery'
+        description: '&7Late-game power for this skill.'
+        max-level: 30
+      treasure:
+        name: '&6Treasure Finder'
+        description: '&7Chance to find bonus treasure.'
+        max-level: 25
+      cooldown:
+        name: '&bCooldown Reduction'
+        description: '&7Reduces future perk cooldowns.'
+        max-level: 25
+      money:
+        name: '&eCoin Bonus'
+        description: '&7Bonus economy rewards later.'
+        max-level: 50
+      durability:
+        name: '&fDurability Saver'
+        description: '&7Chance to save tool durability.'
+        max-level: 25
+      power:
+        name: '&cPower'
+        description: '&7Adds stronger bonuses for this skill.'
+        max-level: 30

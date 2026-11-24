@@ -1,0 +1,91 @@
+import java.time.ZonedDateTime
+
+plugins {
+    id("application")
+    id "io.sentry.jvm.gradle" version "5.12.2"
+}
+
+sentry {
+    includeSourceContext = false
+    includeDependenciesReport = false
+
+    org = "abelix"
+    projectName = "core"
+    authToken = System.getenv("SENTRY_AUTH_TOKEN")
+
+    autoInstallation {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation(project(":network"))
+    implementation(project(":commons"))
+
+    api(project(":commons"))
+    api(libs.eventbus)
+    implementation(libs.caffeine)
+
+    implementation(libs.eventbus)
+    implementation(libs.terminalconsoleappender)
+    implementation(libs.jline)
+    implementation(libs.maria)
+    implementation(libs.abelix.di.api)
+    implementation(libs.abelix.di.core)
+    implementation(libs.fabric8)
+}
+
+def buildInfoDir = layout.buildDirectory.dir("generated/resources/build")
+
+tasks.register("generateBuildInfo") {
+    outputs.dir(buildInfoDir)
+
+    doLast {
+        def file = buildInfoDir.get().file("build-info.properties").asFile
+        file.parentFile.mkdirs()
+
+        def now = ZonedDateTime.now()
+
+        file.text = """\
+        version=${project.version}
+        buildTime=${now}
+        author=${System.getenv("GITLAB_USER_NAME")}
+        branch=${System.getenv("CI_COMMIT_BRANCH")}
+        url=${System.getenv("CI_PROJECT_URL")}
+        """
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir(buildInfoDir)
+        }
+    }
+}
+
+tasks.named("processResources") {
+    dependsOn(tasks.named("generateBuildInfo"))
+}
+
+shadowJar {
+    archiveFileName.set('CoreApplication.jar')
+    destinationDirectory.set(file("$rootDir/artifacts"))
+}
+
+application {
+    mainClass = 'club.abelix.core.app.Bootstrap'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Implementation-Title': project.name,
+            'Implementation-Version': project.version,
+            'Implementation-Vendor': 'Abelix Team',
+            'Main-Class': application.mainClass
+        )
+    }
+}
+
+enablePublishing(project)

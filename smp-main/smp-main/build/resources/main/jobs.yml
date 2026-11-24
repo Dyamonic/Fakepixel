@@ -1,0 +1,36 @@
+jobs-enabled: true
+job-leveling:
+  xp-per-level: 100
+jobs:
+  miner:
+    actions:
+    - break
+    xp: 5
+  lumberjack:
+    actions:
+    - break
+    xp: 5
+  farmer:
+    actions:
+    - break
+    xp: 5
+  hunter:
+    actions:
+    - kill
+    xp: 8
+  fisher:
+    actions:
+    - fish
+    xp: 10
+  builder:
+    actions:
+    - place
+    xp: 2
+  enchanter:
+    actions:
+    - enchant
+    xp: 8
+  brewer:
+    actions:
+    - brew
+    xp: 8

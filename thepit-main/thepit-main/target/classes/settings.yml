@@ -1,0 +1,2416 @@
+settings:
+  prevent-fall-damage: true
+  prevent-explosion-damage: true
+  remove-fireballs: true
+  bedwars-fireball-speed: 1.6
+  bedwars-fireball-yield: 2.0
+  explosion-launch-radius: 5.0
+  explosion-launch-power: 1.15
+  launcher-power: 2.2
+  grappling-hook-power: 1.45
+  grappling-hook-y-boost: 0.35
+  grappling-hook-cooldown-ms: 3500
+  potato-launcher-cooldown-ms: 2500
+  potato-launcher-speed: 2.4
+  potato-launcher-damage: 5.0
+  melon-cannon-cooldown-ms: 5000
+  melon-cannon-speed: 1.5
+  melon-cannon-launch-power: 1.25
+  pig-launcher-cooldown-ms: 4000
+  pig-launcher-speed: 2.0
+  pig-launcher-damage: 3.0
+  pig-launcher-launch-power: 0.75
+  hot-potato-damage: 10.0
+  hot-potato-launch-power: 1.4
+  wipe-stats-on-ban: true
+  spawn-fall-protection-seconds: 8
+  placed-blocks-remove: true
+  placed-blocks-remove-seconds: 5
+  only-build-in-pvp-arena: true
+  coins:
+    kill-min: 2
+    kill-max: 80
+  void-y: 42
+  spawn-world: Abyss
+  use-slimeworldmanager: true
+  swm-loader: file
+combat:
+  knockback:
+    enabled: true
+    active-profile: fakepixel
+    auto-classification: true
+    diagnostics: false
+    test-duration-seconds: 60
+    network:
+      minimum-ping: 0
+      maximum-ping: 350
+      maximum-jitter: 80
+      sample-count: 20
+      consecutive-timeouts: 3
+      recovery-samples: 5
+      history-window: 0
+      immediate-fallback: true
+    profiles:
+      default:
+        horizontal: 0.4
+        vertical: 0.4
+        vertical-max: 0.4
+        vertical-min: -1.0
+        extra-horizontal: 0.5
+        extra-vertical: 0.1
+        friction-horizontal: 0.5
+        friction-vertical: 0.5
+        inherit-existing-motion: true
+        stop-sprint: true
+      fakepixel:
+        horizontal: 0.4
+        vertical: 0.4
+        vertical-max: 0.4
+        vertical-min: -1.0
+        extra-horizontal: 0.5
+        extra-vertical: 0.1
+        friction-horizontal: 0.5
+        friction-vertical: 0.5
+        inherit-existing-motion: true
+        stop-sprint: true
+      normal:
+        horizontal: 0.4
+        vertical: 0.4
+        vertical-max: 0.4
+        vertical-min: -1.0
+        extra-horizontal: 0.5
+        extra-vertical: 0.1
+        friction-horizontal: 0.5
+        friction-vertical: 0.5
+        inherit-existing-motion: true
+        stop-sprint: true
+      high_latency:
+        horizontal: 0.4
+        vertical: 0.4
+        vertical-max: 0.4
+        vertical-min: -1.0
+        extra-horizontal: 0.5
+        extra-vertical: 0.1
+        friction-horizontal: 0.5
+        friction-vertical: 0.5
+        inherit-existing-motion: true
+        stop-sprint: true
+      unstable:
+        horizontal: 0.4
+        vertical: 0.4
+        vertical-max: 0.4
+        vertical-min: -1.0
+        extra-horizontal: 0.5
+        extra-vertical: 0.1
+        friction-horizontal: 0.5
+        friction-vertical: 0.5
+        inherit-existing-motion: true
+        stop-sprint: true
+      extreme:
+        horizontal: 0.4
+        vertical: 0.4
+        vertical-max: 0.4
+        vertical-min: -1.0
+        extra-horizontal: 0.5
+        extra-vertical: 0.1
+        friction-horizontal: 0.5
+        friction-vertical: 0.5
+        inherit-existing-motion: true
+        stop-sprint: true
+      auto:
+        horizontal: 0.4
+        vertical: 0.4
+        vertical-max: 0.4
+        vertical-min: -1.0
+        extra-horizontal: 0.5
+        extra-vertical: 0.1
+        friction-horizontal: 0.5
+        friction-vertical: 0.5
+        inherit-existing-motion: true
+        stop-sprint: true
+action-bar:
+  target-health:
+    enabled: true
+    display-ticks: 100
+    killed-display-ticks: 40
+    format: '%abelix_prefix%%player% %health_hearts%'
+    killed-format: '%abelix_prefix%%player% &aKilled!'
+    normal-full-heart: '&c❤'
+    permanent-bonus-heart: '&6❤'
+    absorption-heart: '&e❤'
+    empty-heart: '&8❤'
+    half-heart: ♥
+    base-hearts: 10
+    maximum-rendered-hearts: 30
+care-package:
+  enabled: true
+  required-clicks: 200
+  click-cooldown-ticks: 2
+  duration-seconds: 180
+  schedule:
+    enabled: true
+    minimum-delay-seconds: 900
+    maximum-delay-seconds: 1500
+    minimum-online-players: 1
+  falling:
+    drop-height: 25
+    initial-velocity: -0.25
+    maximum-seconds: 15
+  hologram:
+    height: 2.25
+    locked:
+      - '&e&lCARE PACKAGE'
+      - '&f%clicks%&7/&f%required_clicks% clicks'
+      - '&eClick to unlock!'
+    unlocked:
+      - '&a&lCARE PACKAGE'
+      - '&eRight-click to open!'
+  announcements:
+    start:
+      - '&e&lMINOR EVENT! &fCare Package'
+      - '&7A Care Package is dropping in the &e%quadrant% &7quadrant!'
+    landed:
+      - '&eThe Care Package has landed!'
+    unlocked:
+      - '&a&lCARE PACKAGE UNLOCKED!'
+    expired: '&cThe Care Package expired.'
+  feedback:
+    start:
+      title: '&e&lMINOR EVENT!'
+      subtitle: '&fCare Package'
+      sound: NOTE_PLING
+    landed:
+      title: '&eCare Package'
+      subtitle: '&fLanded!'
+      sound: ANVIL_LAND
+    unlocked:
+      title: '&a&lCARE PACKAGE UNLOCKED!'
+      subtitle: '&eRight-click to open!'
+      sound: LEVEL_UP
+  loot:
+    pit-xp: 100
+    pit-gold: 100
+    additional-rewards: 5
+    pool:
+      - pit-xp
+      - pit-gold
+      - diamond-armor
+      - diamond-sword
+      - mystic-sword
+      - mystic-bow
+      - fresh-pants
+map-rotation:
+  enabled: true
+  duration-days: 5
+  maps:
+    - abyss
+    - castle
+    - elements
+    - genesis
+    - seasons
+  current-map: seasons
+  rotation-start: 1788039874441
+levels:
+  minimum: 1
+  maximum: 120
+  xp-requirements:
+    1-9: 15
+    10-19: 30
+    20-29: 50
+    30-39: 75
+    40-49: 125
+    50-59: 300
+    60-69: 600
+    70-79: 800
+    80-89: 900
+    90-99: 1000
+    100-109: 1200
+    110-119: 1500
+  rewards:
+    kill-xp: 10
+    assist-xp: 5
+    coin-pickup-xp: 1
+    killstreak-milestone-xp: 5
+    repeat-kill-full-xp-cooldown-seconds: 60
+  colors:
+    1-9: '&7'
+    10-19: '&9'
+    20-29: '&3'
+    30-39: '&2'
+    40-49: '&a'
+    50-59: '&e'
+    60-69: '&6&l'
+    70-79: '&c&l'
+    80-89: '&4&l'
+    90-99: '&d&l'
+    100-109: '&5&l'
+    110-119: '&b&l'
+    '120': '&c&l'
+  migration:
+    convert-rating-to-xp: false
+    xp-per-rating: 1.0
+    conversion-formula: lifetime-xp = round(old-rating * xp-per-rating)
+level-up:
+  title:
+    enabled: true
+    fade-in-ticks: 10
+    stay-ticks: 40
+    fade-out-ticks: 10
+    title: '&b&lLEVEL UP!'
+    subtitle: '%old_level_formatted% &7➜ %new_level_formatted%'
+  sound:
+    enabled: true
+    name: LEVEL_UP
+    volume: 1.0
+    pitch: 1.0
+  particles:
+    enabled: true
+    name: HAPPY_VILLAGER
+    count: 12
+    offset: 0.6
+    speed: 0.1
+  maximum-level-message: '&b&lMAX LEVEL! &7You reached level &c120&7 and can now prestige.'
+  statistics-unlock:
+    title: '&a&lFEATURE UNLOCKED!'
+    message: '&7You permanently unlocked the Statistics menu.'
+  perk-slot-unlock:
+    enabled: true
+    delay-ticks: 65
+    spacing-ticks: 55
+    title: '&e&lPERK SLOT UNLOCKED!'
+    subtitle: '&7You unlocked Perk Slot #%slot%.'
+unlocked-features:
+  enabled: true
+  title: '&e&lUNLOCKED FEATURES'
+  line-spacing: 0.28
+  view-distance: 48
+  show-requirement-lines: false
+  requirement-format: '&cRequires Level %level%'
+  locked-color: '&8'
+  locked-line: '&b???'
+  hide-question-mark-at-all-unlocked: false
+  threshold-colors:
+    1-9: '&7'
+    10-19: '&9'
+    20-39: '&2'
+    40-59: '&e'
+    60-69: '&6'
+    70+: '&c'
+  unlock-title:
+    delay-ticks: 65
+    spacing-ticks: 55
+    title: '&e&lFEATURE UNLOCKED!'
+    trigger-administrative: false
+  features:
+    respawn:
+      enabled: true
+      level: 1
+      unlock-type: CURRENT_LEVEL
+      display: '&b/respawn'
+      description: Return to spawn
+    pitchat:
+      enabled: true
+      level: 5
+      unlock-type: CURRENT_LEVEL
+      display: '&b/pitchat'
+      description: Chat settings
+    upgrades:
+      enabled: true
+      level: 10
+      unlock-type: CURRENT_LEVEL
+      display: '&bUpgrades'
+      description: Perks and passive upgrades
+    enderchest:
+      enabled: true
+      level: 15
+      unlock-type: PERMANENT
+      display: '&bEnder Chest'
+      description: Permanent item storage
+    contracts:
+      enabled: true
+      level: 30
+      unlock-type: CURRENT_LEVEL
+      display: '&bContracts'
+      description: Complete contracts
+    stats:
+      enabled: true
+      level: 50
+      unlock-type: PERMANENT
+      display: '&bStats'
+      description: View statistics
+    trade:
+      enabled: true
+      level: 60
+      unlock-type: PERMANENT
+      display: '&b/trade'
+      description: Trade with players
+    view:
+      enabled: true
+      level: 70
+      unlock-type: PERMANENT
+      display: '&b/view'
+      description: View player information
+  final-lines:
+    - '&7???'
+    - '&7Gain levels to unlock more'
+prestige:
+  minimum: 0
+  maximum: 50
+  menu:
+    title: '&8Prestige'
+    size: 27
+    prestige-item:
+      slot: 13
+    renown-item:
+      material: DIAMOND
+      name: '&e&lRenown Shop'
+      lore:
+        - '&7Spend Renown on permanent'
+        - '&7upgrades and unlocks.'
+        - ''
+        - '&7Your Renown: &e%renown%'
+        - ''
+        - '&eClick to open!'
+  cooldown-seconds: 7200
+  currency: PIT_GOLD
+  requirement-mode: CURRENT_BALANCE
+  consume-currency: true
+  progression:
+    '0':
+      multiplier: 1.0
+      coins-required: 10000
+    '1':
+      multiplier: 1.1
+      coins-required: 20000
+    '2':
+      multiplier: 1.2
+      coins-required: 20000
+    '3':
+      multiplier: 1.3
+      coins-required: 20000
+    '4':
+      multiplier: 1.4
+      coins-required: 30000
+    '5':
+      multiplier: 1.5
+      coins-required: 35000
+    '6':
+      multiplier: 1.75
+      coins-required: 40000
+    '7':
+      multiplier: 2.0
+      coins-required: 45000
+    '8':
+      multiplier: 2.5
+      coins-required: 50000
+    '9':
+      multiplier: 3.0
+      coins-required: 60000
+    '10':
+      multiplier: 4.0
+      coins-required: 70000
+    '11':
+      multiplier: 5.0
+      coins-required: 80000
+    '12':
+      multiplier: 6.0
+      coins-required: 90000
+    '13':
+      multiplier: 7.0
+      coins-required: 100000
+    '14':
+      multiplier: 8.0
+      coins-required: 125000
+    '15':
+      multiplier: 9.0
+      coins-required: 150000
+    '16':
+      multiplier: 10.0
+      coins-required: 175000
+    '17':
+      multiplier: 12.0
+      coins-required: 200000
+    '18':
+      multiplier: 14.0
+      coins-required: 250000
+    '19':
+      multiplier: 16.0
+      coins-required: 300000
+    '20':
+      multiplier: 18.0
+      coins-required: 350000
+    '21':
+      multiplier: 20.0
+      coins-required: 400000
+    '22':
+      multiplier: 24.0
+      coins-required: 500000
+    '23':
+      multiplier: 28.0
+      coins-required: 600000
+    '24':
+      multiplier: 32.0
+      coins-required: 700000
+    '25':
+      multiplier: 36.0
+      coins-required: 800000
+    '26':
+      multiplier: 40.0
+      coins-required: 900000
+    '27':
+      multiplier: 45.0
+      coins-required: 1000000
+    '28':
+      multiplier: 50.0
+      coins-required: 1000000
+    '29':
+      multiplier: 75.0
+      coins-required: 1000000
+    '30':
+      multiplier: 100.0
+      coins-required: 1000000
+    '31':
+      multiplier: 101.0
+      coins-required: 1000000
+    '32':
+      multiplier: 101.0
+      coins-required: 1000000
+    '33':
+      multiplier: 101.0
+      coins-required: 1000000
+    '34':
+      multiplier: 101.0
+      coins-required: 1000000
+    '35':
+      multiplier: 101.0
+      coins-required: 2000000
+    '36':
+      multiplier: 200.0
+      coins-required: 2000000
+    '37':
+      multiplier: 300.0
+      coins-required: 2000000
+    '38':
+      multiplier: 400.0
+      coins-required: 2000000
+    '39':
+      multiplier: 500.0
+      coins-required: 2000000
+    '40':
+      multiplier: 750.0
+      coins-required: 2000000
+    '41':
+      multiplier: 1000.0
+      coins-required: 2000000
+    '42':
+      multiplier: 1250.0
+      coins-required: 2000000
+    '43':
+      multiplier: 1500.0
+      coins-required: 2000000
+    '44':
+      multiplier: 1750.0
+      coins-required: 2000000
+    '45':
+      multiplier: 2000.0
+      coins-required: 2000000
+    '46':
+      multiplier: 3000.0
+      coins-required: 2000000
+    '47':
+      multiplier: 5000.0
+      coins-required: 2000000
+    '48':
+      multiplier: 10000.0
+      coins-required: 2000000
+    '49':
+      multiplier: 50000.0
+      coins-required: 2000000
+    '50':
+      multiplier: 100000.0
+      coins-required: 0
+  renown-rewards:
+    1-4: 10
+    5-10: 20
+    11-15: 30
+    16-20: 40
+    21-25: 50
+    26-28: 75
+    '29': 100
+    '30': 250
+    31-50: 100
+  bracket-colors:
+    '0': '&7'
+    1-4: '&9'
+    5-9: '&e'
+    10-14: '&6'
+    15-19: '&c'
+    20-24: '&5'
+    25-29: '&d'
+    30-34: '&f'
+    35-39: '&b'
+    40-44: '&1'
+    45-47: '&0'
+    48-49: '&4'
+    '50': '&8'
+  reset:
+    level: true
+    current-xp: true
+    equipped-perks: true
+    temporary-perk-purchases: true
+    temporary-passive-upgrades: true
+    killstreak-selections: true
+    megastreak-selection: true
+    combat-inventory: true
+    bounty: true
+    killstreak: true
+    ender-chest: false
+  migration:
+    award-historical-renown: false
+  messages:
+    need-level: '&cYou must reach level 120 before you can prestige.'
+    need-coins: '&cYou need another &6%remaining_coins% Gold &cto prestige.'
+    cooldown: '&cYou must wait %cooldown% before prestiging again.'
+    maximum: '&cYou have reached the maximum prestige.'
+    processing: '&eYour prestige is already being processed.'
+    failed: '&cPrestiging failed. Nothing was changed.'
+    success: '&aYou advanced to Prestige %prestige_roman%!'
+    broadcast: '&b&lPRESTIGE! &r%buildffa_abelix_prefix%%player% &7advanced to Prestige
+      &e%prestige_roman%&7!'
+pit-commands:
+  respawn:
+    cooldown-seconds: 10
+    deny-in-combat: true
+    deny-during-megastreak: true
+  offer:
+    expiration-seconds: 30
+  trade:
+    unlock-level: 60
+    maximum-items-per-side: 8
+    daily-trade-limit: 25
+    daily-gold-limit: 50000
+    daily-reset-hour-utc: 0
+    request-expiration-seconds: 30
+    bound-item-ids:
+      - pit_shop:pants-bundle
+  pitchat:
+    unlock-level: 5
+    title: '&8Pit Chat'
+    categories:
+      bounties:
+        slot: 10
+        material: GOLD_INGOT
+        display: '&6Bounties'
+      killstreaks:
+        slot: 11
+        material: DIAMOND_SWORD
+        display: '&cKillstreaks'
+      prestige-announcements:
+        slot: 12
+        material: NETHER_STAR
+        display: '&dPrestige Announcements'
+      minor-events:
+        slot: 13
+        material: WATCH
+        display: '&eMinor Events'
+      kill-feed:
+        slot: 14
+        material: SKULL_ITEM
+        display: '&cKill Feed'
+      player-chat:
+        slot: 15
+        material: PAPER
+        display: '&fPlayer Chat'
+      miscellaneous:
+        slot: 16
+        material: CHEST
+        display: '&bMiscellaneous'
+  view:
+    unlock-level: 70
+    permanent-unlock: true
+  drop-confirm:
+    presses-required: 3
+    timeout-seconds: 5
+    protected-item-ids:
+      - chunk_of_vile
+      - funky_feather
+      - philosopher_cactus
+      - pants-bundle
+  show:
+    cooldown-seconds: 120
+    bypass-price: 10000
+  events:
+    configured: []
+  cool-conclave:
+    enabled: true
+    inventory-slot: 41
+    required-prestige: 10
+    price: 10
+  stash:
+    capacity: 108
+    claim-batch-size: 54
+pit-supporter:
+  enabled: false
+  required-prestige: 1
+  entitlement-permission: buildffa.pit.supporter
+  star:
+    enabled: true
+    symbol: '&e✬'
+    default-visible: true
+    tab-requires-bounty: true
+  pants-dye:
+    price: 200
+    currency: PIT_GOLD
+    colors:
+      peace-white:
+        display: Peace White
+        hex: FFFFFF
+      business-gray:
+        display: Business Gray
+        hex: A9A9A9
+      pure-red:
+        display: Pure Red
+        hex: FF0000
+      blood-red:
+        display: Blood Red
+        hex: '660000'
+      solid-teal:
+        display: Solid Teal
+        hex: '008080'
+      deep-sky:
+        display: Deep Sky
+        hex: 00BFFF
+      dark-orchid:
+        display: Dark Orchid
+        hex: 9932CC
+      smooth-crimson:
+        display: Smooth Crimson
+        hex: C6143A
+      hot-pink:
+        display: Hot Pink
+        hex: FF00FF
+      ugly-classic:
+        display: Ugly Classic
+        hex: A06540
+      shadow-gray:
+        display: Shadow Gray
+        hex: '606060'
+      night-rider:
+        display: Night Rider
+        hex: '400060'
+      light-lavender:
+        display: Light Lavender
+        hex: DDAADD
+      blueberry-blues:
+        display: Blueberry Blues
+        hex: '555599'
+      soothing-beige:
+        display: Soothing Beige
+        hex: FFDDAA
+      not-orange:
+        display: Not Orange
+        hex: FFBB00
+      neon-green:
+        display: Neon Green
+        hex: AAE100
+      harvest-red:
+        display: Harvest Red
+        hex: EE3300
+  events:
+    maximum-displayed: 54
+  purchase-price-abelix-gold: 1000
+  purchase-currency: ABELIX_GOLD
+default-loadout:
+  inventory:
+    '0':
+      material: IRON_SWORD
+      amount: 1
+      unbreakable: true
+    '1':
+      material: BOW
+      amount: 1
+      unbreakable: true
+    '8':
+      material: ARROW
+      amount: 32
+  armor:
+    unbreakable: true
+inventory-persistence:
+  save-interval-ticks: 1200
+  load-timeout-ticks: 200
+  arena-timeout-ticks: 200
+  overall-timeout-ticks: 600
+  debug: false
+coin-spawns:
+  maximum-configured-points: 2000
+  maximum-active-coins: 250
+  spawn-batch-size: 20
+  debug: false
+npc:
+  debug: false
+gold:
+  currency: PIT_GOLD
+  placeholder: '%thepit_coins%'
+  rewards:
+    kill: 10
+    assist: 5
+    collectible: 1
+renown-shop:
+  title: Renown Shop
+  size: 54
+  menu:
+    status-slot: 4
+    previous-page-slot: 45
+    back-slot: 49
+    next-page-slot: 53
+    content-slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+  items:
+    filler:
+      material: STAINED_GLASS_PANE
+      data: 15
+    status:
+      material: DIAMOND
+      name: '&e&lRenown Shop'
+      lore:
+        - '&7Your Renown: &e%renown%'
+        - '&7Prestige: &e%prestige%'
+        - '&7Page: &f%page%&7/&f%pages%'
+    previous-page:
+      material: ARROW
+      name: '&ePrevious Page'
+      lore:
+        - '&7Go to page %page%.'
+    next-page:
+      material: ARROW
+      name: '&eNext Page'
+      lore:
+        - '&7Go to page %page%.'
+    back:
+      material: ARROW
+      name: '&aGo Back'
+      lore:
+        - '&7Return to the Prestige menu.'
+  sounds:
+    purchase-success: LEVEL_UP
+    purchase-failure: VILLAGER_NO
+  messages:
+    prestige-required: '&cYou must reach Prestige I to use the Renown Shop.'
+    profile-loading: '&cYour profile is still loading.'
+    processing: '&eYour Renown purchase is already being processed.'
+    purchase-success: '&aPurchased %upgrade%&a tier %tier% for &e%cost% Renown&a.'
+    purchase-failed: '&cThe Renown purchase failed. Nothing was changed.'
+    prestige-locked: '&cPrestige requirement not met!'
+    insufficient-renown: '&cNot enough Renown!'
+    already-purchased: '&aPurchased!'
+    tier-mismatch: '&cTiers must be purchased in order.'
+    conflict: '&cYour profile changed on another server. Please try again.'
+  toggles:
+    autobuy-default: true
+    impatient-default: true
+    apollo-default: true
+  expanded-ender-chest:
+    title: '&8Ender Chest'
+  entries:
+    tenacity:
+      name: '&eTenacity'
+      type: TIERED_UPGRADE
+      material: GHAST_TEAR
+      required-prestige: 1
+      description:
+        - '&7Heal on valid kills.'
+      effects:
+        hearts-per-tier: 0.5
+      tiers:
+        '1':
+          cost: 10
+          required-prestige: 1
+        '2':
+          cost: 50
+          required-prestige: 1
+    autobuy:
+      name: '&eAutobuy'
+      type: PERMANENT_UPGRADE
+      material: GOLD_INGOT
+      required-prestige: 1
+      cost: 5
+      description:
+        - '&7Automatically repurchase selected'
+        - '&7Item Shop items after respawning.'
+    scam-artist:
+      name: '&eScam Artist'
+      type: TIERED_UPGRADE
+      material: PAPER
+      required-prestige: 1
+      description:
+        - '&7Discount contracts, upgrades,'
+        - '&7killstreaks, and Mystic Well prices.'
+      effects:
+        discount-per-tier: 0.05
+      tiers:
+        '1':
+          cost: 10
+          required-prestige: 1
+        '2':
+          cost: 20
+          required-prestige: 1
+        '3':
+          cost: 30
+          required-prestige: 1
+        '4':
+          cost: 40
+          required-prestige: 1
+        '5':
+          cost: 50
+          required-prestige: 5
+    renown-gold-boost:
+      name: '&eRenown Gold Boost'
+      type: TIERED_UPGRADE
+      material: GOLD_NUGGET
+      required-prestige: 1
+      description:
+        - '&7Gain more Pit Gold from kills'
+        - '&7and map gold pickups.'
+      effects:
+        multiplier-per-tier: 0.025
+      tiers:
+        '1':
+          cost: 5
+        '2':
+          cost: 10
+        '3':
+          cost: 10
+        '4':
+          cost: 10
+        '5':
+          cost: 10
+        '6':
+          cost: 10
+        '7':
+          cost: 10
+        '8':
+          cost: 10
+        '9':
+          cost: 10
+        '10':
+          cost: 10
+    renown-xp-bump:
+      name: '&eRenown XP Bump'
+      type: TIERED_UPGRADE
+      material: EXP_BOTTLE
+      required-prestige: 1
+      description:
+        - '&7Gain additional XP on valid kills.'
+      effects:
+        xp-per-tier: 1
+      tiers:
+        '1':
+          cost: 5
+          required-prestige: 1
+        '2':
+          cost: 10
+          required-prestige: 1
+        '3':
+          cost: 10
+          required-prestige: 1
+        '4':
+          cost: 10
+          required-prestige: 1
+        '5':
+          cost: 10
+          required-prestige: 2
+        '6':
+          cost: 10
+          required-prestige: 10
+        '7':
+          cost: 20
+          required-prestige: 13
+        '8':
+          cost: 40
+          required-prestige: 16
+        '9':
+          cost: 80
+          required-prestige: 19
+        '10':
+          cost: 160
+          required-prestige: 22
+    mysticism:
+      name: '&eMysticism'
+      type: TIERED_UPGRADE
+      material: ENCHANTMENT_TABLE
+      required-prestige: 1
+      description:
+        - '&7Unlock Mystic drops and improve'
+        - '&7the Mystic Well and drop chance.'
+      effects:
+        base-drop-chance: 0.002
+        tier-2-bonus: 0.3
+        tier-3-bonus: 0.2
+        tier-5-bonus: 0.2
+        tier-6-bonus: 0.3
+        tier-7-bonus: 0.25
+        tier-8-bonus: 0.25
+        tier-10-bonus: 0.5
+      tiers:
+        '1':
+          cost: 10
+          required-prestige: 1
+        '2':
+          cost: 5
+          required-prestige: 1
+        '3':
+          cost: 5
+          required-prestige: 1
+        '4':
+          cost: 10
+          required-prestige: 1
+        '5':
+          cost: 5
+          required-prestige: 1
+        '6':
+          cost: 10
+          required-prestige: 2
+        '7':
+          cost: 10
+          required-prestige: 3
+        '8':
+          cost: 15
+          required-prestige: 4
+        '9':
+          cost: 20
+          required-prestige: 5
+        '10':
+          cost: 25
+          required-prestige: 7
+    overheal:
+      name: '&eOverheal'
+      type: PERK_UNLOCK
+      material: GOLDEN_APPLE
+      required-prestige: 1
+      cost: 10
+      description:
+        - '&7Unlocks Overheal in the'
+        - '&7existing perks menu.'
+    iron-pack:
+      name: '&eIron Pack'
+      purchase-id: shop-iron-pack
+      type: ITEM_SHOP_UNLOCK
+      material: IRON_CHESTPLATE
+      required-prestige: 1
+      cost: 5
+      description:
+        - '&7Unlocks Iron Pack in the Item Shop.'
+        - '&7The item still costs Pit Gold.'
+    contractor:
+      name: '&eContractor'
+      type: TIERED_UPGRADE
+      material: BOOK
+      required-prestige: 2
+      description:
+        - '&7Gain one additional daily'
+        - '&7contract per tier.'
+      effects:
+        contracts-per-tier: 1
+      tiers:
+        '1':
+          cost: 5
+        '2':
+          cost: 5
+        '3':
+          cost: 10
+        '4':
+          cost: 15
+        '5':
+          cost: 15
+    fish-maxxing:
+      name: '&eFish Maxxing'
+      type: TIERED_UPGRADE
+      material: RAW_FISH
+      required-prestige: 2
+      description:
+        - '&7Increase the daily fishing limit.'
+      effects:
+        tier-1-limit: 250
+        tier-2-limit: 500
+        tier-3-limit: 750
+        tier-4-limit: 1000
+      tiers:
+        '1':
+          cost: 5
+        '2':
+          cost: 5
+        '3':
+          cost: 5
+        '4':
+          cost: 5
+    superb-launch-trail:
+      name: '&eSuperb Launch Trail'
+      type: COSMETIC
+      material: FIREWORK
+      required-prestige: 2
+      cost: 10
+      description:
+        - '&7Rainbow slime launcher trail.'
+    barbarian:
+      name: '&eBarbarian'
+      type: PERK_UNLOCK
+      material: IRON_AXE
+      required-prestige: 2
+      cost: 10
+      description:
+        - '&7Unlocks Barbarian in the'
+        - '&7existing perks menu.'
+    dirty:
+      name: '&eDirty'
+      type: PERK_UNLOCK
+      material: DIRT
+      required-prestige: 2
+      cost: 15
+      description:
+        - '&7Unlocks Dirty in the'
+        - '&7existing perks menu.'
+    obsidian-stack:
+      name: '&eObsidian Stack'
+      purchase-id: shop-obsidian-stack
+      type: ITEM_SHOP_UNLOCK
+      material: OBSIDIAN
+      required-prestige: 2
+      cost: 5
+      description:
+        - '&7Unlocks Obsidian Stack in the Item Shop.'
+        - '&7The item still costs Pit Gold.'
+    extra-perk-slot:
+      name: '&eExtra Perk Slot'
+      type: PERMANENT_UPGRADE
+      material: CHEST
+      required-prestige: 3
+      cost: 40
+      description:
+        - '&7Unlocks the fourth perk slot'
+        - '&7at level 100.'
+    impatient:
+      name: '&eImpatient'
+      type: PERMANENT_UPGRADE
+      material: SUGAR
+      required-prestige: 3
+      cost: 10
+      description:
+        - '&7Gain Speed II only inside'
+        - '&7the protected spawn area.'
+      effects:
+        speed-level: 2
+    fishing-club:
+      name: '&eFishing Club'
+      type: TIERED_UPGRADE
+      material: FISHING_ROD
+      required-prestige: 3
+      description:
+        - '&7Unlock and improve fishing.'
+      effects:
+        catch-xp: 25
+        speed-increase: 0.2
+      tiers:
+        '1':
+          cost: 5
+          required-prestige: 3
+        '2':
+          cost: 5
+          required-prestige: 3
+        '3':
+          cost: 5
+          required-prestige: 4
+        '4':
+          cost: 5
+          required-prestige: 5
+        '5':
+          cost: 10
+          required-prestige: 7
+    rambo:
+      name: '&eRambo'
+      type: PERK_UNLOCK
+      material: REDSTONE
+      required-prestige: 3
+      cost: 15
+      description:
+        - '&7Unlocks Rambo in the'
+        - '&7existing perks menu.'
+    diamond-leggings:
+      name: '&eDiamond Leggings'
+      purchase-id: shop-diamond-leggings
+      type: ITEM_SHOP_UNLOCK
+      material: DIAMOND_LEGGINGS
+      required-prestige: 3
+      cost: 20
+      description:
+        - '&7Unlocks Diamond Leggings in the Item Shop.'
+        - '&7The item still costs Pit Gold.'
+    combat-spade:
+      name: '&eCombat Spade'
+      purchase-id: shop-combat-spade
+      type: ITEM_SHOP_UNLOCK
+      material: DIAMOND_SPADE
+      required-prestige: 3
+      cost: 10
+      description:
+        - '&7Unlocks Combat Spade in the Item Shop.'
+        - '&7The item still costs Pit Gold.'
+    beastmode:
+      name: '&eBeastmode Bundle'
+      purchase-id: megastreak-bundle-beastmode
+      type: MEGASTREAK_BUNDLE
+      material: DIAMOND_SWORD
+      required-prestige: 3
+      cost: 10
+      description:
+        - '&7Unlocks the Beastmode killstreak'
+        - '&7bundle and megastreak.'
+    extra-hearts:
+      name: '&eExtra Hearts'
+      type: TIERED_UPGRADE
+      material: REDSTONE_BLOCK
+      required-prestige: 4
+      description:
+        - '&7Gain one maximum heart per tier.'
+      effects:
+        hearts-per-tier: 1.0
+      tiers:
+        '1':
+          cost: 20
+        '2':
+          cost: 100
+    extra-killstreak-slot:
+      name: '&eExtra Killstreak Slot'
+      purchase-id: killstreak-slot
+      type: PERMANENT_UPGRADE
+      material: CHEST
+      required-prestige: 4
+      cost: 50
+      description:
+        - '&7Unlocks the third killstreak slot'
+        - '&7at level 100.'
+    armory:
+      name: '&eArmory'
+      type: TIERED_UPGRADE
+      material: ARROW
+      required-prestige: 4
+      description:
+        - '&7Spawn with eight more arrows per tier.'
+      effects:
+        arrows-per-tier: 8
+      tiers:
+        '1':
+          cost: 5
+        '2':
+          cost: 5
+        '3':
+          cost: 5
+        '4':
+          cost: 5
+    olympus:
+      name: '&eOlympus'
+      type: PERK_UNLOCK
+      material: POTION
+      required-prestige: 4
+      cost: 20
+      description:
+        - '&7Unlocks Olympus in the'
+        - '&7existing perks menu.'
+    bounty-solvent:
+      name: '&eBounty Solvent'
+      purchase-id: shop-bounty-solvent
+      type: ITEM_SHOP_UNLOCK
+      material: POTION
+      required-prestige: 4
+      cost: 10
+      description:
+        - '&7Unlocks Bounty Solvent in the Item Shop.'
+        - '&7The item still costs Pit Gold.'
+    hermit:
+      name: '&eHermit Bundle'
+      purchase-id: megastreak-bundle-hermit
+      type: MEGASTREAK_BUNDLE
+      material: BEDROCK
+      required-prestige: 4
+      cost: 20
+      description:
+        - '&7Unlocks the Hermit killstreak'
+        - '&7bundle and megastreak.'
+    fancy-hat:
+      name: '&eFancy Hat'
+      type: COSMETIC
+      material: LEATHER_HELMET
+      required-prestige: 5
+      cost: 10
+      description:
+        - '&7Unlocks the permanent Fancy Hat.'
+    first-strike:
+      name: '&eFirst Strike'
+      type: PERK_UNLOCK
+      material: IRON_SWORD
+      required-prestige: 5
+      cost: 25
+      description:
+        - '&7Unlocks First Strike in the'
+        - '&7existing perks menu.'
+    assistant-streaker:
+      name: '&eAssistant to the Streaker'
+      type: PERK_UNLOCK
+      material: GOLD_SWORD
+      required-prestige: 5
+      cost: 15
+      description:
+        - '&7Unlocks Assistant to the Streaker'
+        - '&7in the existing perks menu.'
+    first-aid-egg:
+      name: '&eFirst-Aid Egg'
+      purchase-id: shop-first-aid-egg
+      type: ITEM_SHOP_UNLOCK
+      material: EGG
+      required-prestige: 5
+      cost: 15
+      description:
+        - '&7Unlocks First-Aid Egg in the Item Shop.'
+        - '&7The item still costs Pit Gold.'
+    yummy:
+      name: '&eYummy!'
+      type: PERMANENT_UPGRADE
+      material: GOLDEN_APPLE
+      required-prestige: 6
+      cost: 15
+      description:
+        - '&7Gain Pit Gold when eating'
+        - '&7a Golden Apple or Golden Head.'
+      effects:
+        gold: 6
+    heresy:
+      name: '&eHeresy'
+      type: TIERED_UPGRADE
+      material: NETHER_BRICK_ITEM
+      required-prestige: 6
+      description:
+        - '&7Unlock Chunks of Vile and'
+        - '&7improve Dark Pants crafting.'
+      tiers:
+        '1':
+          cost: 10
+          required-prestige: 6
+        '2':
+          cost: 20
+          required-prestige: 8
+        '3':
+          cost: 50
+          required-prestige: 11
+    divine-intervention:
+      name: '&eDivine Intervention'
+      type: TIERED_UPGRADE
+      material: NETHER_STAR
+      required-prestige: 6
+      description:
+        - '&7Gain a chance to keep your'
+        - '&7inventory on death.'
+      effects:
+        chance-per-tier: 0.05
+      tiers:
+        '1':
+          cost: 50
+          required-prestige: 6
+        '2':
+          cost: 50
+          required-prestige: 12
+        '3':
+          cost: 50
+          required-prestige: 18
+    blazing-launch-trail:
+      name: '&eBlazing Launch Trail'
+      type: COSMETIC
+      material: BLAZE_POWDER
+      required-prestige: 6
+      cost: 30
+      description:
+        - '&7Fire slime launcher trail.'
+    marathon:
+      name: '&eMarathon'
+      type: PERK_UNLOCK
+      material: LEATHER_BOOTS
+      required-prestige: 6
+      cost: 20
+      description:
+        - '&7Unlocks Marathon in the'
+        - '&7existing perks menu.'
+    co-op-cat:
+      name: '&eCo-op Cat'
+      purchase-id: co-op-cat
+      type: PERK_UNLOCK
+      material: RAW_FISH
+      required-prestige: 6
+      cost: 10
+      description:
+        - '&7Unlocks Co-op Cat in the'
+        - '&7existing perks menu.'
+    apollo:
+      name: '&eApollo'
+      type: PERMANENT_UPGRADE
+      material: SLIME_BLOCK
+      required-prestige: 7
+      cost: 25
+      description:
+        - '&7Use your facing direction when'
+        - '&7launching toward spawn.'
+    soup:
+      name: '&eSoup'
+      type: PERK_UNLOCK
+      material: MUSHROOM_SOUP
+      required-prestige: 7
+      cost: 30
+      description:
+        - '&7Unlocks Soup in the'
+        - '&7existing perks menu.'
+    recon:
+      name: '&eRecon'
+      type: PERK_UNLOCK
+      material: BOW
+      required-prestige: 7
+      cost: 20
+      description:
+        - '&7Unlocks Recon in the'
+        - '&7existing perks menu.'
+    jump-boost-iv:
+      name: '&eJump Boost IV'
+      purchase-id: shop-jump-boost
+      type: ITEM_SHOP_UNLOCK
+      material: POTION
+      required-prestige: 7
+      cost: 20
+      description:
+        - '&7Unlocks Jump Boost IV in the Item Shop.'
+        - '&7The potion still costs Pit Gold.'
+    highlander:
+      name: '&eHighlander Bundle'
+      purchase-id: megastreak-bundle-highlander
+      type: MEGASTREAK_BUNDLE
+      material: GOLD_CHESTPLATE
+      required-prestige: 7
+      cost: 40
+      description:
+        - '&7Unlocks the Highlander killstreak'
+        - '&7bundle and megastreak.'
+    the-way:
+      name: '&eThe Way'
+      type: PERMANENT_UPGRADE
+      material: COMPASS
+      required-prestige: 8
+      cost: 50
+      description:
+        - '&7Remove level requirements from'
+        - '&7perks and perk slots only.'
+    very-yummy:
+      name: '&eVery Yummy!'
+      type: PERMANENT_UPGRADE
+      material: GOLDEN_APPLE
+      required-prestige: 8
+      cost: 20
+      description:
+        - '&7Improve Golden Head absorption'
+        - '&7and regeneration.'
+    do-your-own-carpentry:
+      name: '&eDo Your Own Carpentry'
+      type: PERMANENT_UPGRADE
+      material: WORKBENCH
+      required-prestige: 8
+      cost: 5
+      description:
+        - '&7Improve Chunk of Vile rewards'
+        - '&7from contracts.'
+    conglomerate:
+      name: '&eConglomerate'
+      type: PERK_UNLOCK
+      material: GOLD_BLOCK
+      required-prestige: 8
+      cost: 40
+      description:
+        - '&7Unlocks Conglomerate in the'
+        - '&7existing perks menu.'
+    tactical-insertion:
+      name: '&eTactical Insertion'
+      purchase-id: shop-tactical-insertion
+      type: ITEM_SHOP_UNLOCK
+      material: REDSTONE_TORCH_ON
+      required-prestige: 8
+      cost: 20
+      description:
+        - '&7Unlocks Tactical Insertion in the Item Shop.'
+        - '&7The item still costs Pit Gold.'
+    pure-rage:
+      name: '&ePure Rage'
+      type: PERMANENT_UPGRADE
+      material: REDSTONE_BLOCK
+      required-prestige: 9
+      cost: 35
+      description:
+        - '&7Unlock crafting and use of Rage Pants.'
+    self-confidence:
+      name: '&eSelf-Confidence'
+      type: PERMANENT_UPGRADE
+      material: EMERALD
+      required-prestige: 9
+      cost: 50
+      description:
+        - '&7Gain bonus Pit Gold from'
+        - '&7eligible major event placements.'
+    bang-launch-trail:
+      name: '&eBang Launch Trail'
+      type: COSMETIC
+      material: TNT
+      required-prestige: 9
+      cost: 50
+      description:
+        - '&7Explosion slime launcher trail.'
+    kung-fu-knowledge:
+      name: '&eKung Fu Knowledge'
+      type: PERK_UNLOCK
+      material: STICK
+      required-prestige: 9
+      cost: 40
+      description:
+        - '&7Unlocks Kung Fu Knowledge in the'
+        - '&7existing perks menu.'
+    fast-pass:
+      name: '&eFast Pass'
+      type: PERMANENT_UPGRADE
+      material: MINECART
+      required-prestige: 10
+      cost: 100
+      description:
+        - '&7Prestiges start at level 1.'
+      effects:
+        starting-level: 1
+    cool-conclave:
+      name: '&eCool Conclave'
+      type: COMMAND_UNLOCK
+      material: ICE
+      required-prestige: 10
+      cost: 10
+      description:
+        - '&7Unlocks the /cool command.'
+    magnum-opus:
+      name: '&eMagnum Opus Bundle'
+      purchase-id: megastreak-bundle-magnum-opus
+      type: MEGASTREAK_BUNDLE
+      material: BEACON
+      required-prestige: 10
+      cost: 60
+      description:
+        - '&7Unlocks the Magnum Opus killstreak'
+        - '&7bundle and megastreak.'
+    inventory-management:
+      name: '&eInventory Management'
+      type: TIERED_UPGRADE
+      material: ENDER_CHEST
+      required-prestige: 11
+      description:
+        - '&7Add nine Ender Chest slots per tier.'
+      effects:
+        slots-per-tier: 9
+      tiers:
+        '1':
+          cost: 50
+          required-prestige: 11
+        '2':
+          cost: 100
+          required-prestige: 15
+        '3':
+          cost: 150
+          required-prestige: 19
+    thick:
+      name: '&eThick'
+      type: PERK_UNLOCK
+      material: IRON_CHESTPLATE
+      required-prestige: 11
+      cost: 45
+      description:
+        - '&7Unlocks Thick in the'
+        - '&7existing perks menu.'
+    promotion:
+      name: '&ePromotion!!'
+      type: PERMANENT_UPGRADE
+      material: DIAMOND
+      required-prestige: 12
+      cost: 30
+      description:
+        - '&7Buff Assistant to the Streaker'
+        - '&7and add streak progress.'
+    pants-bundle:
+      name: '&ePants Bundle'
+      purchase-id: shop-pants-bundle
+      type: ITEM_SHOP_UNLOCK
+      material: LEATHER_LEGGINGS
+      required-prestige: 12
+      cost: 20
+      description:
+        - '&7Unlocks Pants Bundle in the Item Shop.'
+        - '&7The bundle still costs Pit Gold.'
+    raw-numbers:
+      name: '&eRaw Numbers'
+      type: PERMANENT_UPGRADE
+      material: NAME_TAG
+      required-prestige: 13
+      cost: 40
+      description:
+        - '&7Show exact damage in the action bar.'
+    experience-industrial-complex:
+      name: '&eExperience-Industrial Complex'
+      type: PERMANENT_UPGRADE
+      material: EXP_BOTTLE
+      required-prestige: 13
+      cost: 80
+      description:
+        - '&7Extend streak XP scaling and'
+        - '&7increase maximum kill XP.'
+    one-upper:
+      name: '&eOne Upper'
+      type: PERMANENT_UPGRADE
+      material: EMERALD
+      required-prestige: 14
+      cost: 40
+      description:
+        - '&7Unlock tier VI of all'
+        - '&7existing passive upgrades.'
+    to-the-moon:
+      name: '&eTo the Moon Bundle'
+      purchase-id: megastreak-bundle-to-the-moon
+      type: MEGASTREAK_BUNDLE
+      material: ENDER_PEARL
+      required-prestige: 14
+      cost: 150
+      description:
+        - '&7Unlocks the To the Moon killstreak'
+        - '&7bundle and megastreak.'
+    bounty-cloak:
+      name: '&eBounty Cloak'
+      type: COSMETIC
+      material: LEATHER_CHESTPLATE
+      required-prestige: 15
+      cost: 100
+      description:
+        - '&7Unlocks the Bounty Cloak cosmetic.'
+    uberstreak:
+      name: '&eUberstreak'
+      purchase-id: megastreak-bundle-uberstreak
+      type: MEGASTREAK_BUNDLE
+      material: DRAGON_EGG
+      required-prestige: 20
+      cost: 50
+      description:
+        - '&7Unlocks the Uberstreak megastreak.'
+    celebrity:
+      name: '&eCelebrity'
+      type: PERMANENT_UPGRADE
+      material: DIAMOND_BLOCK
+      required-prestige: 25
+      cost: 300
+      description:
+        - '&7Earn double Pit Gold from valid kills.'
+      effects:
+        kill-gold-multiplier: 2.0
+statistics:
+  count-admin-build-mode: false
+  persistence:
+    flush-interval-ticks: 1200
+  performance:
+    safe-zero-rule: NUMERATOR
+  formatting:
+    ratio-pattern: '0.00'
+  menus:
+    main:
+      title: '&8Statistics'
+      offensive-slot: 10
+      defensive-slot: 12
+      performance-slot: 14
+      miscellaneous-slot: 16
+      summary-slot: 31
+      close-slot: 40
+    offensive:
+      title: '&8Offensive Statistics'
+    defensive:
+      title: '&8Defensive Statistics'
+    performance:
+      title: '&8Performance Statistics'
+    miscellaneous:
+      title: '&8Miscellaneous Statistics'
+    summary:
+      title: '&8%player%''s Statistics'
+    submenu:
+      back-slot: 40
+    materials:
+      offensive: DIAMOND_SWORD
+      defensive: IRON_CHESTPLATE
+      performance: EXPERIENCE_BOTTLE
+      miscellaneous: PAPER
+      summary: SKULL_ITEM
+      close: BARRIER
+      back: ARROW
+fishing:
+  enabled: true
+  maximum-y: 105
+  default-daily-limit: 100
+  anti-automation:
+    minimum-success-interval-millis: 2500
+    repeated-timing-window-millis: 150
+    repeated-timing-threshold: 4
+  rewards:
+    basic:
+      one-gold:
+        weight: 70
+        type: GOLD
+        amount: 1
+      six-gold:
+        weight: 25
+        type: GOLD
+        amount: 6
+      diamond-sword:
+        weight: 5
+        type: ITEM
+        material: DIAMOND_SWORD
+        amount: 1
+        unbreakable: true
+    club:
+      kloonfish:
+        weight: 8
+      salmon:
+        weight: 8
+      diamond-chestplate:
+        weight: 3
+      diamond-leggings:
+        weight: 3
+      diamond-boots:
+        weight: 3
+      diamond-helmet:
+        enabled: false
+        weight: 3
+  club:
+    catch-xp: 25
+    tier-4-speed-increase: 0.2
+  fish-sizes:
+    nearly-microscopic: 1
+    tiny: 12
+    small: 22
+    medium: 30
+    big: 20
+    x-large: 10
+    massive: 4
+    gargantuan: 1
+  special-fish:
+    kloonfish:
+      data: 0
+      absorption-hearts: 1.5
+    salmon:
+      data: 1
+      regeneration-level: 3
+      duration-seconds: 3
+    burp-chance: 0.03
+  aqua-pants:
+    enabled: true
+    currency: PIT_GOLD
+    required-club-tier: 5
+    required-prestige: 7
+    weight: 1
+    enchant-cost-gold: 5000
+  aqua-enchants:
+    grandmaster:
+      enabled: true
+      true-damage-hearts: 0.5
+      cooldown-millis: 500
+    luck-of-the-pond:
+      enabled: true
+      speed-increase: 0.1
+    portable-pond:
+      enabled: true
+      bucket-uses: 4
+    rodback:
+      enabled: true
+      knockback-multiplier: 1.2
+      cooldown-millis: 500
+    rogue:
+      enabled: true
+      damage-increase: 0.25
+      damage-reduction: 0.1
+    tough-crew:
+      enabled: true
+      nearby-required: 3
+      radius: 12
+      damage-reduction: 0.15
+    trophy:
+      enabled: true
+      bonus-gold: 2
+    unite:
+      enabled: true
+      cooldown-millis: 500
+    stereo:
+      enabled: true
+      cooldown-millis: 3000
+      songs:
+        - NOTE_PLING
+  messages:
+    invalid-area: '&cYou can only fish in designated fishing areas.'
+    too-high: '&c&lNO FISH! &7You can''t fish this high up!'
+    daily-limit: '&cYou have reached your daily fishing limit!'
+    caught-gold: '&6You caught %amount% gold!'
+    caught-item: '&aYou caught %item%!'
+    caught-fish: '&aYou caught a %size% %fish%!'
+    caught-aqua-pants: '&b&lRARE CATCH! &fYou caught Fresh Aqua Pants!'
+    club-required: '&cYou need Fishing Club %tier% for this reward.'
+    xp: '&b+%amount% XP'
+    nom-nom: '&aNom nom!'
+    burp: '&6Burp!'
+fishing-club:
+  enabled: true
+  unlock-prestige: 3
+  currency: PIT_GOLD
+  tiers:
+    '1':
+      price: 5000
+      required-prestige: 3
+    '2':
+      price: 7500
+      required-prestige: 3
+    '3':
+      price: 10000
+      required-prestige: 3
+    '4':
+      price: 15000
+      required-prestige: 3
+    '5':
+      price: 25000
+      required-prestige: 7
+killstreaks:
+  enabled: true
+  currency: PIT_GOLD
+  title: Killstreaks
+  size: 54
+  choose-title: Choose a Killstreak
+  choose-size: 54
+  save-interval-seconds: 10
+  menu:
+    selected-megastreak-slot: 40
+    back-slot: 49
+  slots:
+    '1':
+      inventory-slot: 20
+      required-level: 10
+      required-prestige: 0
+      required-renown-upgrade: ''
+    '2':
+      inventory-slot: 22
+      required-level: 75
+      required-prestige: 1
+      required-renown-upgrade: ''
+    '3':
+      inventory-slot: 24
+      required-level: 100
+      required-prestige: 4
+      required-renown-upgrade: killstreak-slot
+  definitions:
+    second-gapple:
+      enabled: true
+      name: '&aSecond Gapple'
+      material: GOLDEN_APPLE
+      menu-slot: 10
+      price: 1500
+      required-level: 10
+      trigger-interval: 3
+      effect: SECOND_GAPPLE
+      bonus-xp: 5
+      bonus-gold: 5
+      golden-apples: 1
+      lore:
+        - '&7Every third kill grants &b5 XP&7,'
+        - '&65 Pit Gold &7and a Golden Apple.'
+    explicious:
+      enabled: true
+      name: '&bExplicious'
+      material: EXP_BOTTLE
+      menu-slot: 11
+      price: 3000
+      required-level: 20
+      trigger-interval: 3
+      effect: EXPLICIOUS
+      bonus-xp: 12
+      lore:
+        - '&7Every third kill grants &b12 XP&7.'
+    feast:
+      enabled: true
+      name: '&cFeast'
+      material: MUTTON
+      menu-slot: 12
+      price: 4000
+      required-level: 30
+      trigger-interval: 7
+      effect: FEAST
+      lore:
+        - '&7Every seventh kill grants an'
+        - '&7AAA-Rated Steak.'
+    counter-strike:
+      enabled: true
+      name: '&eCounter-Strike'
+      material: IRON_CHESTPLATE
+      menu-slot: 13
+      price: 5000
+      required-level: 40
+      trigger-interval: 7
+      effect: COUNTER_STRIKE
+      lore:
+        - '&7Every seventh kill grants eight'
+        - '&7seconds of combat power.'
+    arquebusier:
+      enabled: true
+      name: '&aArquebusier'
+      material: ARROW
+      menu-slot: 14
+      price: 5000
+      required-level: 50
+      trigger-interval: 3
+      effect: ARQUEBUSIER
+      bonus-gold: 7
+      arrows: 16
+      speed-seconds: 10
+      lore:
+        - '&7Every third kill grants &67 Pit Gold&7,'
+        - '&716 arrows and Speed I.'
+    fight-or-flight:
+      enabled: true
+      name: '&cFight or Flight'
+      material: FEATHER
+      menu-slot: 15
+      price: 5000
+      required-level: 50
+      trigger-interval: 5
+      effect: FIGHT_OR_FLIGHT
+      lore:
+        - '&7Every fifth kill grants a'
+        - '&7health-dependent combat buff.'
+    spongesteve:
+      enabled: true
+      name: '&eSpongesteve'
+      material: SPONGE
+      menu-slot: 16
+      price: 12000
+      required-level: 70
+      trigger-interval: 25
+      effect: SPONGESTEVE
+      absorption-hearts: 15
+      lore:
+        - '&7Every twenty-fifth kill grants'
+        - '&715 absorption hearts.'
+    heros-haste:
+      enabled: true
+      name: '&bHero''s Haste'
+      material: SUGAR
+      menu-slot: 19
+      price: 15000
+      required-level: 100
+      trigger-interval: 5
+      effect: HEROS_HASTE
+      speed-amplifier: 2
+      speed-seconds: 5
+      lore:
+        - '&7Every fifth kill grants'
+        - '&7Speed II for five seconds.'
+    r-and-r:
+      enabled: true
+      name: '&aR&R'
+      material: RED_ROSE
+      menu-slot: 20
+      price: 4000
+      required-level: 40
+      required-bundle: beastmode
+      trigger-interval: 3
+      effect: R_AND_R
+    tough-skin:
+      enabled: true
+      name: '&9Tough Skin'
+      material: LEATHER
+      menu-slot: 21
+      price: 3000
+      required-level: 30
+      required-bundle: beastmode
+      trigger-interval: 5
+      effect: TOUGH_SKIN
+    tactical-retreat:
+      enabled: true
+      name: '&dTactical Retreat'
+      material: RABBIT_FOOT
+      menu-slot: 22
+      price: 5000
+      required-level: 50
+      required-bundle: beastmode
+      trigger-interval: 7
+      effect: TACTICAL_RETREAT
+    monster:
+      enabled: true
+      name: '&cMonster'
+      material: NETHER_STAR
+      menu-slot: 23
+      price: 10000
+      required-level: 40
+      required-bundle: beastmode
+      trigger-interval: 25
+      effect: MONSTER
+    pungent:
+      enabled: true
+      name: '&2Pungent'
+      material: SLIME_BALL
+      menu-slot: 24
+      price: 5000
+      required-level: 50
+      required-bundle: hermit
+      trigger-interval: 7
+      effect: PUNGENT
+    glass-pickaxe:
+      enabled: true
+      name: '&bGlass Pickaxe'
+      material: DIAMOND_PICKAXE
+      menu-slot: 25
+      price: 6000
+      required-level: 60
+      required-bundle: hermit
+      trigger-interval: 7
+      effect: GLASS_PICKAXE
+    aura-of-protection:
+      enabled: true
+      name: '&9Aura of Protection'
+      material: BEACON
+      menu-slot: 28
+      price: 8000
+      required-level: 50
+      required-bundle: hermit
+      trigger-interval: 10
+      effect: AURA_OF_PROTECTION
+    ice-cube:
+      enabled: true
+      name: '&bIce Cube'
+      material: ICE
+      menu-slot: 29
+      price: 9000
+      required-level: 60
+      required-bundle: hermit
+      trigger-interval: 10
+      effect: ICE_CUBE
+    khanate:
+      enabled: true
+      name: '&6Khanate'
+      material: GOLD_SWORD
+      menu-slot: 30
+      price: 6000
+      required-level: 60
+      required-bundle: highlander
+      trigger-interval: 3
+      effect: KHANATE
+    rush:
+      enabled: true
+      name: '&bRush'
+      material: FEATHER
+      menu-slot: 31
+      price: 25000
+      required-level: 110
+      required-bundle: highlander
+      trigger-interval: 5
+      effect: RUSH
+    gold-nano-factory:
+      enabled: true
+      name: '&6Gold Nano-factory'
+      material: GOLD_NUGGET
+      menu-slot: 32
+      price: 6000
+      required-level: 50
+      required-bundle: highlander
+      trigger-interval: 7
+      effect: GOLD_NANO_FACTORY
+    leech:
+      enabled: true
+      name: '&cLeech'
+      material: FERMENTED_SPIDER_EYE
+      menu-slot: 33
+      price: 6000
+      required-level: 70
+      required-bundle: magnum-opus
+      trigger-interval: 3
+      effect: LEECH
+    assured-strike:
+      enabled: true
+      name: '&eAssured Strike'
+      material: IRON_SWORD
+      menu-slot: 34
+      price: 10000
+      required-level: 80
+      required-bundle: magnum-opus
+      trigger-interval: 7
+      effect: ASSURED_STRIKE
+    apostle-to-rngesus:
+      enabled: true
+      name: '&dApostle to RNGesus'
+      material: ENDER_PORTAL_FRAME
+      menu-slot: 37
+      price: 50000
+      required-level: 100
+      required-bundle: magnum-opus
+      trigger-interval: 25
+      effect: APOSTLE
+    super-streaker:
+      enabled: true
+      name: '&bSuper Streaker'
+      material: EXP_BOTTLE
+      menu-slot: 38
+      price: 20000
+      required-level: 80
+      required-bundle: to-the-moon
+      trigger-interval: 10
+      effect: SUPER_STREAKER
+    gold-stack:
+      enabled: true
+      name: '&6Gold Stack'
+      material: GOLD_INGOT
+      menu-slot: 39
+      price: 25000
+      required-level: 90
+      required-bundle: to-the-moon
+      trigger-interval: 10
+      effect: GOLD_STACK
+    xp-stack:
+      enabled: true
+      name: '&bXP Stack'
+      material: EXP_BOTTLE
+      menu-slot: 40
+      price: 25000
+      required-level: 90
+      required-bundle: to-the-moon
+      trigger-interval: 10
+      effect: XP_STACK
+  effects:
+    feast:
+      duration-seconds: 10
+      damage-bonus: 0.2
+    counter-strike:
+      duration-seconds: 8
+      damage-bonus: 0.15
+      flat-reduction: 2.0
+    fight-or-flight:
+      duration-seconds: 7
+      damage-bonus: 0.2
+    tough-skin:
+      reduction-per-stack: 0.03
+      maximum-stacks: 8
+    monster:
+      hearts-per-stack: 1
+      maximum-stacks: 2
+    khanate:
+      damage-per-stack: 0.04
+      maximum-stacks: 10
+    rush:
+      speed-per-stack: 0.015
+      maximum-stacks: 10
+    super-streaker:
+      base-xp: 50
+      bonus-per-stack: 0.05
+      maximum-stacks: 10
+    gold-stack:
+      progress-per-trigger: 0.1
+      base-cap: 0.5
+      cap-per-prestige: 0.1
+    xp-stack:
+      progress-per-trigger: 0.05
+      base-cap: 1.0
+      cap-per-prestige: 0.2
+  milestones:
+    - 5
+    - 10
+    - 15
+    - 20
+    - 25
+    - 30
+    - 35
+    - 40
+    - 45
+    - 50
+    - 55
+    - 60
+    - 65
+    - 70
+    - 75
+    - 80
+    - 85
+    - 90
+    - 95
+    - 100
+megastreaks:
+  enabled: true
+  currency: PIT_GOLD
+  title: Choose a Megastreak
+  size: 45
+  close-slot: 40
+  command-restrictions:
+    - spawn
+    - respawn
+    - lobby
+    - leave
+  activation:
+    title: '&c&lMEGASTREAK!'
+    subtitle: '&f%megastreak% &7activated at &a%streak% kills'
+    sound: WITHER_SPAWN
+    broadcast: '&c&lMEGASTREAK! %level_formatted% &f%player% &7activated &c%megastreak%&7!'
+  definitions:
+    overdrive:
+      enabled: true
+      name: '&bOverdrive'
+      material: SUGAR
+      menu-slot: 10
+      activation-streak: 50
+      required-level: 1
+      required-prestige: 0
+      bundle-renown-price: 0
+      price: 0
+      kill-xp-multiplier: 1.5
+      kill-gold-multiplier: 2.0
+      true-damage-heart-per-five: 0.1
+      death-xp: 4000
+    beastmode:
+      enabled: true
+      name: '&cBeastmode'
+      material: DIAMOND_HELMET
+      menu-slot: 12
+      activation-streak: 50
+      required-level: 30
+      required-prestige: 3
+      bundle-renown-price: 10
+      price: 10000
+      outgoing-damage: 0.25
+      kill-xp-multiplier: 1.5
+      kill-gold-multiplier: 1.75
+      incoming-heart-per-five: 0.1
+    hermit:
+      enabled: true
+      name: '&7Hermit'
+      material: BEDROCK
+      menu-slot: 14
+      activation-streak: 50
+      required-level: 50
+      required-prestige: 4
+      bundle-renown-price: 20
+      price: 20000
+      block-duration-multiplier: 2.0
+      bedrock-at-activation: 32
+      bedrock-per-ten: 16
+      bedrock-duration-seconds: 60
+      initial-reward-bonus: 0.05
+      reward-bonus-per-ten: 0.05
+      maximum-reward-bonus: 0.75
+      incoming-damage-per-kill: 0.003
+    highlander:
+      enabled: true
+      name: '&6Highlander'
+      material: GOLD_BOOTS
+      menu-slot: 16
+      activation-streak: 50
+      required-level: 60
+      required-prestige: 7
+      bundle-renown-price: 40
+      price: 30000
+      kill-gold-multiplier: 2.1
+      bountied-damage-bonus: 0.33
+      bounty-hunter-incoming-per-kill: 0.003
+      maximum-bounty: 10000
+    magnum-opus:
+      enabled: true
+      name: '&dMagnum Opus'
+      material: TNT
+      menu-slot: 28
+      activation-streak: 50
+      required-level: 70
+      required-prestige: 10
+      bundle-renown-price: 60
+      price: 40000
+      renown-reward: 1
+    to-the-moon:
+      enabled: true
+      name: '&bTo the Moon'
+      material: FIREWORK
+      menu-slot: 30
+      activation-streak: 100
+      required-level: 80
+      required-prestige: 14
+      bundle-renown-price: 150
+      price: 50000
+      kill-xp-multiplier: 1.2
+      maximum-kill-xp-bonus: 100
+      incoming-per-twenty: 0.1
+      true-damage-heart-per-twenty-over-200: 0.1
+      death-multiplier-per-kill: 0.005
+      death-multiplier-cap: 1.0
+      death-streak-cap: 300
+    uberstreak:
+      enabled: true
+      name: '&5Uberstreak'
+      material: DRAGON_EGG
+      menu-slot: 32
+      activation-streak: 100
+      required-level: 90
+      required-prestige: 20
+      bundle-renown-price: 50
+      price: 50000
+      mystic-drop-bonus: 0.5
+      non-prestige-damage-reduction: 0.4
+      incoming-per-hundred: 0.1
+      max-health-loss-at-200: 4.0
+      half-effects-at: 300
+      disable-healing-at: 400
+      uberdrop-minimum-streak: 400
+      uberdrop-limit: 4
+      uberdrop-window-hours: 24
+      uberdrop-renown-costs:
+        - 0
+        - 5
+        - 10
+        - 15
+      uberdrop-rewards:
+        - FUNKY_FEATHER
+        - CHUNK_OF_VILE
+        - PHILOSOPHERS_CACTUS
+bounties:
+  after-streak: 10
+  base-coins: 50
+  coins-per-streak: 5
+temporary-blocks:
+  feature-protection-radius: 3
+  sources:
+    OBSIDIAN:
+      material: OBSIDIAN
+      lifetime-seconds: 120
+    MINEMAN_COBBLESTONE:
+      material: COBBLESTONE
+      lifetime-seconds: 30
+    EVENT_BLOCK:
+      material: WOOL
+      lifetime-seconds: 15
+    REGISTERED_TEMPORARY_BLOCK:
+      material: COBBLESTONE
+      lifetime-seconds: 30
+  blocked-events:
+    - care_package
+    - king_of_the_hill
+    - dragon_egg
+    - king_of_the_ladder
+    - giant_cake
+    - rage_pit
+    - team_deathmatch
+    - beast
+    - raffle
+    - robbery
+    - pizza
+    - squads
+    - blockhead
+    - spire
+events:
+  schedule:
+    enabled: true
+    minimum-delay-seconds: 600
+    maximum-delay-seconds: 1200
+  double_rewards:
+    enabled: true
+    duration-seconds: 240
+    minimum-players: 1
+  everyone_gets_a_bounty:
+    enabled: true
+    duration-seconds: 1
+    minimum-players: 1
+    bounty-min: 100
+    bounty-max: 1000
+  king_of_the_hill:
+    enabled: true
+    duration-seconds: 180
+    minimum-players: 2
+    minimum-locations: 1
+  dragon_egg:
+    enabled: true
+    duration-seconds: 180
+    minimum-players: 1
+    minimum-locations: 2
+  king_of_the_ladder:
+    enabled: true
+    duration-seconds: 180
+    minimum-players: 2
+    minimum-locations: 2
+  giant_cake:
+    enabled: true
+    duration-seconds: 180
+    minimum-players: 1
+    minimum-locations: 1
+  team_deathmatch:
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 4
+    minimum-locations: 2
+  rage_pit:
+    wall-placement-batch-size: 500
+    preview-duration-ticks: 600
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 4
+    minimum-locations: 3
+  beast:
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 4
+  raffle:
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 3
+    minimum-locations: 1
+  robbery:
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 3
+  blockhead:
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 4
+    minimum-locations: 1
+  squads:
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 4
+  pizza:
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 2
+    minimum-locations: 2
+  spire:
+    enabled: true
+    duration-seconds: 300
+    minimum-players: 2
+    minimum-locations: 9

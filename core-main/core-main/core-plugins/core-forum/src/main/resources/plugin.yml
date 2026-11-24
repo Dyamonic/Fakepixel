@@ -1,0 +1,7 @@
+name: CoreForum
+main: club.abelix.core.plugin.forum.ForumCorePlugin
+version: '1.0'
+
+authors:
+  - Revage
+  - Abelix

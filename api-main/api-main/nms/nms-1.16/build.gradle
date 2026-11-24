@@ -1,0 +1,11 @@
+dependencies {
+    compileOnly libs.spigot.v1165
+    compileOnly libs.adventure.api
+    compileOnly libs.adventure.text.serializer.gson
+    compileOnly libs.protocollib.legacy
+    compileOnly libs.fastutil
+
+    api project(":nms:nms-1.12")
+}
+
+enablePublishing(project)

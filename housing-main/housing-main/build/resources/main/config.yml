@@ -1,0 +1,259 @@
+server-name: "MC.FAKEPIXEL.ME"
+store: "WORLD.FAKEPIXEL.ME"
+
+settings:
+  server-name: "Housing"
+  network-name: "Fakepixel"
+  server-address: "&6world.fakepixel.me"
+  default-template: "default"
+  fallback-spawn-world: "housinglobby"
+  lobby-world: "housinglobby"
+  main-world: "housinglobby"
+  static-worlds:
+    - housinglobby
+  lobby-spawn:
+    x: -7
+    y: 68.0
+    z: -8
+    yaw: 0.0
+    pitch: 0.0
+  house-spawn:
+    x: -9.0
+    y: 110.0
+    z: -57.0
+    yaw: 0.0
+    pitch: 0.0
+
+slimeworldmanager:
+  enabled: true
+  plugin: ""
+  loader: "file"
+  storage-folder: "slime_worlds"
+  world-prefix: "house_"
+  read-only-template: true
+  store-house-worlds-in-slime-worlds: true
+  copy-template-folder-on-create: false
+  repair-missing-template-outside-border: true
+  repair-template-min-outside-blocks: 100
+  repair-template-max-existing-outside-blocks: 25
+  template-worlds:
+    - basic
+    - default
+    - air
+    - desert
+    - forest
+    - jungle
+    - jungle2
+    - mesa
+    - scifi
+
+template-copy:
+  min-x: -128
+  max-x: 128
+  min-y: 0
+  max-y: 255
+  min-z: -128
+  max-z: 128
+
+limits:
+  default-guests: 20
+  build-rank: "VIP"
+  create-rank: "DEFAULT"
+  max-name-length: 48
+
+housing-plots:
+  max-plots: 6
+  default-owned: 1
+  prices:
+    2: 500
+    3: 1000
+    4: 2500
+    5: 5000
+    6: 10000
+
+mode:
+  default: SOCIAL
+  build-mode-name: "&aBuild Mode"
+  social-mode-name: "&bSocial Mode"
+  bypass-permission: "housing.admin"
+
+messages:
+  prefix: "&a"
+  no-permission: "&cYou don't have permission."
+  loading: "&7Loading your house..."
+  created: "&aYour house has been created."
+  visiting: "&7Sending you to &e%owner%&7's house..."
+  left: "&7You left the house."
+  not-found: "&cThat house could not be found."
+  reload: "&aHousingCore reloaded."
+
+cookies:
+  item-slot: 4
+
+scoreboards:
+  enabled: true
+  lobby: true
+  owner-house: true
+  guest-house: true
+
+cookie-leaderboard:
+  enabled: true
+  world: "housinglobby"
+  x: 28
+  y: 68
+  z: 43
+  title: "&bCookie Leaderboard"
+  lines: 10
+  update-ticks: 1200
+
+housing-npcs:
+  default-name: "Housing"
+  name-format: |-
+    &a%npcname%
+    &e&lRIGHT CLICK
+  configured:
+    browse:
+      enabled: true
+      name: "&aBrowse"
+      skin-name: "hamzadeveloper"
+      world: "housinglobby"
+      command: "housing browse"
+      look-at-players: false
+      location:
+        x: -3.502
+        y: 66.0
+        z: 31.573
+        yaw: 136.8
+        pitch: -0.2
+      skin-value: ""
+      skin-signature: ""
+    list:
+      enabled: true
+      name: "&aYour Houses"
+      skin-name: "2pb"
+      world: "housinglobby"
+      command: "housing list"
+      look-at-players: false
+      location:
+        x: -6.521
+        y: 66.0
+        z: 32.761
+        yaw: -179.3
+        pitch: 0.5
+      skin-value: ""
+      skin-signature: ""
+    random:
+      enabled: true
+      name: "&aRandom"
+      skin-name: "1zg"
+      world: "housinglobby"
+      command: "housing random"
+      look-at-players: false
+      location:
+        x: -9.512
+        y: 66.0
+        z: 31.482
+        yaw: -149.6
+        pitch: 3.8
+      skin-value: ""
+      skin-signature: ""
+  saved: {}
+
+carpenter-npc:
+  enabled: true
+  name: "&aCarpenter"
+  skin-name: "makedonovv"
+  command: "housing carpenter"
+  look-at-players: false
+  location:
+    x: -2.476
+    y: 110.0
+    z: -57.410
+    yaw: -3.8
+    pitch: 4.1
+  skin-value: ""
+  skin-signature: ""
+
+staff:
+  menu-item-slot: 7
+  admin-cookie-slot: 4
+  admin-cookie-amount: 50
+  dry-radius: 4
+
+rank-detection:
+  enabled: true
+
+owner-menu:
+  item-slot: 8
+
+build:
+  max-selection-blocks: 20000
+
+border:
+  enabled: true
+  min-x: -21
+  max-x: 17
+  min-z: -36
+  max-z: 7
+  y: 102
+  material: "WOOL:14"
+  min-build-y-enabled: true
+  min-build-y: 92
+
+chat:
+  format: "%housing_prefix% %abelix_prefix%%player%&7: &f%message%"
+
+
+nametags:
+  enabled: true
+  format: "%abelix_prefix%%player% %housing_prefix%"
+  update-ticks: 20
+  armorstand-overlay: false
+  name-separator: " "
+
+
+damage:
+  disable-pvp-in-houses: true
+  disable-fall-damage-in-houses: true
+  disable-fire-lava-damage-in-houses: true
+
+protection:
+  disable-explosions-in-houses: true
+  disable-fire-spread-in-houses: true
+  disable-lava-flow-in-houses: true
+
+display-names:
+  display-name-format: "%abelix_prefix%%player% %housing_prefix%"
+  tablist-format: "%abelix_prefix%%player% %housing_prefix%"
+  max-tablist-length: 64
+
+tablist:
+  enabled: true
+  update-ticks: 40
+  hide-house-players: true
+  header:
+    - "&bYou are playing on &6&l%server%"
+    - ""
+  footer:
+    - ""
+    - "&aRanks, Boosters & MORE! &c&l%store%"
+
+
+guest-menu:
+  item-slot: 8
+
+lobby-items:
+  enabled: true
+  game-menu-slot: 0
+  profile-slot: 1
+  players-visible-slot: 7
+  cosmetics-slot: 4
+  lobby-selector-slot: 8
+  game-menu-name: "&aGame Menu &7(Right Click)"
+  profile-name: "&aMy Profile &7(Right Click)"
+  cosmetics-name: "&aCosmetics &7(Right Click)"
+  players-visible-name: "&aPlayers: Visible &7(Right Click)"
+  lobby-selector-name: "&aLobby Selector &7(Right Click)"
+
+placeholders:
+  housing-prefix: "%housing_prefix%"

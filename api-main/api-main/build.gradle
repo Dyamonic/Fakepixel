@@ -1,0 +1,68 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'com.google.protobuf' version '0.9.4' apply false
+    id 'com.gradleup.shadow' version '9.1.0' apply false
+    id 'com.akuleshov7.vercraft.plugin-gradle' version '0.5.0'
+}
+
+
+
+allprojects {
+    group = 'club.abelix'
+
+    ext.set('output', findProperty("gradle.output") ?: "artifacts/")
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+
+        maven { url = "https://dist.labymod.net/api/v1/maven/release/" }
+        maven { url = "https://repo.lunarclient.dev" }
+        maven { url = "https://repo.abelix.club/repository/public/" }
+
+        maven {
+            url "https://git.fakepixel.online/api/v4/groups/6/-/packages/maven"
+
+            credentials(HttpHeaderCredentials) {
+                name = "${System.getenv("CI_JOB_TOKEN") ? 'Job-Token' : 'Private-Token'}"
+                value = System.getenv("CI_JOB_TOKEN") ?: System.getenv("ABELIX_ACCESS_TOKEN")
+            }
+
+            authentication { header(HttpHeaderAuthentication) }
+        }
+    }
+}
+
+configure(subprojects - project(":nms")) { p ->
+    apply plugin: "java-library"
+    apply plugin: "com.gradleup.shadow"
+
+    apply from: "$rootDir/gradle/publishing.gradle"
+
+    dependencies {
+        compileOnly(libs.jetbrains.annotations)
+
+        compileOnly(libs.lombok)
+        annotationProcessor(libs.lombok)
+
+        compileOnly(libs.abelix.core.connector)
+        compileOnly(libs.abelix.di.api)
+        compileOnly(libs.abelix.di.bukkit)
+    }
+
+    tasks.assemble.dependsOn(shadowJar)
+
+    tasks.named('processResources') {
+        inputs.property 'VERSION', project.version
+        inputs.property 'COMMIT', System.getenv('CI_COMMIT_SHORT_SHA') ?: 'unspecified'
+
+        filesMatching('plugin.yml') {
+            expand([
+                    VERSION    : project.version,
+            ])
+            filteringCharset = 'UTF-8'
+        }
+    }
+
+}

@@ -1,0 +1,20 @@
+<configuration>
+    <conversionRule conversionWord="lv"
+                    class="club.abelix.commons.slf4j.LevelColorConverter"/>
+    <conversionRule conversionWord="mc"
+                    class="club.abelix.commons.slf4j.MinecraftFormattingConverter"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} %lv %logger{36} - %mc(%msg) %n%ex</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="club.abelix" level="INFO" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

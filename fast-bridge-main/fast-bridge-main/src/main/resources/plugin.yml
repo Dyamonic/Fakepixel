@@ -1,0 +1,7 @@
+name: FastBridgeGame
+main: club.abelix.games.fastbridge.FastBridge
+version: '${VERSION} git-${COMMIT}'
+description: "FastBridge game plugin for the Abelix platform base on K8S"
+author: AbelixClub
+
+depend: [ Api ]

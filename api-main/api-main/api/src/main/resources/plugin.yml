@@ -1,0 +1,11 @@
+name: Api
+main: club.abelix.api.FalconAPI
+description: "Api Plugin for the Abelix platform base on K8S"
+website: "https://abelix.team"
+version: '${VERSION}'
+authors: [ AbelixTeam ]
+load: POSTWORLD
+
+depend: [ ProtocolLib, Starship, LabyModServerAPI, Apollo-Bukkit ]
+softdepend: [ FastAsyncWorldEdit, AbelixSlimeWorldManager, WorldGuard, GadgetsMenu, SlimeWorldManager ]
+

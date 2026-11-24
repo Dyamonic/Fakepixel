@@ -1,0 +1,129 @@
+contracts:
+  enabled: true
+  duration-seconds: 300
+  choices: 3
+  save-interval-seconds: 10
+  action-bar-update-seconds: 5
+  chain-window-seconds: 5
+  long-range-bow-distance: 30
+  assist-window-seconds: 15
+  lava-attribution-seconds: 30
+  sneaking-attempt-timeout-seconds: 30
+  daily-reset:
+    hour-utc: 4
+    base-limit: 3
+  pending-offer:
+    expires-seconds: 600
+    refund-on-expire: true
+  menu:
+    title: '&8Contracts'
+    size: 27
+    novice-slot: 11
+    big-time-slot: 15
+    current-slot: 22
+    filler:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+  choice-menu:
+    title: '&8Choose a Contract'
+    size: 27
+    slots: [11, 13, 15]
+  abandon-menu:
+    title: '&8Abandon Contract?'
+    confirm-slot: 11
+    cancel-slot: 15
+  novice:
+    required-level: 30
+    base-price: 250
+    reward-min: 400
+    reward-max: 800
+    enhanced-reward-max: 1000
+  big-time:
+    required-level: 70
+    base-price: 1000
+    reward-min: 1500
+    reward-max: 3000
+    enhanced-reward-max: 5000
+  enhanced:
+    chance: 0.05
+    target-multiplier: 1.5
+    name: '&d&lENHANCED!'
+  chunks-of-vile:
+    enabled: true
+    required-difficulty: BIG_TIME
+    required-renown-upgrade: heresy
+    base-chance: 0.10
+    amount: 1
+  renown:
+    contractor:
+      enabled: true
+      inventory-slot: 37
+      required-prestige: 2
+      prices: [5, 5, 10, 15, 15]
+    scam-artist:
+      enabled: true
+      inventory-slot: 38
+      required-prestige: 1
+      prices: [5, 5, 10, 15, 15]
+      discount-per-tier: 0.05
+    heresy:
+      enabled: true
+      inventory-slot: 39
+      required-prestige: 6
+      price: 10
+    do-your-own-carpentry:
+      enabled: true
+      inventory-slot: 40
+      required-prestige: 8
+      price: 5
+      vile-chance-bonus: 0.10
+      vile-amount: 2
+  messages:
+    locked-level: '&cYou must reach level %level% first.'
+    daily-limit: '&cYou completed all available contracts today.'
+    already-active: '&cYou already have an active contract.'
+    pending-offer: '&eYou already paid for an offer. Choose one of the existing contracts.'
+    purchase-failed: '&cThe contract purchase failed. Nothing was charged.'
+    complete: '&a&lCONTRACT COMPLETE! &7You earned &6%reward% Gold&7.'
+    failed: '&c&lCONTRACT FAILED! &7You ran out of time.'
+    abandoned: '&cYou abandoned your active contract.'
+    refunded: '&aYour expired contract offer was refunded &6%amount% Gold&a.'
+  statistics:
+    failed-contracts-consume-daily: false
+    abandoned-contracts-consume-daily: false
+  center-regions: {}
+  objectives:
+    novice:
+      PLAYER_KILLS: { enabled: true, weight: 10, targets: [5, 10], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      KILLS_ON_GRASS: { enabled: true, weight: 5, targets: [1], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      DIAMOND_SWORD_KILLS: { enabled: true, weight: 5, targets: [1], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      LAVA_KILLS: { enabled: true, weight: 4, targets: [1], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      KILLS_ON_OBSIDIAN: { enabled: true, weight: 5, targets: [1], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      KILLS_AFTER_BOW_HIT: { enabled: true, weight: 7, targets: [3, 4], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      BOW_FINAL_KILLS: { enabled: true, weight: 7, targets: [5, 7, 8], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      LONG_RANGE_BOW_KILLS: { enabled: true, weight: 3, targets: [1], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      SNEAKING_KILLS: { enabled: true, weight: 4, targets: [1], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      KILLSTREAK: { enabled: true, weight: 7, targets: [5, 7], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      CHAIN_KILLS: { enabled: true, weight: 7, targets: [2], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      GROUND_INGOTS: { enabled: true, weight: 8, targets: [10], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      GOLDEN_APPLES_EATEN: { enabled: true, weight: 8, targets: [6], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      BOUNTIES_CLAIMED: { enabled: true, weight: 6, targets: [1], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+      BOW_HITS: { enabled: true, weight: 8, targets: [35], reward-min: 400, reward-max: 800, enhanced-reward-max: 1000 }
+    big-time:
+      PLAYER_KILLS: { enabled: true, weight: 10, targets: [15, 20], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      KILLS_ON_GRASS: { enabled: true, weight: 6, targets: [8, 12], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      DIAMOND_SWORD_KILLS: { enabled: true, weight: 7, targets: [10, 15, 20], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      LAVA_KILLS: { enabled: true, weight: 5, targets: [5, 8], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      KILLS_ON_OBSIDIAN: { enabled: true, weight: 6, targets: [5, 8, 12], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      KILLS_AFTER_BOW_HIT: { enabled: true, weight: 7, targets: [8, 10, 12, 15], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      NO_ARMOR_KILLS: { enabled: true, weight: 5, targets: [3, 4], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      SNEAKING_KILLS: { enabled: true, weight: 5, targets: [3, 4], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      KILLSTREAK: { enabled: true, weight: 7, targets: [15, 20], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      CHAIN_KILLS: { enabled: true, weight: 7, targets: [3, 4], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      GROUND_INGOTS: { enabled: true, weight: 8, targets: [20, 25, 30], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      GOLDEN_APPLES_EATEN: { enabled: true, weight: 8, targets: [12, 16, 18], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      BOUNTIES_CLAIMED: { enabled: true, weight: 6, targets: [2, 3, 4], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      BOW_HITS: { enabled: true, weight: 8, targets: [100, 125, 150], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      FISHED_DIAMOND_SWORDS: { enabled: true, weight: 3, targets: [1], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000 }
+      CENTER_FIST_KILLS: { enabled: true, weight: 3, targets: [1, 2], reward-min: 1500, reward-max: 3000, enhanced-reward-max: 5000, requires-center-region: true }

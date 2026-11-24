@@ -1,0 +1,4 @@
+main: club.abelix.core.plugin.keda.KedaCorePlugin
+name: KedaPlugin
+author: Krashe85
+version: 1.0.0

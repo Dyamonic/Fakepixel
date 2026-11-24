@@ -1,0 +1,82 @@
+scoreboard:
+  enabled: true
+  update-ticks: 20
+  gold-refresh-ticks: 200
+  maximum-effect-lines: 3
+  date-format: 'MM/dd/yy'
+  date-timezone: 'America/Los_Angeles'
+  title: '&b&lThe Pit'
+  lines:
+  - '&7%date%'
+  - ''
+  - '%prestige_line%'
+  - '&fLevel: %level_formatted%'
+  - '&fNeeded XP: &b%needed_xp%'
+  - ''
+  - '&fGold: &6%coins%'
+  - ''
+  - '&fStatus: %status%'
+  - '%bounty_line%'
+  - '%streak_line%'
+  - '%effect_lines%'
+  - ''
+  - '&emc.fakepixel.me'
+  effects:
+    enabled: true
+    maximum-lines: 3
+    sort: SHORTEST_REMAINING
+    allowlist:
+    - INCREASE_DAMAGE
+    - DAMAGE_RESISTANCE
+    - SPEED
+    - REGENERATION
+    - ABSORPTION
+    - SLOW
+    names:
+      INCREASE_DAMAGE: Strength
+      DAMAGE_RESISTANCE: Resistance
+      SPEED: Speed
+      REGENERATION: Regeneration
+      ABSORPTION: Absorption
+      SLOW: Slowness
+    level-colors:
+      INCREASE_DAMAGE: '&c'
+      DAMAGE_RESISTANCE: '&9'
+      SPEED: '&b'
+      REGENERATION: '&d'
+      ABSORPTION: '&e'
+      SLOW: '&7'
+leaderboards:
+  title: '&b&lThe Pit Top %type%'
+  period-line: '&7%period%'
+  entry-line: '%entry%'
+  empty-line: '&7No data'
+  names:
+    kills: Kills
+    level: Level
+    xp: XP
+    prestige: Prestige
+    activeplayers: Active Players
+  activeplayers:
+    enabled: true
+    title: '&b&lTOP ACTIVE PLAYERS'
+    subtitle: '&7Pit Level'
+    active-days: 7
+    maximum-entries: 10
+    refresh-seconds: 300
+    minimum-refresh-seconds: 30
+    visibility-update-ticks: 20
+    view-distance: 48
+    line-spacing: 0.27
+    title-entry-gap: 0.32
+    entry-format: '%position_color%%position%. %level_display% %player_display% &7- &b%lifetime_xp_short% XP'
+    viewer-line: '&7You have: &b%viewer_lifetime_xp_short% XP'
+    footer:
+      - '&7All-time &ebest &7players!'
+      - '&7&oPlayers who logged in this week.'
+    empty-line: '&7No active players'
+    position-colors:
+      '1': '&e'
+      '2': '&e'
+      '3': '&e'
+      default: '&e'

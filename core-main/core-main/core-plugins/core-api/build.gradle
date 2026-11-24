@@ -1,0 +1,5 @@
+dependencies {
+    implementation(libs.abelix.coreapi.proto)
+    compileOnly(libs.grpc.protobuf)
+    compileOnly(libs.grpc.stub)
+}

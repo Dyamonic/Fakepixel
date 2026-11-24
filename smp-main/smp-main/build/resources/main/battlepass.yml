@@ -1,0 +1,1714 @@
+﻿enabled: true
+xp-per-level: 2500
+max-level: 100
+buy-level-cost-gold: 250
+premium-cost-gold: 1500
+menu:
+  levels-per-page: 9
+  locked-material: MINECART
+  unlocked-material: CHEST_MINECART
+  premium-glow: true
+xp-from:
+  skills-multiplier: 1.0
+  jobs-multiplier: 1.0
+rewards:
+  1:
+    display: '&aBattlePass Reward &7#1'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f125 coins'
+        - '&8- &f16 x oak logs'
+      commands:
+        - 'coins give %player% 125'
+        - 'give %player% oak_log 16'
+    premium:
+      lore:
+        - '&8- &f300 coins'
+        - '&8- &f12 x iron ingots'
+      commands:
+        - 'coins give %player% 300'
+        - 'give %player% iron_ingot 12'
+  2:
+    display: '&aBattlePass Reward &7#2'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f150 coins'
+        - '&8- &f32 x cobblestone'
+      commands:
+        - 'coins give %player% 150'
+        - 'give %player% cobblestone 32'
+    premium:
+      lore:
+        - '&8- &f350 coins'
+        - '&8- &f8 x gold ingots'
+      commands:
+        - 'coins give %player% 350'
+        - 'give %player% gold_ingot 8'
+  3:
+    display: '&aBattlePass Reward &7#3'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f175 coins'
+        - '&8- &f8 x bread'
+      commands:
+        - 'coins give %player% 175'
+        - 'give %player% bread 8'
+    premium:
+      lore:
+        - '&8- &f400 coins'
+        - '&8- &f2 x diamonds'
+      commands:
+        - 'coins give %player% 400'
+        - 'give %player% diamond 2'
+  4:
+    display: '&aBattlePass Reward &7#4'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f200 coins'
+        - '&8- &f12 x coal'
+      commands:
+        - 'coins give %player% 200'
+        - 'give %player% coal 12'
+    premium:
+      lore:
+        - '&8- &f450 coins'
+        - '&8- &f6 x emeralds'
+      commands:
+        - 'coins give %player% 450'
+        - 'give %player% emerald 6'
+  5:
+    display: '&aBattlePass Reward &7#5'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f225 coins'
+        - '&8- &f4 x iron ingots'
+      commands:
+        - 'coins give %player% 225'
+        - 'give %player% iron_ingot 4'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f12 x bottles o enchanting'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% experience_bottle 12'
+  6:
+    display: '&aBattlePass Reward &7#6'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f250 coins'
+        - '&8- &f24 x glass'
+      commands:
+        - 'coins give %player% 250'
+        - 'give %player% glass 24'
+    premium:
+      lore:
+        - '&8- &f550 coins'
+        - '&8- &f10 x obsidian'
+      commands:
+        - 'coins give %player% 550'
+        - 'give %player% obsidian 10'
+  7:
+    display: '&aBattlePass Reward &7#7'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f275 coins'
+        - '&8- &f24 x torches'
+      commands:
+        - 'coins give %player% 275'
+        - 'give %player% torch 24'
+    premium:
+      lore:
+        - '&8- &f600 coins'
+        - '&8- &f4 x ender pearls'
+      commands:
+        - 'coins give %player% 600'
+        - 'give %player% ender_pearl 4'
+  8:
+    display: '&aBattlePass Reward &7#8'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f300 coins'
+        - '&8- &f8 x cooked beef'
+      commands:
+        - 'coins give %player% 300'
+        - 'give %player% cooked_beef 8'
+    premium:
+      lore:
+        - '&8- &f650 coins'
+        - '&8- &f8 x bookshelves'
+      commands:
+        - 'coins give %player% 650'
+        - 'give %player% bookshelf 8'
+  9:
+    display: '&6Milestone Reward &7#9'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f325 coins'
+        - '&8- &f12 x lapis lazuli'
+      commands:
+        - 'coins give %player% 325'
+        - 'give %player% lapis_lazuli 12'
+    premium:
+      lore:
+        - '&8- &f700 coins'
+        - '&8- &f2 x golden apples'
+      commands:
+        - 'coins give %player% 700'
+        - 'give %player% golden_apple 2'
+  10:
+    display: '&6Milestone Reward &7#10'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f350 coins'
+        - '&8- &f1 x iron pickaxe'
+      commands:
+        - 'coins give %player% 350'
+        - 'give %player% iron_pickaxe 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f1 x diamond pickaxe'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% diamond_pickaxe 1'
+  11:
+    display: '&aBattlePass Reward &7#11'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f375 coins'
+        - '&8- &f3 x gold ingots'
+      commands:
+        - 'coins give %player% 375'
+        - 'give %player% gold_ingot 3'
+    premium:
+      lore:
+        - '&8- &f800 coins'
+        - '&8- &f24 x copper ingots'
+      commands:
+        - 'coins give %player% 800'
+        - 'give %player% copper_ingot 24'
+  12:
+    display: '&aBattlePass Reward &7#12'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f400 coins'
+        - '&8- &f24 x arrows'
+      commands:
+        - 'coins give %player% 400'
+        - 'give %player% arrow 24'
+    premium:
+      lore:
+        - '&8- &f850 coins'
+        - '&8- &f24 x quartz'
+      commands:
+        - 'coins give %player% 850'
+        - 'give %player% quartz 24'
+  13:
+    display: '&aBattlePass Reward &7#13'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f425 coins'
+        - '&8- &f16 x spruce logs'
+      commands:
+        - 'coins give %player% 425'
+        - 'give %player% spruce_log 16'
+    premium:
+      lore:
+        - '&8- &f900 coins'
+        - '&8- &f3 x blaze rods'
+      commands:
+        - 'coins give %player% 900'
+        - 'give %player% blaze_rod 3'
+  14:
+    display: '&aBattlePass Reward &7#14'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f450 coins'
+        - '&8- &f32 x stone bricks'
+      commands:
+        - 'coins give %player% 450'
+        - 'give %player% stone_bricks 32'
+    premium:
+      lore:
+        - '&8- &f950 coins'
+        - '&8- &f12 x nether wart'
+      commands:
+        - 'coins give %player% 950'
+        - 'give %player% nether_wart 12'
+  15:
+    display: '&aBattlePass Reward &7#15'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f475 coins'
+        - '&8- &f4 x bottles o enchanting'
+      commands:
+        - 'coins give %player% 475'
+        - 'give %player% experience_bottle 4'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f1 x ancient debris'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% ancient_debris 1'
+  16:
+    display: '&aBattlePass Reward &7#16'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f500 coins'
+        - '&8- &f16 x oak logs'
+      commands:
+        - 'coins give %player% 500'
+        - 'give %player% oak_log 16'
+    premium:
+      lore:
+        - '&8- &f1050 coins'
+        - '&8- &f12 x iron ingots'
+      commands:
+        - 'coins give %player% 1050'
+        - 'give %player% iron_ingot 12'
+  17:
+    display: '&aBattlePass Reward &7#17'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f525 coins'
+        - '&8- &f32 x cobblestone'
+      commands:
+        - 'coins give %player% 525'
+        - 'give %player% cobblestone 32'
+    premium:
+      lore:
+        - '&8- &f1100 coins'
+        - '&8- &f8 x gold ingots'
+      commands:
+        - 'coins give %player% 1100'
+        - 'give %player% gold_ingot 8'
+  18:
+    display: '&6Milestone Reward &7#18'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f550 coins'
+        - '&8- &f8 x bread'
+      commands:
+        - 'coins give %player% 550'
+        - 'give %player% bread 8'
+    premium:
+      lore:
+        - '&8- &f1150 coins'
+        - '&8- &f2 x diamonds'
+      commands:
+        - 'coins give %player% 1150'
+        - 'give %player% diamond 2'
+  19:
+    display: '&aBattlePass Reward &7#19'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f575 coins'
+        - '&8- &f12 x coal'
+      commands:
+        - 'coins give %player% 575'
+        - 'give %player% coal 12'
+    premium:
+      lore:
+        - '&8- &f1200 coins'
+        - '&8- &f6 x emeralds'
+      commands:
+        - 'coins give %player% 1200'
+        - 'give %player% emerald 6'
+  20:
+    display: '&6Milestone Reward &7#20'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f600 coins'
+        - '&8- &f1 x diamond'
+      commands:
+        - 'coins give %player% 600'
+        - 'give %player% diamond 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f4 x diamonds'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% diamond 4'
+  21:
+    display: '&aBattlePass Reward &7#21'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f625 coins'
+        - '&8- &f24 x glass'
+      commands:
+        - 'coins give %player% 625'
+        - 'give %player% glass 24'
+    premium:
+      lore:
+        - '&8- &f1300 coins'
+        - '&8- &f10 x obsidian'
+      commands:
+        - 'coins give %player% 1300'
+        - 'give %player% obsidian 10'
+  22:
+    display: '&aBattlePass Reward &7#22'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f650 coins'
+        - '&8- &f24 x torches'
+      commands:
+        - 'coins give %player% 650'
+        - 'give %player% torch 24'
+    premium:
+      lore:
+        - '&8- &f1350 coins'
+        - '&8- &f4 x ender pearls'
+      commands:
+        - 'coins give %player% 1350'
+        - 'give %player% ender_pearl 4'
+  23:
+    display: '&aBattlePass Reward &7#23'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f675 coins'
+        - '&8- &f8 x cooked beef'
+      commands:
+        - 'coins give %player% 675'
+        - 'give %player% cooked_beef 8'
+    premium:
+      lore:
+        - '&8- &f1400 coins'
+        - '&8- &f8 x bookshelves'
+      commands:
+        - 'coins give %player% 1400'
+        - 'give %player% bookshelf 8'
+  24:
+    display: '&aBattlePass Reward &7#24'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f700 coins'
+        - '&8- &f12 x lapis lazuli'
+      commands:
+        - 'coins give %player% 700'
+        - 'give %player% lapis_lazuli 12'
+    premium:
+      lore:
+        - '&8- &f1450 coins'
+        - '&8- &f2 x golden apples'
+      commands:
+        - 'coins give %player% 1450'
+        - 'give %player% golden_apple 2'
+  25:
+    display: '&aBattlePass Reward &7#25'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f725 coins'
+        - '&8- &f16 x redstone dust'
+      commands:
+        - 'coins give %player% 725'
+        - 'give %player% redstone 16'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f16 x amethyst shards'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% amethyst_shard 16'
+  26:
+    display: '&aBattlePass Reward &7#26'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f750 coins'
+        - '&8- &f3 x gold ingots'
+      commands:
+        - 'coins give %player% 750'
+        - 'give %player% gold_ingot 3'
+    premium:
+      lore:
+        - '&8- &f1550 coins'
+        - '&8- &f24 x copper ingots'
+      commands:
+        - 'coins give %player% 1550'
+        - 'give %player% copper_ingot 24'
+  27:
+    display: '&6Milestone Reward &7#27'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f775 coins'
+        - '&8- &f24 x arrows'
+      commands:
+        - 'coins give %player% 775'
+        - 'give %player% arrow 24'
+    premium:
+      lore:
+        - '&8- &f1600 coins'
+        - '&8- &f24 x quartz'
+      commands:
+        - 'coins give %player% 1600'
+        - 'give %player% quartz 24'
+  28:
+    display: '&aBattlePass Reward &7#28'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f800 coins'
+        - '&8- &f16 x spruce logs'
+      commands:
+        - 'coins give %player% 800'
+        - 'give %player% spruce_log 16'
+    premium:
+      lore:
+        - '&8- &f1650 coins'
+        - '&8- &f3 x blaze rods'
+      commands:
+        - 'coins give %player% 1650'
+        - 'give %player% blaze_rod 3'
+  29:
+    display: '&aBattlePass Reward &7#29'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f825 coins'
+        - '&8- &f32 x stone bricks'
+      commands:
+        - 'coins give %player% 825'
+        - 'give %player% stone_bricks 32'
+    premium:
+      lore:
+        - '&8- &f1700 coins'
+        - '&8- &f12 x nether wart'
+      commands:
+        - 'coins give %player% 1700'
+        - 'give %player% nether_wart 12'
+  30:
+    display: '&6Milestone Reward &7#30'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f850 coins'
+        - '&8- &f1 x anvil'
+      commands:
+        - 'coins give %player% 850'
+        - 'give %player% anvil 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f1 x netherite upgrade template'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% netherite_upgrade_smithing_template 1'
+  31:
+    display: '&aBattlePass Reward &7#31'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f875 coins'
+        - '&8- &f16 x oak logs'
+      commands:
+        - 'coins give %player% 875'
+        - 'give %player% oak_log 16'
+    premium:
+      lore:
+        - '&8- &f1800 coins'
+        - '&8- &f12 x iron ingots'
+      commands:
+        - 'coins give %player% 1800'
+        - 'give %player% iron_ingot 12'
+  32:
+    display: '&aBattlePass Reward &7#32'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f900 coins'
+        - '&8- &f32 x cobblestone'
+      commands:
+        - 'coins give %player% 900'
+        - 'give %player% cobblestone 32'
+    premium:
+      lore:
+        - '&8- &f1850 coins'
+        - '&8- &f8 x gold ingots'
+      commands:
+        - 'coins give %player% 1850'
+        - 'give %player% gold_ingot 8'
+  33:
+    display: '&aBattlePass Reward &7#33'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f925 coins'
+        - '&8- &f8 x bread'
+      commands:
+        - 'coins give %player% 925'
+        - 'give %player% bread 8'
+    premium:
+      lore:
+        - '&8- &f1900 coins'
+        - '&8- &f2 x diamonds'
+      commands:
+        - 'coins give %player% 1900'
+        - 'give %player% diamond 2'
+  34:
+    display: '&aBattlePass Reward &7#34'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f950 coins'
+        - '&8- &f12 x coal'
+      commands:
+        - 'coins give %player% 950'
+        - 'give %player% coal 12'
+    premium:
+      lore:
+        - '&8- &f1950 coins'
+        - '&8- &f6 x emeralds'
+      commands:
+        - 'coins give %player% 1950'
+        - 'give %player% emerald 6'
+  35:
+    display: '&aBattlePass Reward &7#35'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f975 coins'
+        - '&8- &f4 x iron ingots'
+      commands:
+        - 'coins give %player% 975'
+        - 'give %player% iron_ingot 4'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f12 x bottles o enchanting'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% experience_bottle 12'
+  36:
+    display: '&6Milestone Reward &7#36'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1000 coins'
+        - '&8- &f24 x glass'
+      commands:
+        - 'coins give %player% 1000'
+        - 'give %player% glass 24'
+    premium:
+      lore:
+        - '&8- &f2050 coins'
+        - '&8- &f10 x obsidian'
+      commands:
+        - 'coins give %player% 2050'
+        - 'give %player% obsidian 10'
+  37:
+    display: '&aBattlePass Reward &7#37'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1025 coins'
+        - '&8- &f24 x torches'
+      commands:
+        - 'coins give %player% 1025'
+        - 'give %player% torch 24'
+    premium:
+      lore:
+        - '&8- &f2100 coins'
+        - '&8- &f4 x ender pearls'
+      commands:
+        - 'coins give %player% 2100'
+        - 'give %player% ender_pearl 4'
+  38:
+    display: '&aBattlePass Reward &7#38'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1050 coins'
+        - '&8- &f8 x cooked beef'
+      commands:
+        - 'coins give %player% 1050'
+        - 'give %player% cooked_beef 8'
+    premium:
+      lore:
+        - '&8- &f2150 coins'
+        - '&8- &f8 x bookshelves'
+      commands:
+        - 'coins give %player% 2150'
+        - 'give %player% bookshelf 8'
+  39:
+    display: '&aBattlePass Reward &7#39'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1075 coins'
+        - '&8- &f12 x lapis lazuli'
+      commands:
+        - 'coins give %player% 1075'
+        - 'give %player% lapis_lazuli 12'
+    premium:
+      lore:
+        - '&8- &f2200 coins'
+        - '&8- &f2 x golden apples'
+      commands:
+        - 'coins give %player% 2200'
+        - 'give %player% golden_apple 2'
+  40:
+    display: '&6Milestone Reward &7#40'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1100 coins'
+        - '&8- &f1 x enchanting table'
+      commands:
+        - 'coins give %player% 1100'
+        - 'give %player% enchanting_table 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f1 x elytra'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% elytra 1'
+  41:
+    display: '&aBattlePass Reward &7#41'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1125 coins'
+        - '&8- &f3 x gold ingots'
+      commands:
+        - 'coins give %player% 1125'
+        - 'give %player% gold_ingot 3'
+    premium:
+      lore:
+        - '&8- &f2300 coins'
+        - '&8- &f24 x copper ingots'
+      commands:
+        - 'coins give %player% 2300'
+        - 'give %player% copper_ingot 24'
+  42:
+    display: '&aBattlePass Reward &7#42'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1150 coins'
+        - '&8- &f24 x arrows'
+      commands:
+        - 'coins give %player% 1150'
+        - 'give %player% arrow 24'
+    premium:
+      lore:
+        - '&8- &f2350 coins'
+        - '&8- &f24 x quartz'
+      commands:
+        - 'coins give %player% 2350'
+        - 'give %player% quartz 24'
+  43:
+    display: '&aBattlePass Reward &7#43'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1175 coins'
+        - '&8- &f16 x spruce logs'
+      commands:
+        - 'coins give %player% 1175'
+        - 'give %player% spruce_log 16'
+    premium:
+      lore:
+        - '&8- &f2400 coins'
+        - '&8- &f3 x blaze rods'
+      commands:
+        - 'coins give %player% 2400'
+        - 'give %player% blaze_rod 3'
+  44:
+    display: '&aBattlePass Reward &7#44'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1200 coins'
+        - '&8- &f32 x stone bricks'
+      commands:
+        - 'coins give %player% 1200'
+        - 'give %player% stone_bricks 32'
+    premium:
+      lore:
+        - '&8- &f2450 coins'
+        - '&8- &f12 x nether wart'
+      commands:
+        - 'coins give %player% 2450'
+        - 'give %player% nether_wart 12'
+  45:
+    display: '&6Milestone Reward &7#45'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1225 coins'
+        - '&8- &f4 x bottles o enchanting'
+      commands:
+        - 'coins give %player% 1225'
+        - 'give %player% experience_bottle 4'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f1 x ancient debris'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% ancient_debris 1'
+  46:
+    display: '&aBattlePass Reward &7#46'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1250 coins'
+        - '&8- &f16 x oak logs'
+      commands:
+        - 'coins give %player% 1250'
+        - 'give %player% oak_log 16'
+    premium:
+      lore:
+        - '&8- &f2550 coins'
+        - '&8- &f12 x iron ingots'
+      commands:
+        - 'coins give %player% 2550'
+        - 'give %player% iron_ingot 12'
+  47:
+    display: '&aBattlePass Reward &7#47'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1275 coins'
+        - '&8- &f32 x cobblestone'
+      commands:
+        - 'coins give %player% 1275'
+        - 'give %player% cobblestone 32'
+    premium:
+      lore:
+        - '&8- &f2600 coins'
+        - '&8- &f8 x gold ingots'
+      commands:
+        - 'coins give %player% 2600'
+        - 'give %player% gold_ingot 8'
+  48:
+    display: '&aBattlePass Reward &7#48'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1300 coins'
+        - '&8- &f8 x bread'
+      commands:
+        - 'coins give %player% 1300'
+        - 'give %player% bread 8'
+    premium:
+      lore:
+        - '&8- &f2650 coins'
+        - '&8- &f2 x diamonds'
+      commands:
+        - 'coins give %player% 2650'
+        - 'give %player% diamond 2'
+  49:
+    display: '&aBattlePass Reward &7#49'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1325 coins'
+        - '&8- &f12 x coal'
+      commands:
+        - 'coins give %player% 1325'
+        - 'give %player% coal 12'
+    premium:
+      lore:
+        - '&8- &f2700 coins'
+        - '&8- &f6 x emeralds'
+      commands:
+        - 'coins give %player% 2700'
+        - 'give %player% emerald 6'
+  50:
+    display: '&6Milestone Reward &7#50'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1350 coins'
+        - '&8- &f1 x golden apple'
+      commands:
+        - 'coins give %player% 1350'
+        - 'give %player% golden_apple 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f1 x netherite ingot'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% netherite_ingot 1'
+  51:
+    display: '&aBattlePass Reward &7#51'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1375 coins'
+        - '&8- &f24 x glass'
+      commands:
+        - 'coins give %player% 1375'
+        - 'give %player% glass 24'
+    premium:
+      lore:
+        - '&8- &f2800 coins'
+        - '&8- &f10 x obsidian'
+      commands:
+        - 'coins give %player% 2800'
+        - 'give %player% obsidian 10'
+  52:
+    display: '&aBattlePass Reward &7#52'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1400 coins'
+        - '&8- &f24 x torches'
+      commands:
+        - 'coins give %player% 1400'
+        - 'give %player% torch 24'
+    premium:
+      lore:
+        - '&8- &f2850 coins'
+        - '&8- &f4 x ender pearls'
+      commands:
+        - 'coins give %player% 2850'
+        - 'give %player% ender_pearl 4'
+  53:
+    display: '&aBattlePass Reward &7#53'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1425 coins'
+        - '&8- &f8 x cooked beef'
+      commands:
+        - 'coins give %player% 1425'
+        - 'give %player% cooked_beef 8'
+    premium:
+      lore:
+        - '&8- &f2900 coins'
+        - '&8- &f8 x bookshelves'
+      commands:
+        - 'coins give %player% 2900'
+        - 'give %player% bookshelf 8'
+  54:
+    display: '&6Milestone Reward &7#54'
+    material: CHEST_MINECART
+    free:
+      lore:
+        - '&8- &f1450 coins'
+        - '&8- &f12 x lapis lazuli'
+      commands:
+        - 'coins give %player% 1450'
+        - 'give %player% lapis_lazuli 12'
+    premium:
+      lore:
+        - '&8- &f2950 coins'
+        - '&8- &f2 x golden apples'
+      commands:
+        - 'coins give %player% 2950'
+        - 'give %player% golden_apple 2'
+  55:
+    display: '&aBattlePass Reward &7#55'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1475 coins'
+        - '&8- &f16 x redstone dust'
+      commands:
+        - 'coins give %player% 1475'
+        - 'give %player% redstone 16'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f16 x amethyst shards'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% amethyst_shard 16'
+  56:
+    display: '&aBattlePass Reward &7#56'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1500 coins'
+        - '&8- &f3 x gold ingots'
+      commands:
+        - 'coins give %player% 1500'
+        - 'give %player% gold_ingot 3'
+    premium:
+      lore:
+        - '&8- &f3050 coins'
+        - '&8- &f24 x copper ingots'
+      commands:
+        - 'coins give %player% 3050'
+        - 'give %player% copper_ingot 24'
+  57:
+    display: '&aBattlePass Reward &7#57'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1525 coins'
+        - '&8- &f24 x arrows'
+      commands:
+        - 'coins give %player% 1525'
+        - 'give %player% arrow 24'
+    premium:
+      lore:
+        - '&8- &f3100 coins'
+        - '&8- &f24 x quartz'
+      commands:
+        - 'coins give %player% 3100'
+        - 'give %player% quartz 24'
+  58:
+    display: '&aBattlePass Reward &7#58'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1550 coins'
+        - '&8- &f16 x spruce logs'
+      commands:
+        - 'coins give %player% 1550'
+        - 'give %player% spruce_log 16'
+    premium:
+      lore:
+        - '&8- &f3150 coins'
+        - '&8- &f3 x blaze rods'
+      commands:
+        - 'coins give %player% 3150'
+        - 'give %player% blaze_rod 3'
+  59:
+    display: '&aBattlePass Reward &7#59'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1575 coins'
+        - '&8- &f32 x stone bricks'
+      commands:
+        - 'coins give %player% 1575'
+        - 'give %player% stone_bricks 32'
+    premium:
+      lore:
+        - '&8- &f3200 coins'
+        - '&8- &f12 x nether wart'
+      commands:
+        - 'coins give %player% 3200'
+        - 'give %player% nether_wart 12'
+  60:
+    display: '&6Milestone Reward &7#60'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1600 coins'
+        - '&8- &f1 x iron pickaxe'
+      commands:
+        - 'coins give %player% 1600'
+        - 'give %player% iron_pickaxe 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f1 x diamond pickaxe'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% diamond_pickaxe 1'
+  61:
+    display: '&aBattlePass Reward &7#61'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1625 coins'
+        - '&8- &f16 x oak logs'
+      commands:
+        - 'coins give %player% 1625'
+        - 'give %player% oak_log 16'
+    premium:
+      lore:
+        - '&8- &f3300 coins'
+        - '&8- &f12 x iron ingots'
+      commands:
+        - 'coins give %player% 3300'
+        - 'give %player% iron_ingot 12'
+  62:
+    display: '&aBattlePass Reward &7#62'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1650 coins'
+        - '&8- &f32 x cobblestone'
+      commands:
+        - 'coins give %player% 1650'
+        - 'give %player% cobblestone 32'
+    premium:
+      lore:
+        - '&8- &f3350 coins'
+        - '&8- &f8 x gold ingots'
+      commands:
+        - 'coins give %player% 3350'
+        - 'give %player% gold_ingot 8'
+  63:
+    display: '&6Milestone Reward &7#63'
+    material: CHEST_MINECART
+    free:
+      lore:
+        - '&8- &f1675 coins'
+        - '&8- &f8 x bread'
+      commands:
+        - 'coins give %player% 1675'
+        - 'give %player% bread 8'
+    premium:
+      lore:
+        - '&8- &f3400 coins'
+        - '&8- &f2 x diamonds'
+      commands:
+        - 'coins give %player% 3400'
+        - 'give %player% diamond 2'
+  64:
+    display: '&aBattlePass Reward &7#64'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1700 coins'
+        - '&8- &f12 x coal'
+      commands:
+        - 'coins give %player% 1700'
+        - 'give %player% coal 12'
+    premium:
+      lore:
+        - '&8- &f3450 coins'
+        - '&8- &f6 x emeralds'
+      commands:
+        - 'coins give %player% 3450'
+        - 'give %player% emerald 6'
+  65:
+    display: '&aBattlePass Reward &7#65'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1725 coins'
+        - '&8- &f4 x iron ingots'
+      commands:
+        - 'coins give %player% 1725'
+        - 'give %player% iron_ingot 4'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f12 x bottles o enchanting'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% experience_bottle 12'
+  66:
+    display: '&aBattlePass Reward &7#66'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1750 coins'
+        - '&8- &f24 x glass'
+      commands:
+        - 'coins give %player% 1750'
+        - 'give %player% glass 24'
+    premium:
+      lore:
+        - '&8- &f3550 coins'
+        - '&8- &f10 x obsidian'
+      commands:
+        - 'coins give %player% 3550'
+        - 'give %player% obsidian 10'
+  67:
+    display: '&aBattlePass Reward &7#67'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1775 coins'
+        - '&8- &f24 x torches'
+      commands:
+        - 'coins give %player% 1775'
+        - 'give %player% torch 24'
+    premium:
+      lore:
+        - '&8- &f3600 coins'
+        - '&8- &f4 x ender pearls'
+      commands:
+        - 'coins give %player% 3600'
+        - 'give %player% ender_pearl 4'
+  68:
+    display: '&aBattlePass Reward &7#68'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1800 coins'
+        - '&8- &f8 x cooked beef'
+      commands:
+        - 'coins give %player% 1800'
+        - 'give %player% cooked_beef 8'
+    premium:
+      lore:
+        - '&8- &f3650 coins'
+        - '&8- &f8 x bookshelves'
+      commands:
+        - 'coins give %player% 3650'
+        - 'give %player% bookshelf 8'
+  69:
+    display: '&aBattlePass Reward &7#69'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1825 coins'
+        - '&8- &f12 x lapis lazuli'
+      commands:
+        - 'coins give %player% 1825'
+        - 'give %player% lapis_lazuli 12'
+    premium:
+      lore:
+        - '&8- &f3700 coins'
+        - '&8- &f2 x golden apples'
+      commands:
+        - 'coins give %player% 3700'
+        - 'give %player% golden_apple 2'
+  70:
+    display: '&6Milestone Reward &7#70'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1850 coins'
+        - '&8- &f1 x diamond'
+      commands:
+        - 'coins give %player% 1850'
+        - 'give %player% diamond 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f4 x diamonds'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% diamond 4'
+  71:
+    display: '&aBattlePass Reward &7#71'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1875 coins'
+        - '&8- &f3 x gold ingots'
+      commands:
+        - 'coins give %player% 1875'
+        - 'give %player% gold_ingot 3'
+    premium:
+      lore:
+        - '&8- &f3800 coins'
+        - '&8- &f24 x copper ingots'
+      commands:
+        - 'coins give %player% 3800'
+        - 'give %player% copper_ingot 24'
+  72:
+    display: '&6Milestone Reward &7#72'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1900 coins'
+        - '&8- &f24 x arrows'
+      commands:
+        - 'coins give %player% 1900'
+        - 'give %player% arrow 24'
+    premium:
+      lore:
+        - '&8- &f3850 coins'
+        - '&8- &f24 x quartz'
+      commands:
+        - 'coins give %player% 3850'
+        - 'give %player% quartz 24'
+  73:
+    display: '&aBattlePass Reward &7#73'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1925 coins'
+        - '&8- &f16 x spruce logs'
+      commands:
+        - 'coins give %player% 1925'
+        - 'give %player% spruce_log 16'
+    premium:
+      lore:
+        - '&8- &f3900 coins'
+        - '&8- &f3 x blaze rods'
+      commands:
+        - 'coins give %player% 3900'
+        - 'give %player% blaze_rod 3'
+  74:
+    display: '&aBattlePass Reward &7#74'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1950 coins'
+        - '&8- &f32 x stone bricks'
+      commands:
+        - 'coins give %player% 1950'
+        - 'give %player% stone_bricks 32'
+    premium:
+      lore:
+        - '&8- &f3950 coins'
+        - '&8- &f12 x nether wart'
+      commands:
+        - 'coins give %player% 3950'
+        - 'give %player% nether_wart 12'
+  75:
+    display: '&aBattlePass Reward &7#75'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f1975 coins'
+        - '&8- &f4 x bottles o enchanting'
+      commands:
+        - 'coins give %player% 1975'
+        - 'give %player% experience_bottle 4'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f1 x ancient debris'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% ancient_debris 1'
+  76:
+    display: '&aBattlePass Reward &7#76'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2000 coins'
+        - '&8- &f16 x oak logs'
+      commands:
+        - 'coins give %player% 2000'
+        - 'give %player% oak_log 16'
+    premium:
+      lore:
+        - '&8- &f4050 coins'
+        - '&8- &f12 x iron ingots'
+      commands:
+        - 'coins give %player% 4050'
+        - 'give %player% iron_ingot 12'
+  77:
+    display: '&aBattlePass Reward &7#77'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2025 coins'
+        - '&8- &f32 x cobblestone'
+      commands:
+        - 'coins give %player% 2025'
+        - 'give %player% cobblestone 32'
+    premium:
+      lore:
+        - '&8- &f4100 coins'
+        - '&8- &f8 x gold ingots'
+      commands:
+        - 'coins give %player% 4100'
+        - 'give %player% gold_ingot 8'
+  78:
+    display: '&aBattlePass Reward &7#78'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2050 coins'
+        - '&8- &f8 x bread'
+      commands:
+        - 'coins give %player% 2050'
+        - 'give %player% bread 8'
+    premium:
+      lore:
+        - '&8- &f4150 coins'
+        - '&8- &f2 x diamonds'
+      commands:
+        - 'coins give %player% 4150'
+        - 'give %player% diamond 2'
+  79:
+    display: '&aBattlePass Reward &7#79'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2075 coins'
+        - '&8- &f12 x coal'
+      commands:
+        - 'coins give %player% 2075'
+        - 'give %player% coal 12'
+    premium:
+      lore:
+        - '&8- &f4200 coins'
+        - '&8- &f6 x emeralds'
+      commands:
+        - 'coins give %player% 4200'
+        - 'give %player% emerald 6'
+  80:
+    display: '&6Milestone Reward &7#80'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2100 coins'
+        - '&8- &f1 x anvil'
+      commands:
+        - 'coins give %player% 2100'
+        - 'give %player% anvil 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f1 x netherite upgrade template'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% netherite_upgrade_smithing_template 1'
+  81:
+    display: '&6Milestone Reward &7#81'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2125 coins'
+        - '&8- &f24 x glass'
+      commands:
+        - 'coins give %player% 2125'
+        - 'give %player% glass 24'
+    premium:
+      lore:
+        - '&8- &f4300 coins'
+        - '&8- &f10 x obsidian'
+      commands:
+        - 'coins give %player% 4300'
+        - 'give %player% obsidian 10'
+  82:
+    display: '&aBattlePass Reward &7#82'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2150 coins'
+        - '&8- &f24 x torches'
+      commands:
+        - 'coins give %player% 2150'
+        - 'give %player% torch 24'
+    premium:
+      lore:
+        - '&8- &f4350 coins'
+        - '&8- &f4 x ender pearls'
+      commands:
+        - 'coins give %player% 4350'
+        - 'give %player% ender_pearl 4'
+  83:
+    display: '&aBattlePass Reward &7#83'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2175 coins'
+        - '&8- &f8 x cooked beef'
+      commands:
+        - 'coins give %player% 2175'
+        - 'give %player% cooked_beef 8'
+    premium:
+      lore:
+        - '&8- &f4400 coins'
+        - '&8- &f8 x bookshelves'
+      commands:
+        - 'coins give %player% 4400'
+        - 'give %player% bookshelf 8'
+  84:
+    display: '&aBattlePass Reward &7#84'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2200 coins'
+        - '&8- &f12 x lapis lazuli'
+      commands:
+        - 'coins give %player% 2200'
+        - 'give %player% lapis_lazuli 12'
+    premium:
+      lore:
+        - '&8- &f4450 coins'
+        - '&8- &f2 x golden apples'
+      commands:
+        - 'coins give %player% 4450'
+        - 'give %player% golden_apple 2'
+  85:
+    display: '&aBattlePass Reward &7#85'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2225 coins'
+        - '&8- &f16 x redstone dust'
+      commands:
+        - 'coins give %player% 2225'
+        - 'give %player% redstone 16'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f16 x amethyst shards'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% amethyst_shard 16'
+  86:
+    display: '&aBattlePass Reward &7#86'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2250 coins'
+        - '&8- &f3 x gold ingots'
+      commands:
+        - 'coins give %player% 2250'
+        - 'give %player% gold_ingot 3'
+    premium:
+      lore:
+        - '&8- &f4550 coins'
+        - '&8- &f24 x copper ingots'
+      commands:
+        - 'coins give %player% 4550'
+        - 'give %player% copper_ingot 24'
+  87:
+    display: '&aBattlePass Reward &7#87'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2275 coins'
+        - '&8- &f24 x arrows'
+      commands:
+        - 'coins give %player% 2275'
+        - 'give %player% arrow 24'
+    premium:
+      lore:
+        - '&8- &f4600 coins'
+        - '&8- &f24 x quartz'
+      commands:
+        - 'coins give %player% 4600'
+        - 'give %player% quartz 24'
+  88:
+    display: '&aBattlePass Reward &7#88'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2300 coins'
+        - '&8- &f16 x spruce logs'
+      commands:
+        - 'coins give %player% 2300'
+        - 'give %player% spruce_log 16'
+    premium:
+      lore:
+        - '&8- &f4650 coins'
+        - '&8- &f3 x blaze rods'
+      commands:
+        - 'coins give %player% 4650'
+        - 'give %player% blaze_rod 3'
+  89:
+    display: '&aBattlePass Reward &7#89'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2325 coins'
+        - '&8- &f32 x stone bricks'
+      commands:
+        - 'coins give %player% 2325'
+        - 'give %player% stone_bricks 32'
+    premium:
+      lore:
+        - '&8- &f4700 coins'
+        - '&8- &f12 x nether wart'
+      commands:
+        - 'coins give %player% 4700'
+        - 'give %player% nether_wart 12'
+  90:
+    display: '&6Milestone Reward &7#90'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2350 coins'
+        - '&8- &f1 x enchanting table'
+      commands:
+        - 'coins give %player% 2350'
+        - 'give %player% enchanting_table 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f1 x elytra'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% elytra 1'
+  91:
+    display: '&aBattlePass Reward &7#91'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2375 coins'
+        - '&8- &f16 x oak logs'
+      commands:
+        - 'coins give %player% 2375'
+        - 'give %player% oak_log 16'
+    premium:
+      lore:
+        - '&8- &f4800 coins'
+        - '&8- &f12 x iron ingots'
+      commands:
+        - 'coins give %player% 4800'
+        - 'give %player% iron_ingot 12'
+  92:
+    display: '&aBattlePass Reward &7#92'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2400 coins'
+        - '&8- &f32 x cobblestone'
+      commands:
+        - 'coins give %player% 2400'
+        - 'give %player% cobblestone 32'
+    premium:
+      lore:
+        - '&8- &f4850 coins'
+        - '&8- &f8 x gold ingots'
+      commands:
+        - 'coins give %player% 4850'
+        - 'give %player% gold_ingot 8'
+  93:
+    display: '&aBattlePass Reward &7#93'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2425 coins'
+        - '&8- &f8 x bread'
+      commands:
+        - 'coins give %player% 2425'
+        - 'give %player% bread 8'
+    premium:
+      lore:
+        - '&8- &f4900 coins'
+        - '&8- &f2 x diamonds'
+      commands:
+        - 'coins give %player% 4900'
+        - 'give %player% diamond 2'
+  94:
+    display: '&aBattlePass Reward &7#94'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2450 coins'
+        - '&8- &f12 x coal'
+      commands:
+        - 'coins give %player% 2450'
+        - 'give %player% coal 12'
+    premium:
+      lore:
+        - '&8- &f4950 coins'
+        - '&8- &f6 x emeralds'
+      commands:
+        - 'coins give %player% 4950'
+        - 'give %player% emerald 6'
+  95:
+    display: '&aBattlePass Reward &7#95'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2475 coins'
+        - '&8- &f4 x iron ingots'
+      commands:
+        - 'coins give %player% 2475'
+        - 'give %player% iron_ingot 4'
+    premium:
+      lore:
+        - '&8- &f1 x diamond'
+        - '&8- &f12 x bottles o enchanting'
+      commands:
+        - 'give %player% diamond 1'
+        - 'give %player% experience_bottle 12'
+  96:
+    display: '&aBattlePass Reward &7#96'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2500 coins'
+        - '&8- &f24 x glass'
+      commands:
+        - 'coins give %player% 2500'
+        - 'give %player% glass 24'
+    premium:
+      lore:
+        - '&8- &f5050 coins'
+        - '&8- &f10 x obsidian'
+      commands:
+        - 'coins give %player% 5050'
+        - 'give %player% obsidian 10'
+  97:
+    display: '&aBattlePass Reward &7#97'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2525 coins'
+        - '&8- &f24 x torches'
+      commands:
+        - 'coins give %player% 2525'
+        - 'give %player% torch 24'
+    premium:
+      lore:
+        - '&8- &f5100 coins'
+        - '&8- &f4 x ender pearls'
+      commands:
+        - 'coins give %player% 5100'
+        - 'give %player% ender_pearl 4'
+  98:
+    display: '&aBattlePass Reward &7#98'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2550 coins'
+        - '&8- &f8 x cooked beef'
+      commands:
+        - 'coins give %player% 2550'
+        - 'give %player% cooked_beef 8'
+    premium:
+      lore:
+        - '&8- &f5150 coins'
+        - '&8- &f8 x bookshelves'
+      commands:
+        - 'coins give %player% 5150'
+        - 'give %player% bookshelf 8'
+  99:
+    display: '&6Milestone Reward &7#99'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2575 coins'
+        - '&8- &f12 x lapis lazuli'
+      commands:
+        - 'coins give %player% 2575'
+        - 'give %player% lapis_lazuli 12'
+    premium:
+      lore:
+        - '&8- &f5200 coins'
+        - '&8- &f2 x golden apples'
+      commands:
+        - 'coins give %player% 5200'
+        - 'give %player% golden_apple 2'
+  100:
+    display: '&6Milestone Reward &7#100'
+    material: MINECART
+    free:
+      lore:
+        - '&8- &f2600 coins'
+        - '&8- &f1 x golden apple'
+      commands:
+        - 'coins give %player% 2600'
+        - 'give %player% golden_apple 1'
+    premium:
+      lore:
+        - '&8- &f2 x diamond'
+        - '&8- &f1 x netherite ingot'
+      commands:
+        - 'give %player% diamond 2'
+        - 'give %player% netherite_ingot 1'

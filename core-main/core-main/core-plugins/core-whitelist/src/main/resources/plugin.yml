@@ -1,0 +1,4 @@
+main: club.abelix.core.whitelist.WhitelistCorePlugin
+name: CoreWhitelist
+author: Krashe85
+version: 1.0.0

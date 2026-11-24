@@ -1,0 +1,31 @@
+skills:
+  enabled: true
+  xp-per-level: 100
+  enabled-skills:
+  - mining
+  - woodcutting
+  - excavation
+  - farming
+  - combat
+  - archery
+  - fishing
+  - taming
+  - acrobatics
+  - alchemy
+  - repair
+  - smelting
+  - enchanting
+  xp-per-action:
+    mining: 5
+    woodcutting: 7
+    excavation: 3
+    farming: 4
+    combat: 8
+    archery: 5
+    fishing: 10
+    taming: 6
+    acrobatics: 6
+    alchemy: 8
+    repair: 1
+    smelting: 1
+    enchanting: 8

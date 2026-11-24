@@ -1,0 +1,4 @@
+name: CorePrivateApi
+main: club.abelix.core.plugin.api.CoreApiPlugin
+version: 1.0
+author: quiu

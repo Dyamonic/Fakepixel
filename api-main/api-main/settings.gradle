@@ -1,0 +1,76 @@
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            version("lombok", "1.18.42")
+            version("annotations", "23.0.0")
+            version("abelix", "1.0.0-PROD")
+            version("adventure", "4.17.0")
+            version("adventure-bukkit", "4.3.4")
+            version("lunar", "1.2.3")
+            version("labymod", "1.0.6")
+            version("grpc", "1.78.0")
+            version("protobuf", "4.33.2")
+
+            library("viaversion", "com.viaversion:viaversion:4.4.2")
+            library("gadgetsmenu", "com.yapzhenyie:GadgetsMenu:5.1.4")
+            library("worldedit", "com.sk89q.worldedit:worldedit-bukkit:6.1.4-abelix")
+            library("fawe", "com.fastasyncworldedit:FAWE:21.03.26")
+            library("swm", "club.abelix", "swm-api").version("1.0.0-K8S")
+
+            library("fasterxml", "com.fasterxml.jackson.datatype", "jackson-datatype-jsr310").version("2.20.1")
+
+            library("trove", "net.sf.trove4j:trove4j:3.0.3")
+            library("fastutil", "it.unimi.dsi:fastutil:8.5.13")
+
+            library("jafama", "net.jafama", "jafama").version("2.3.2")
+            library("lombok", "org.projectlombok", "lombok").versionRef("lombok")
+            library("jetbrains-annotations", "org.jetbrains", "annotations").versionRef("annotations")
+
+            library("abelix-api", "club.abelix", "api").versionRef("abelix")
+            library("abelix-core-connector", "club.abelix.core", "bukkit").version("1.13.15-main+665ad")
+            library("abelix-di-api", "club.abelix.di", "api").versionRef("abelix")
+            library("abelix-di-bukkit", "club.abelix.di", "bukkit").versionRef("abelix")
+            library("abelix-tournament-proto", "club.abelix.tournament.proto", "proto").version("0.0.1")
+
+            library("adventure-api", "net.kyori", "adventure-api").versionRef("adventure")
+            library("adventure-text-serializer-legacy", "net.kyori", "adventure-text-serializer-legacy").versionRef("adventure")
+            library("adventure-text-serializer-gson", "net.kyori", "adventure-text-serializer-gson").versionRef("adventure")
+            library("adventure-platform-bukkit", "net.kyori", "adventure-platform-bukkit").versionRef("adventure-bukkit")
+            library("adventure-legacy", "net.kyori", "adventure-text-serializer-legacy").versionRef("adventure")
+            library("adventure-gson", "net.kyori", "adventure-text-serializer-gson").versionRef("adventure")
+            library("adventure-minimessage", "net.kyori", "adventure-text-minimessage").versionRef("adventure")
+
+            library("labymod-core", "net.labymod.serverapi", "core").versionRef("labymod")
+            library("labymod-api", "net.labymod.serverapi", "api").versionRef("labymod")
+            library("labymod-bukkit", "net.labymod.serverapi", "server-bukkit").versionRef("labymod")
+
+            library("lunar-api", "com.lunarclient", "apollo-api").versionRef("lunar")
+            library("lunar-adventure", "com.lunarclient", "apollo-extra-adventure4").versionRef("lunar")
+
+            library("protocollib-legacy", "com.comphenix.protocol", "ProtocolLib").version("4.7.0")
+            library("protocollib", "com.comphenix.protocol", "ProtocolLib").version("5.1.0")
+
+            library("gamehistory-proto", "club.abelix.gamehistory", "proto").version("1.0.2-SNAPSHOT")
+            library("bytebuddy", "net.bytebuddy", "byte-buddy").version("1.12.16")
+
+            library("grpc-api", "io.grpc", "grpc-api").versionRef("grpc")
+            library("grpc-stub", "io.grpc", "grpc-stub").versionRef("grpc")
+            library("grpc-protobuf", "io.grpc", "grpc-protobuf").versionRef("grpc")
+            library("grpc-netty", "io.grpc", "grpc-netty-shaded").versionRef("grpc")
+            library("protobuf-java", "com.google.protobuf", "protobuf-java").versionRef("protobuf")
+
+            library("spigot-v188", "org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT")
+            library("spigot-v1122", "org.spigotmc:spigot:1.12.2-R0.1-SNAPSHOT")
+            library("spigot-v1165", "org.spigotmc:spigot:1.16.5-R0.1-SNAPSHOT")
+        }
+    }
+}
+
+rootProject.name = 'abelix_api'
+include 'api'
+
+include 'nms'
+include 'nms:nms-api'
+include 'nms:nms-1.8'
+include 'nms:nms-1.12'
+include 'nms:nms-1.16'

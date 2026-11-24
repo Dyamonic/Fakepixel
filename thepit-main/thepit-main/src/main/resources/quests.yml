@@ -1,0 +1,197 @@
+quests:
+  enabled: true
+  menu:
+    title: 'Quests & Contracts'
+    size: 54
+    filler:
+      material: STAINED_GLASS_PANE
+      data: 15
+      name: ' '
+    quest-master:
+      slot: 4
+      material: DIRT
+      name: '&eQuest Master'
+      lore:
+      - '&7Daily reset: &e%daily_reset%'
+      - '&7Weekly reset: &e%weekly_reset%'
+      - ''
+      - '&7Active quests: &e%active_quests%'
+      - '&7Completed daily quests: &e%completed_daily%'
+      - '&7Contracts remaining today: &e%contracts_remaining%'
+    contracts:
+      novice:
+        slot: 30
+        material: ENCHANTED_BOOK
+        name: '&aNovice Contract'
+        lore:
+        - '&7Complete an easier contract'
+        - '&7for a modest Gold reward.'
+        - ''
+        - '&7Requires: &bLevel %required_level%'
+        - '&7Cost: &6%price% Gold'
+        - '&7Completions today: &e%completed%&7/&e%daily_limit%'
+        - ''
+        - '&eClick to purchase!'
+      big-time:
+        slot: 32
+        material: ENCHANTED_BOOK
+        name: '&cBig Time Contract'
+        lore:
+        - '&7Complete a difficult contract'
+        - '&7for a larger Gold reward.'
+        - ''
+        - '&7Requires: &bLevel %required_level%'
+        - '&7Cost: &6%price% Gold'
+        - '&7Completions today: &e%completed%&7/&e%daily_limit%'
+        - ''
+        - '&eClick to purchase!'
+    achievements:
+      slot: 45
+      material: DIAMOND
+      name: '&bThe Pit Achievements'
+      lore:
+      - '&7Achievement Points: &e%points%'
+      - '&7Completed: &a%completed%&7/&a%total%'
+      - '&7Completion: &b%percentage%%'
+      - ''
+      - '&eClick to view!'
+    auto-accept:
+      slot: 53
+      enabled-material: SLIME_BALL
+      disabled-material: MAGMA_CREAM
+      enabled-name: '&aAuto-Accept Quests: ON'
+      disabled-name: '&cAuto-Accept Quests: OFF'
+      lore:
+      - '&7Automatically starts new daily'
+      - '&7and weekly quests.'
+      - ''
+      - '&eClick to toggle!'
+      locked-lore:
+      - '&7Automatically starts new daily'
+      - '&7and weekly quests.'
+      - ''
+      - '&cRequires MVP+ or higher!'
+
+  resets:
+    timezone: America/New_York
+    daily:
+      hour: 0
+    weekly:
+      day: FRIDAY
+      hour: 0
+
+  auto-accept:
+    permission: thepit.quests.autoaccept
+    allowed-rank-ids:
+    - MVP_PLUS
+    - MVP_PLUS_PLUS
+    - YOUTUBE
+    - HELPER
+    - MOD
+    - MODERATOR
+    - ADMIN
+    - OWNER
+    - DEVELOPER
+    - MANAGER
+
+  daily:
+    hunter:
+      slot: 12
+      display-name: '&aDaily Hunter'
+      material: PAPER
+      storage-id: kills
+      type: kills
+      target: 25
+      description: 'Kill 25 valid players.'
+      rewards:
+        pit-gold: 1000
+        network-experience: 2000
+        event-experience: 2200
+        event-experience-enabled: false
+      lore:
+      - '&7Kill &e25 valid players&7.'
+      - ''
+      - '&7Progress: &e%progress%&7/&e%target%'
+      - '&7Reward: &61,000 Gold'
+      - '&7Network Experience: &b2,000'
+      - ''
+      - '%state_line%'
+    contracted:
+      slot: 13
+      display-name: '&aDaily Contracted'
+      material: PAPER
+      storage-id: contracted
+      type: contracts-completed
+      target: 1
+      description: 'Complete one contract.'
+      rewards:
+        pit-gold: 1000
+        network-experience: 3000
+        event-experience: 3300
+        event-experience-enabled: false
+      lore:
+      - '&7Complete &eone contract&7.'
+      - ''
+      - '&7Progress: &e%progress%&7/&e%target%'
+      - '&7Reward: &61,000 Gold'
+      - '&7Network Experience: &b3,000'
+      - ''
+      - '%state_line%'
+
+  weekly:
+    double-up:
+      slot: 14
+      display-name: '&6Weekly Double Up'
+      material: PAPER
+      storage-id: double-up
+      type: gold-earned
+      target: 10000
+      description: 'Earn 10,000 Pit Gold from legitimate gameplay.'
+      rewards:
+        pit-gold: 10000
+        network-experience: 7000
+        event-experience: 7700
+        event-experience-enabled: false
+      lore:
+      - '&7Earn &610,000 Pit Gold &7from'
+      - '&7legitimate gameplay.'
+      - ''
+      - '&7Progress: &e%progress%&7/&e%target%'
+      - '&7Reward: &610,000 Gold'
+      - '&7Network Experience: &b7,000'
+      - ''
+      - '%state_line%'
+
+  states:
+    available: '&eClick to start!'
+    active: '&aYou''ve already started this quest!'
+    completed: '&aQuest completed!'
+
+  rewards:
+    network-experience-command: ''
+    event-experience-command: ''
+
+  sounds:
+    start:
+      enabled: true
+      name: CLICK
+      volume: 1.0
+      pitch: 1.0
+    complete:
+      enabled: true
+      name: LEVEL_UP
+      volume: 1.0
+      pitch: 1.0
+    toggle:
+      enabled: true
+      name: CLICK
+      volume: 1.0
+      pitch: 1.2
+
+  messages:
+    profile-loading: '&cYour profile is still loading.'
+    started: '&aQuest started!'
+    already-active: '&aYou''ve already started this quest!'
+    already-completed: '&aQuest completed!'
+    completed: '&a&lQUEST COMPLETE! &7You completed &f%quest%&7 and earned &6%gold% Gold&7.'
+    auto-accept-locked: '&cAuto-Accept Quests requires MVP+ or higher.'

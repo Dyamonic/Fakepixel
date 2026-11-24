@@ -1,0 +1,7 @@
+name: CoreTelegramBot
+main: club.abelix.core.telegram.TelegramBotPlugin
+version: 1.0
+
+authors:
+  - Revage
+  - Abelix

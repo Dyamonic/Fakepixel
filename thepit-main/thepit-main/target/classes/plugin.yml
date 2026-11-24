@@ -1,0 +1,272 @@
+name: ThePit
+version: 2.8
+main: me.outerspace.thepit.ThePitPlugin
+authors: [1zg]
+description: The Pit is a remake of Fakepixels The Pit Gamemode.
+softdepend: [SlimeWorldManager, AlphaAPI]
+commands:
+  knockback:
+    description: Administer The Pit combat knockback profiles
+    aliases: [kb]
+    permission: thepit.admin.knockback
+  pit:
+    description: Main The Pit command
+    aliases: [bffa]
+  npc:
+    description: Administer The Pit NPCs
+  quests:
+    description: Open Quests and Contracts
+    aliases: [quest]
+  spawn:
+    description: Return safely to the current The Pit spawn
+  respawn:
+    description: Return safely to the current The Pit spawn
+  oof:
+    description: Perform a normal The Pit death
+  trade:
+    description: Trade securely with another The Pit player
+  tradelimits:
+    description: View daily The Pit trade limits
+  offer:
+    description: Offer the held item for Pit Gold
+  pickupstash:
+    description: Claim safely stored overflow items
+  dropconfirm:
+    description: Toggle rare item drop confirmation
+  show:
+    description: Show off the held item
+  events:
+    description: View configured The Pit events
+  event:
+    description: Administer The Pit events
+  eventsetup:
+    description: Configure arena event locations
+  combatlog:
+    description: Inspect or clear The Pit combat log state
+  carepackageset:
+    description: Save a Care Package landing location
+  carepackageremove:
+    description: Remove a Care Package landing location
+  carepackagelist:
+    description: List Care Package landing locations
+  carepackagetest:
+    description: Test a Care Package event
+  squad:
+    description: Manage an active Squads event squad
+  cool:
+    description: List Cool Conclave players
+  credit:
+    description: Claim active event contributor credit
+  pitsupporter:
+    description: Open or administer Pit Supporter
+  blue:
+    description: View The Pit player information
+    aliases: [azul]
+  enderchest:
+    description: Open your ender chest
+    aliases: [ec]
+  gmc:
+    description: Set gamemode creative
+  gms:
+    description: Set gamemode survival
+  gmsp:
+    description: Set gamemode spectator
+  gma:
+    description: Set gamemode adventure
+  unsafeenchant:
+    description: Add unsafe enchantment
+    aliases: [enchantunsafe]
+  buildmode:
+    description: Toggle The Pit admin build mode
+  stats:
+    description: Open the The Pit Statistics menu
+  shop:
+    description: Open the The Pit Item Shop
+  shopadmin:
+    description: Administer the The Pit Item Shop
+  pitchat:
+    description: Open The Pit chat settings
+  upgrades:
+    description: Open The Pit upgrades and perks
+  killstreaks:
+    description: Open the The Pit Killstreaks menu
+  renown:
+    description: Open the The Pit Renown Shop
+  contracts:
+    description: Open Quests and Contracts
+  contract:
+    description: View or abandon the active The Pit contract
+  contractadmin:
+    description: Administer The Pit contracts
+  pitpurchasedebug:
+    description: Diagnose Contract and Killstreak purchases
+  view:
+    description: View The Pit player information
+  coins:
+    description: Compatibility alias for The Pit Pit Gold
+  gold:
+    description: View or administer The Pit Pit Gold
+  setleaderboard:
+    description: Place a The Pit leaderboard
+  removeleaderboard:
+    description: Remove the nearest The Pit leaderboard
+  leaderboard:
+    description: Manage The Pit leaderboards
+  setfeaturehologram:
+    description: Place the Unlocked Features hologram
+  removefeaturehologram:
+    description: Remove the nearest Unlocked Features hologram
+  achievements:
+    description: Open The Pit Achievements menu
+  achievementadmin:
+    description: Administer The Pit achievements
+permissions:
+  thepit.admin:
+    default: op
+    children:
+      thepit.admin.reload: true
+      thepit.admin.coins: true
+      thepit.admin.gold: true
+      thepit.admin.shop: true
+      thepit.admin.level: true
+      thepit.admin.prestige: true
+      thepit.admin.maprotation: true
+      thepit.admin.gamemode: true
+      thepit.admin.enchantunsafe: true
+      thepit.admin.break: true
+      thepit.admin.reset: true
+      thepit.admin.setstats: true
+      thepit.admin.npc: true
+      thepit.admin.combatlog: true
+      thepit.admin.npcmigrate: true
+      thepit.admin.rankdebug: true
+      thepit.admin.launchpad: true
+      thepit.admin.coinspawn: true
+      thepit.admin.carepackage: true
+      thepit.admin.event: true
+      thepit.admin.eventsetup: true
+      thepit.admin.setup: true
+      thepit.admin.setup.export: true
+      thepit.admin.setup.import: true
+      thepit.admin.setup.replace: true
+      thepit.admin.arenadebug: true
+      thepit.admin.perks: true
+      thepit.admin.fishing: true
+      thepit.admin.renown: true
+      thepit.admin.leaderboard: true
+      thepit.admin.achievements: true
+      thepit.admin.contracts: true
+      thepit.admin.purchasedebug: true
+      thepit.admin.pitsupporter: true
+      thepit.admin.supporterdebug: true
+      thepit.admin.namedebug: true
+      thepit.admin.knockback: true
+      thepit.megastreak.command-bypass: true
+  thepit.admin.reload:
+    default: op
+  thepit.admin.coins:
+    default: op
+  thepit.admin.gold:
+    default: op
+  thepit.admin.purchasedebug:
+    default: op
+  thepit.command.gold:
+    default: true
+  thepit.command.shop:
+    default: true
+  thepit.admin.shop:
+    default: op
+  thepit.admin.level:
+    default: op
+  thepit.admin.prestige:
+    default: op
+  thepit.admin.maprotation:
+    default: op
+  thepit.admin.event:
+    default: op
+  thepit.admin.eventsetup:
+    default: op
+  thepit.admin.namedebug:
+    default: op
+  thepit.admin.knockback:
+    default: op
+  thepit.admin.gamemode:
+    default: op
+  thepit.admin.enchantunsafe:
+    default: op
+  thepit.admin.break:
+    default: false
+  thepit.admin.reset:
+    default: op
+  thepit.admin.setstats:
+    default: op
+  thepit.admin.npc:
+    description: Create and manage The Pit's internal clickable NPCs
+    default: op
+  thepit.admin.combatlog:
+    description: Inspect and clear The Pit combat log state
+    default: op
+  thepit.admin.npcmigrate:
+    description: Migrate legacy The Pit NPC definitions from MariaDB into arenas.yml
+    default: op
+  thepit.admin.rankdebug:
+    description: Inspect Abelix rank detection and runtime permissions
+    default: op
+  thepit.admin.launchpad:
+    default: op
+  thepit.admin.coinspawn:
+    default: op
+  thepit.admin.setup:
+    default: op
+  thepit.admin.setup.export:
+    default: op
+  thepit.admin.setup.import:
+    default: op
+  thepit.admin.setup.replace:
+    default: op
+  thepit.admin.arenadebug:
+    default: op
+  thepit.perks:
+    default: true
+  thepit.command.killstreaks:
+    default: true
+  thepit.megastreak.command-bypass:
+    default: op
+  thepit.admin.perks:
+    default: op
+  thepit.admin.fishing:
+    default: op
+  thepit.admin.renown:
+    default: op
+  thepit.admin.leaderboard:
+    default: op
+  thepit.prestige.cooldown.bypass:
+    default: false
+  thepit.fishing:
+    default: true
+  thepit.stats.others:
+    default: op
+  thepit.stats.bypass:
+    default: op
+  thepit.command.achievements:
+    default: true
+  thepit.achievements.others:
+    default: op
+  thepit.admin.achievements:
+    default: op
+  thepit.command.contracts:
+    default: true
+  thepit.quests.autoaccept:
+    default: false
+  thepit.admin.contracts:
+    default: op
+  thepit.pit.supporter:
+    default: false
+  thepit.admin.pitsupporter:
+    default: op
+  thepit.admin.supporterdebug:
+    default: op
+  thepit.admin.packetentities:
+    default: op
+  thepit.view.hidden:
+    default: op

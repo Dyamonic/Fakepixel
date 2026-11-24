@@ -1,0 +1,7 @@
+name: Auth
+main: club.abelix.authorization.AuthServer
+version: '${VERSION} git-${COMMIT}'
+description: 'AbelixAuth'
+
+load: POSTWORLD
+authors: [ Abelix ]

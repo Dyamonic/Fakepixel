@@ -1,0 +1,14 @@
+mode: DISABLED
+
+global:
+  enable: false
+  minimal_group: ADMINISTRATOR
+  kick_message_key: 'whitelist_message'
+  access_users: [ ]
+
+modes:
+  SW:
+    enable: false
+    minimal_group: ADMINISTRATOR
+    kick_message_key: эwhitelist_message_swэ
+    access_users: [ ]

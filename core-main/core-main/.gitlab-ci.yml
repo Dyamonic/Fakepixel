@@ -1,0 +1,85 @@
+image: registry.fakepixel.online/fakepixel-minecraft/kubernetes/images/base:main
+
+stages:
+  - build
+  - upload
+  - trigger
+  - release
+
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+build:
+  stage: build
+  variables:
+    GIT_DEPTH: 0
+  before_script:
+    - GRADLE_USER_HOME="$(pwd)/.gradle"
+    - export GRADLE_USER_HOME
+    - git checkout -B "$CI_COMMIT_REF_NAME" "$CI_COMMIT_SHA"
+  script:
+    - chmod +x ./gradlew
+    - ./gradlew clean build publish --no-daemon --stacktrace --build-cache --parallel --refresh-dependencies
+  artifacts:
+    paths:
+      - ./artifacts/*
+    expire_in: 2 days
+  rules:
+    - if: $CI_COMMIT_MESSAGE !~ /--no-build/
+      when: always
+
+s3:
+  stage: upload
+  needs:
+    - build
+  script:
+    - export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+    - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    - aws configure set region $AWS_REGION
+    - aws s3 cp --endpoint-url=$AWS_ENDPOINT_URL artifacts/CoreApplication.jar s3://$AWS_BUCKET/mono/core/application/$CI_COMMIT_REF_NAME/
+    - aws s3 cp --endpoint-url=$AWS_ENDPOINT_URL artifacts/CoreVelocityConnector.jar s3://$AWS_BUCKET/mono/plugin/core-velocity/$CI_COMMIT_REF_NAME/
+    - aws s3 cp --endpoint-url=$AWS_ENDPOINT_URL artifacts/CoreBukkitConnector.jar s3://$AWS_BUCKET/mono/plugin/core-bukkit/$CI_COMMIT_REF_NAME/
+    - aws s3 cp --endpoint-url=$AWS_ENDPOINT_URL artifacts/CoreBukkitConnector-skyblock.jar s3://$AWS_BUCKET/mono/plugin/core-bukkit/skyblock/
+    - aws s3 sync --endpoint-url=$AWS_ENDPOINT_URL artifacts/plugins/ s3://$AWS_BUCKET/mono/plugin/core-plugins/$CI_COMMIT_REF_NAME/ --delete --no-progress
+  rules:
+    - if: $CI_COMMIT_MESSAGE !~ /--no-s3-upload/
+      when: always
+
+core_image:
+  stage: trigger
+  needs:
+    - build
+    - s3
+  variables:
+    JAR_BRANCH: "$CI_COMMIT_REF_NAME"
+  trigger:
+    project: fakepixel-minecraft/kubernetes/images/core
+    branch: main
+    forward:
+      yaml_variables: true
+
+gitlab_release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  needs:
+    - build
+    - s3
+  script:
+    - |
+      RAW_REF="$CI_COMMIT_REF_NAME"
+      VERSION="${RAW_REF#release/}" 
+      TAG="v${VERSION}"
+
+      echo "Creating GitLab Release for tag ${TAG}"
+
+      release-cli create \
+        --tag-name "${TAG}" \
+        --ref "${CI_COMMIT_SHA}" \
+        --name "Release ${TAG}" \
+        --description "Automatic release for branch ${CI_COMMIT_REF_NAME}. Commit: ${CI_COMMIT_SHORT_SHA}"
+  rules:
+    - if: '$CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH =~ /^release\/.*$/ && $CI_COMMIT_MESSAGE !~ /--no-release/'
+      when: on_success
+    - when: never

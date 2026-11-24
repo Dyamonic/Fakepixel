@@ -1,0 +1,22 @@
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            version("lombok", "1.18.36")
+            version("annotations", "23.0.0")
+            version("abelix", "1.0.0-PROD")
+            version("spigot", "1.8.8-R0.1-SNAPSHOT")
+            version("protocollib", "4.7.0")
+
+            library("lombok", "org.projectlombok", "lombok").versionRef("lombok")
+            library("jetbrains-annotations", "org.jetbrains", "annotations").versionRef("annotations")
+            library("spigot", "org.spigotmc", "spigot").versionRef("spigot")
+            library("protocollib", "com.comphenix.protocol", "ProtocolLib").versionRef("protocollib")
+            //abelix
+            library("swm", "club.abelix", "swm-api").version("1.0.0-K8S")
+            library("abelix-di-api", "club.abelix.di", "api").versionRef("abelix")
+            library("abelix-di-bukkit", "club.abelix.di", "bukkit").versionRef("abelix")
+        }
+    }
+}
+
+rootProject.name = 'abelix_auth'

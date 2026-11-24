@@ -1,0 +1,48 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+
+dependencies {
+    implementation(project(":network"))
+
+    implementation(libs.grpc.netty)
+    implementation(libs.grpc.stub)
+    implementation(libs.grpc.protobuf)
+
+    compileOnly(libs.bukkit)
+    compileOnly(libs.abelix.di.api)
+    compileOnly(libs.abelix.di.bukkit)
+}
+
+enablePublishing(project)
+
+shadowJar {
+    archiveFileName.set('CoreBukkitConnector.jar')
+    destinationDirectory.set(file("$rootDir/artifacts"))
+
+    relocate("com.google.protobuf", "abelix.shade.com.google.protobuf")
+    relocate("com.google.common", "abelix.shade.com.google.common")
+    mergeServiceFiles()
+}
+
+tasks.register("skyblockJar", ShadowJar) {
+    group = "shadow"
+    description = "Builds the skyblock variant of CoreBukkitConnector with relocated netty."
+
+    archiveFileName.set('CoreBukkitConnector-skyblock.jar')
+    destinationDirectory.set(file("$rootDir/artifacts"))
+
+    dependsOn tasks.named("jar")
+
+    from sourceSets.main.output
+    configurations = [project.configurations.runtimeClasspath]
+
+    exclude("META-INF/*.SF", "META-INF/*.DSA", "META-INF/*.RSA", "META-INF/*.EC")
+
+    relocate("com.google.protobuf", "abelix.shade.com.google.protobuf")
+    relocate("com.google.common", "abelix.shade.com.google.common")
+    relocate("io.netty", "abelix.shade.io.netty")
+    mergeServiceFiles()
+}
+
+tasks.named("assemble") {
+    dependsOn tasks.named("skyblockJar")
+}

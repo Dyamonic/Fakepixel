@@ -1,0 +1,9 @@
+name: Starship
+main: club.abelix.core.bukkit.StarshipBukkit
+website: https://abelix.club
+description: Abelix Core Plugin
+version: '${VERSION}'
+authors: [ Abelix ]
+load: POSTWORLD
+depend:
+  - BukkitDiPlatform

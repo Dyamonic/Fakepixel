@@ -1,0 +1,86 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'com.gradleup.shadow' version '9.1.0' apply false
+    id "io.sentry.jvm.gradle" version "5.12.2" apply false
+    id 'com.akuleshov7.vercraft.plugin-gradle' version '0.5.0'
+}
+
+ext.set('output', findProperty("gradle.output") ?: "artifacts/")
+
+allprojects {
+    group = "club.abelix.core"
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+
+        maven { url = "https://repo.abelix.club/repository/public/" }
+
+        maven {
+            url "https://git.fakepixel.online/api/v4/groups/6/-/packages/maven"
+
+            credentials(HttpHeaderCredentials) {
+                name = "${System.getenv("CI_JOB_TOKEN") ? 'Job-Token' : 'Private-Token'}"
+                value = System.getenv("CI_JOB_TOKEN") ?: System.getenv("ABELIX_ACCESS_TOKEN")
+            }
+
+            authentication { header(HttpHeaderAuthentication) }
+        }
+    }
+}
+
+subprojects {
+    apply plugin: "java"
+    apply plugin: "java-library"
+    apply plugin: "com.gradleup.shadow"
+
+    apply from: "$rootDir/gradle/publishing.gradle"
+
+    dependencies {
+        compileOnly(libs.jetbrains.annotations)
+
+        compileOnly(libs.lombok)
+        annotationProcessor(libs.lombok)
+        annotationProcessor(libs.wcommons.impl.loader)
+    }
+
+    tasks {
+        tasks.withType(JavaCompile) {
+            targetCompatibility = JavaVersion.VERSION_21
+            sourceCompatibility = JavaVersion.VERSION_21
+            options.encoding = "UTF-8"
+        }
+
+        tasks.assemble.dependsOn(shadowJar)
+
+        tasks.named('clean', Delete) {
+            delete "$rootDir/artifacts"
+        }
+    }
+
+    tasks.register("publishAll") {
+        dependsOn subprojects.collect { project ->
+            project.tasks.findByName("publish") ?: project.tasks.findByName("assemble")
+        }.findAll { it != null }
+    }
+
+    tasks.named('processResources') {
+        inputs.property 'VERSION', project.version
+        inputs.property 'COMMIT', System.getenv('CI_COMMIT_SHORT_SHA') ?: 'unspecified'
+
+        filesMatching('plugin.yml') {
+            expand([
+                    VERSION    : project.version,
+            ])
+            filteringCharset = 'UTF-8'
+        }
+
+        filesMatching('velocity-plugin.json') {
+            expand([
+                    VERSION    : project.version,
+            ])
+            filteringCharset = 'UTF-8'
+        }
+    }
+}

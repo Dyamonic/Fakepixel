@@ -1,0 +1,207 @@
+scoreboard:
+  enabled: true
+  update-interval-ticks: 40
+  title: '&e&lFakepixel'
+  lines:
+  - '&8%date%'
+  - '&7'
+  - '&r%abelix_prefix%%player%'
+  - '&fkills: &e%kills%'
+  - '&fdeath: &c%deaths%'
+  - '&7'
+  - '&fCoins: &e%coins%'
+  - '&fGold: &6%gold%'
+  - '&7'
+  - '&fOnline: &b%online%&7/&b%max_players%'
+  - '&7'
+  - '&eworld.fakepixel.me'
+tablist:
+  enabled: true
+  update-ticks: 40
+  name-format: '%abelix_prefix%%player%'
+  header:
+  - '&e&lFakepixel'
+  - ''
+  - '&fStore: &eworld.fakepixel.me'
+  - ''
+  footer:
+  - ''
+  - '&fYou Are playing on &emc.fakepixel.me'
+  - ''
+nametag:
+  enabled: true
+  format: '%abelix_prefix%%player%'
+spawn:
+  teleport-on-join: true
+spawnprotection:
+  enabled: true
+  allow-mob-spawning: false
+  force-adventure: true
+rtp:
+  world: world
+  spawn-world: hub
+  min-radius: 500
+  max-radius: 5000
+  attempts: 80
+  cooldown-seconds: 60
+homes:
+  max-homes: 5
+tpa:
+  request-timeout-seconds: 15
+vanish:
+  double-shift-millis: 500
+dupe-detection:
+  enabled: true
+  scan-interval-ticks: 200
+  event-scan-delay-ticks: 2
+  scan-ender-chest: true
+  scan-world-drops: true
+  remove-duplicate: false
+  alert-cooldown-seconds: 120
+  track-all-items: false
+  track-stacked-items: false
+  tracked-materials: []
+  ignored-materials:
+  - AIR
+discord:
+  dupe-detection:
+    enabled: true
+    webhook-url: 'discord webhook url here'
+    username: 'Fakevival Dupe Detection'
+    embed-color: 15158332
+menus:
+  skills:
+    title: '&bYour Skills'
+  jobs:
+    title: '&bJobs'
+  skill-leveling:
+    title: '&bSkill Leveling'
+  mining-tree:
+    title: '&8Mining Skill Tree'
+  skill-tree:
+    title: '&8%skill% Skill Tree'
+npcs:
+  enabled: true
+  shops:
+    shopkeeper:
+      shop: general
+      messages:
+      - '&eShopkeeper &8» &fWelcome, %player%.'
+      - '&eShopkeeper &8» &7Let me show you what I have for sale.'
+      open-delay-ticks: 20
+      sound: ENTITY_VILLAGER_TRADE
+  talking:
+    guide:
+      name: Guide
+      messages:
+      - '&bGuide &8» &fWelcome to Fakevival, &a%player%&f!'
+      - '&7Use &e/jobs &7and &e/skills &7to start progressing.'
+      commands: []
+      sound: ENTITY_VILLAGER_YES
+    skills:
+      name: Skills Master
+      messages:
+      - '&dSkills Master &8» &fBreak blocks, kill mobs, and fish to level skills.'
+      commands:
+      - player:skills
+      sound: ENTITY_EXPERIENCE_ORB_PICKUP
+quests:
+  enabled: false
+  npcs:
+    1zg:
+      starter_quest:
+        start-messages:
+        - '&e[NPC] Tester &8» &fBring me &e16 Oak Logs &fto finish your first quest.'
+        required-item:
+          material: OAK_LOG
+          amount: 16
+        need-item-message: '&bGuide &8» &cYou need &e%amount%x %item% &cto complete this quest.'
+        complete-messages:
+        - '&e[NPC] Tester &8» &aQuest complete! Nice work, %player%.'
+        completed-message: '&e[NPC] Tester &8» &aYou already completed this quest.'
+        reward-commands:
+        - give %player% emerald 4
+messages:
+  no-permission: '&cYou do not have permission.'
+  skill-level-up: '&aYour %skill% skill is now level %level%!'
+  job-level-up: '&aYour %job% job is now level %level%!'
+  spawnprotection-deny: '&cYou cannot build or break blocks in spawn protection.'
+  rtp-teleported: '&aTeleported to a random safe location.'
+  rtp-cooldown: '&cYou can use RTP again in %seconds%s.'
+bossbar:
+  hide-after-ticks: 60
+  skills:
+    enabled: true
+    color: BLUE
+    title: '&b%skill% &7Level &a%level% &8- &e%xp%&7/&e%needed% XP'
+  jobs:
+    enabled: true
+    color: YELLOW
+    title: '&6%job% Job &7Level &a%level% &8- &e%xp%&7/&e%needed% XP'
+sounds:
+  skill-level-up:
+    enabled: true
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.2
+  job-level-up:
+    enabled: true
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0
+regions:
+  enabled: true
+  default-discover-sound: ENTITY_PLAYER_LEVELUP
+dungeons:
+  enabled: false
+  default-world: dungeontest
+  boss-health: 200.0
+  spawn-portal:
+    enabled: true
+    rotate: DAILY
+    interval-minutes: 1440
+    build-structure: true
+    broadcast-on-rotate: true
+    broadcast: '&5The spawn dungeon portal now leads to &f%dungeon%&5!'
+  random-portal:
+    enabled: false
+    world: world
+    min-radius: 1000
+    max-radius: 8000
+    open-millis: 10800000
+    broadcast: '&5A dungeon portal opened at &f%x%, %y%, %z% &5in &f%world%&5 for 3 hours!'
+  mobs:
+    minions:
+      type: ZOMBIE
+      name: '&aMinion'
+    officers:
+      type: SKELETON
+      name: '&eOfficer'
+    generals:
+      type: RAVAGER
+      name: '&6General'
+shops:
+  general:
+    items:
+      diamond:
+        material: DIAMOND
+        amount: 1
+        price: 250
+        name: '&bDiamond'
+auctionhouse:
+  enabled: true
+battlepass:
+  enabled: true
+  play-xp-every-minutes: 5
+  play-xp: 25
+storage:
+  type: YAML
+  mysql:
+    enabled: false
+    host: localhost
+    port: 3306
+    database: fakevival
+    username: root
+    password: password
+    use-ssl: false
+    table: fakevival_data

@@ -1,0 +1,9 @@
+database:
+  enabled: true
+  type: MYSQL
+  host: fake
+  port: 3306
+  name: thepit
+  username: username
+  password: password
+  pool-size: 4

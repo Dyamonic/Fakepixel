@@ -1,0 +1,4 @@
+name: CoreVotifier
+author: Krashe85
+version: 1.0
+main: club.abelix.core.votifer.VotifierCorePlugin

@@ -1,0 +1,4 @@
+main: club.abelix.metrics.MetricsCorePlugin
+name: CoreMetrics
+author: Krashe85
+version: 1.0

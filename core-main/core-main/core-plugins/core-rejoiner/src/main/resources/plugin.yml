@@ -1,0 +1,4 @@
+main: club.abelix.core.rejoiner.CoreRejoinerCorePlugin
+name: CoreRejoiner
+author: Kambet
+version: 1.0

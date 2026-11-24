@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/smp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/smp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/proxy-bungee/smp.proxy-bungee.main.iml" filepath="$PROJECT_DIR$/.idea/modules/proxy-bungee/smp.proxy-bungee.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/smp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/smp.test.iml" />
+    </modules>
+  </component>
+</project>

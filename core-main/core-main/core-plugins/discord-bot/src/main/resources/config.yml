@@ -1,0 +1,18 @@
+guildId: 123456789012345678
+linkedRoleId: 987654321098765432
+linkChannelId: 112233445566778899
+# boosterRoleId - the Discord role granted automatically to server boosters (use 0 to disable)
+boosterRoleId: 0
+
+staffChannels:
+  - 111111111111111111
+  - 222222222222222222
+  - 333333333333333333
+
+adaptedRoles:
+  - discordId: 444444444444444444
+    localRankId: 1
+  - discordId: 555555555555555555
+    localRankId: 2
+  - discordId: 666666666666666666
+    localRankId: 3

@@ -1,0 +1,4 @@
+name: SMPProxyRouter
+main: club.abelix.games.fakevival.proxy.bungee.SMPProxyRouterBungee
+version: 1.0.0
+author: 1zg
